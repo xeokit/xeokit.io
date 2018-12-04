@@ -1,0 +1,5891 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 5448,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 98,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 5448,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 98,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [
+      {
+        "type": "ImportDeclaration",
+        "start": 0,
+        "end": 63,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 1,
+            "column": 63
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportSpecifier",
+            "start": 8,
+            "end": 20,
+            "loc": {
+              "start": {
+                "line": 1,
+                "column": 8
+              },
+              "end": {
+                "line": 1,
+                "column": 20
+              }
+            },
+            "imported": {
+              "type": "Identifier",
+              "start": 8,
+              "end": 20,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 8
+                },
+                "end": {
+                  "line": 1,
+                  "column": 20
+                },
+                "identifierName": "ModelsPlugin"
+              },
+              "name": "ModelsPlugin"
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 8,
+              "end": 20,
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 8
+                },
+                "end": {
+                  "line": 1,
+                  "column": 20
+                },
+                "identifierName": "ModelsPlugin"
+              },
+              "name": "ModelsPlugin"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 27,
+          "end": 62,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 27
+            },
+            "end": {
+              "line": 1,
+              "column": 62
+            }
+          },
+          "extra": {
+            "rawValue": "./../../../viewer/ModelsPlugin.js",
+            "raw": "\"./../../../viewer/ModelsPlugin.js\""
+          },
+          "value": "./../../../viewer/ModelsPlugin.js"
+        }
+      },
+      {
+        "type": "ImportDeclaration",
+        "start": 64,
+        "end": 137,
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 0
+          },
+          "end": {
+            "line": 2,
+            "column": 73
+          }
+        },
+        "specifiers": [
+          {
+            "type": "ImportSpecifier",
+            "start": 72,
+            "end": 84,
+            "loc": {
+              "start": {
+                "line": 2,
+                "column": 8
+              },
+              "end": {
+                "line": 2,
+                "column": 20
+              }
+            },
+            "imported": {
+              "type": "Identifier",
+              "start": 72,
+              "end": 84,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 8
+                },
+                "end": {
+                  "line": 2,
+                  "column": 20
+                },
+                "identifierName": "GLTFBigModel"
+              },
+              "name": "GLTFBigModel"
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 72,
+              "end": 84,
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 8
+                },
+                "end": {
+                  "line": 2,
+                  "column": 20
+                },
+                "identifierName": "GLTFBigModel"
+              },
+              "name": "GLTFBigModel"
+            }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 91,
+          "end": 136,
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 27
+            },
+            "end": {
+              "line": 2,
+              "column": 72
+            }
+          },
+          "extra": {
+            "rawValue": "../../../xeogl/GLTFBigModel/GLTFBigModel.js",
+            "raw": "\"../../../xeogl/GLTFBigModel/GLTFBigModel.js\""
+          },
+          "value": "../../../xeogl/GLTFBigModel/GLTFBigModel.js"
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * A viewer plugin that loads large models from [glTF](https://www.khronos.org/gltf/).\n *\n * @example\n *\n * // Create a viewer\n * const viewer = new Viewer({\n *      canvasId: \"glcanvas\"\n * });\n *\n * // Create a GLTFBigModels plugin within the viewer\n * var plugin = new GLTFBigModelsPlugin(viewer, {\n *      id: \"GLTFBigModels\"  // Optional plugin ID\n * });\n *\n * // We can also get the plugin by its ID on the viewer\n * plugin = viewer.plugins.GLTFBigModels;\n *\n * // Load the big glTF model\n * // These params can include all the xeogl.GLTFModel configs\n * const model = plugin.load({\n *      id: \"myModel\",\n *      src: \"./models/gltf/mygltfmodel.gltf\"\n * });\n *\n * // The model is a xeogl.Model\n *\n * // When the model has loaded, fit it to view\n * model.on(\"loaded\", function() {\n *      viewer.cameraFlight.flyTo(model);\n * });\n *\n * @class GLTFBigModelsPlugin\n *\n ",
+            "start": 139,
+            "end": 1017,
+            "loc": {
+              "start": {
+                "line": 4,
+                "column": 0
+              },
+              "end": {
+                "line": 38,
+                "column": 3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "Identifier",
+        "start": 1018,
+        "end": 5417,
+        "loc": {
+          "start": {
+            "line": 39,
+            "column": 0
+          },
+          "end": {
+            "line": 95,
+            "column": 1
+          }
+        },
+        "id": {
+          "type": "Identifier",
+          "start": 1024,
+          "end": 1043,
+          "loc": {
+            "start": {
+              "line": 39,
+              "column": 6
+            },
+            "end": {
+              "line": 39,
+              "column": 25
+            },
+            "identifierName": "GLTFBigModelsPlugin"
+          },
+          "name": "GLTFBigModelsPlugin",
+          "leadingComments": null
+        },
+        "superClass": {
+          "type": "Identifier",
+          "start": 1052,
+          "end": 1064,
+          "loc": {
+            "start": {
+              "line": 39,
+              "column": 34
+            },
+            "end": {
+              "line": 39,
+              "column": 46
+            },
+            "identifierName": "ModelsPlugin"
+          },
+          "name": "ModelsPlugin"
+        },
+        "body": {
+          "type": "ClassBody",
+          "start": 1065,
+          "end": 5417,
+          "loc": {
+            "start": {
+              "line": 39,
+              "column": 47
+            },
+            "end": {
+              "line": 95,
+              "column": 1
+            }
+          },
+          "body": [
+            {
+              "type": "ClassMethod",
+              "start": 1334,
+              "end": 1425,
+              "loc": {
+                "start": {
+                  "line": 47,
+                  "column": 4
+                },
+                "end": {
+                  "line": 49,
+                  "column": 5
+                }
+              },
+              "static": false,
+              "computed": false,
+              "key": {
+                "type": "Identifier",
+                "start": 1334,
+                "end": 1345,
+                "loc": {
+                  "start": {
+                    "line": 47,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 47,
+                    "column": 15
+                  },
+                  "identifierName": "constructor"
+                },
+                "name": "constructor",
+                "leadingComments": null
+              },
+              "kind": "constructor",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "start": 1346,
+                  "end": 1352,
+                  "loc": {
+                    "start": {
+                      "line": 47,
+                      "column": 16
+                    },
+                    "end": {
+                      "line": 47,
+                      "column": 22
+                    },
+                    "identifierName": "viewer"
+                  },
+                  "name": "viewer"
+                },
+                {
+                  "type": "Identifier",
+                  "start": 1354,
+                  "end": 1357,
+                  "loc": {
+                    "start": {
+                      "line": 47,
+                      "column": 24
+                    },
+                    "end": {
+                      "line": 47,
+                      "column": 27
+                    },
+                    "identifierName": "cfg"
+                  },
+                  "name": "cfg"
+                }
+              ],
+              "body": {
+                "type": "BlockStatement",
+                "start": 1359,
+                "end": 1425,
+                "loc": {
+                  "start": {
+                    "line": 47,
+                    "column": 29
+                  },
+                  "end": {
+                    "line": 49,
+                    "column": 5
+                  }
+                },
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "start": 1369,
+                    "end": 1419,
+                    "loc": {
+                      "start": {
+                        "line": 48,
+                        "column": 8
+                      },
+                      "end": {
+                        "line": 48,
+                        "column": 58
+                      }
+                    },
+                    "expression": {
+                      "type": "CallExpression",
+                      "start": 1369,
+                      "end": 1418,
+                      "loc": {
+                        "start": {
+                          "line": 48,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 48,
+                          "column": 57
+                        }
+                      },
+                      "callee": {
+                        "type": "Super",
+                        "start": 1369,
+                        "end": 1374,
+                        "loc": {
+                          "start": {
+                            "line": 48,
+                            "column": 8
+                          },
+                          "end": {
+                            "line": 48,
+                            "column": 13
+                          }
+                        }
+                      },
+                      "arguments": [
+                        {
+                          "type": "StringLiteral",
+                          "start": 1375,
+                          "end": 1390,
+                          "loc": {
+                            "start": {
+                              "line": 48,
+                              "column": 14
+                            },
+                            "end": {
+                              "line": 48,
+                              "column": 29
+                            }
+                          },
+                          "extra": {
+                            "rawValue": "GLTFBigModels",
+                            "raw": "\"GLTFBigModels\""
+                          },
+                          "value": "GLTFBigModels"
+                        },
+                        {
+                          "type": "Identifier",
+                          "start": 1392,
+                          "end": 1398,
+                          "loc": {
+                            "start": {
+                              "line": 48,
+                              "column": 31
+                            },
+                            "end": {
+                              "line": 48,
+                              "column": 37
+                            },
+                            "identifierName": "viewer"
+                          },
+                          "name": "viewer"
+                        },
+                        {
+                          "type": "Identifier",
+                          "start": 1400,
+                          "end": 1412,
+                          "loc": {
+                            "start": {
+                              "line": 48,
+                              "column": 39
+                            },
+                            "end": {
+                              "line": 48,
+                              "column": 51
+                            },
+                            "identifierName": "GLTFBigModel"
+                          },
+                          "name": "GLTFBigModel"
+                        },
+                        {
+                          "type": "Identifier",
+                          "start": 1414,
+                          "end": 1417,
+                          "loc": {
+                            "start": {
+                              "line": 48,
+                              "column": 53
+                            },
+                            "end": {
+                              "line": 48,
+                              "column": 56
+                            },
+                            "identifierName": "cfg"
+                          },
+                          "name": "cfg"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "directives": [],
+                "trailingComments": null
+              },
+              "leadingComments": [
+                {
+                  "type": "CommentBlock",
+                  "value": "*\n     * @constructor\n     * @param {Viewer} viewer The Viewer.\n     * @param {Object} cfg  Plugin configuration.\n     * @param {String} [cfg.id=\"GLTFBigModels\"] Optional ID for this plugin, with which we can find it within {@link Viewer#plugins}.\n     ",
+                  "start": 1072,
+                  "end": 1329,
+                  "loc": {
+                    "start": {
+                      "line": 41,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 46,
+                      "column": 7
+                    }
+                  }
+                }
+              ],
+              "trailingComments": [
+                {
+                  "type": "CommentBlock",
+                  "value": "*\n     Loads a glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file. You can set this to a new file path at any time, which will cause the\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
+                  "start": 1431,
+                  "end": 4948,
+                  "loc": {
+                    "start": {
+                      "line": 51,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 82,
+                      "column": 7
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "ClassMethod",
+              "start": 4953,
+              "end": 5415,
+              "loc": {
+                "start": {
+                  "line": 83,
+                  "column": 4
+                },
+                "end": {
+                  "line": 94,
+                  "column": 5
+                }
+              },
+              "static": false,
+              "computed": false,
+              "key": {
+                "type": "Identifier",
+                "start": 4953,
+                "end": 4957,
+                "loc": {
+                  "start": {
+                    "line": 83,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 83,
+                    "column": 8
+                  },
+                  "identifierName": "load"
+                },
+                "name": "load",
+                "leadingComments": null
+              },
+              "kind": "method",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "start": 4958,
+                  "end": 4964,
+                  "loc": {
+                    "start": {
+                      "line": 83,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 83,
+                      "column": 15
+                    },
+                    "identifierName": "params"
+                  },
+                  "name": "params"
+                }
+              ],
+              "body": {
+                "type": "BlockStatement",
+                "start": 4966,
+                "end": 5415,
+                "loc": {
+                  "start": {
+                    "line": 83,
+                    "column": 17
+                  },
+                  "end": {
+                    "line": 94,
+                    "column": 5
+                  }
+                },
+                "body": [
+                  {
+                    "type": "IfStatement",
+                    "start": 4976,
+                    "end": 5076,
+                    "loc": {
+                      "start": {
+                        "line": 84,
+                        "column": 8
+                      },
+                      "end": {
+                        "line": 87,
+                        "column": 9
+                      }
+                    },
+                    "test": {
+                      "type": "UnaryExpression",
+                      "start": 4980,
+                      "end": 4990,
+                      "loc": {
+                        "start": {
+                          "line": 84,
+                          "column": 12
+                        },
+                        "end": {
+                          "line": 84,
+                          "column": 22
+                        }
+                      },
+                      "operator": "!",
+                      "prefix": true,
+                      "argument": {
+                        "type": "MemberExpression",
+                        "start": 4981,
+                        "end": 4990,
+                        "loc": {
+                          "start": {
+                            "line": 84,
+                            "column": 13
+                          },
+                          "end": {
+                            "line": 84,
+                            "column": 22
+                          }
+                        },
+                        "object": {
+                          "type": "Identifier",
+                          "start": 4981,
+                          "end": 4987,
+                          "loc": {
+                            "start": {
+                              "line": 84,
+                              "column": 13
+                            },
+                            "end": {
+                              "line": 84,
+                              "column": 19
+                            },
+                            "identifierName": "params"
+                          },
+                          "name": "params"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "start": 4988,
+                          "end": 4990,
+                          "loc": {
+                            "start": {
+                              "line": 84,
+                              "column": 20
+                            },
+                            "end": {
+                              "line": 84,
+                              "column": 22
+                            },
+                            "identifierName": "id"
+                          },
+                          "name": "id"
+                        },
+                        "computed": false
+                      },
+                      "extra": {
+                        "parenthesizedArgument": false
+                      }
+                    },
+                    "consequent": {
+                      "type": "BlockStatement",
+                      "start": 4992,
+                      "end": 5076,
+                      "loc": {
+                        "start": {
+                          "line": 84,
+                          "column": 24
+                        },
+                        "end": {
+                          "line": 87,
+                          "column": 9
+                        }
+                      },
+                      "body": [
+                        {
+                          "type": "ExpressionStatement",
+                          "start": 5006,
+                          "end": 5046,
+                          "loc": {
+                            "start": {
+                              "line": 85,
+                              "column": 12
+                            },
+                            "end": {
+                              "line": 85,
+                              "column": 52
+                            }
+                          },
+                          "expression": {
+                            "type": "CallExpression",
+                            "start": 5006,
+                            "end": 5045,
+                            "loc": {
+                              "start": {
+                                "line": 85,
+                                "column": 12
+                              },
+                              "end": {
+                                "line": 85,
+                                "column": 51
+                              }
+                            },
+                            "callee": {
+                              "type": "MemberExpression",
+                              "start": 5006,
+                              "end": 5016,
+                              "loc": {
+                                "start": {
+                                  "line": 85,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "line": 85,
+                                  "column": 22
+                                }
+                              },
+                              "object": {
+                                "type": "ThisExpression",
+                                "start": 5006,
+                                "end": 5010,
+                                "loc": {
+                                  "start": {
+                                    "line": 85,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "line": 85,
+                                    "column": 16
+                                  }
+                                }
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "start": 5011,
+                                "end": 5016,
+                                "loc": {
+                                  "start": {
+                                    "line": 85,
+                                    "column": 17
+                                  },
+                                  "end": {
+                                    "line": 85,
+                                    "column": 22
+                                  },
+                                  "identifierName": "error"
+                                },
+                                "name": "error"
+                              },
+                              "computed": false
+                            },
+                            "arguments": [
+                              {
+                                "type": "StringLiteral",
+                                "start": 5017,
+                                "end": 5044,
+                                "loc": {
+                                  "start": {
+                                    "line": 85,
+                                    "column": 23
+                                  },
+                                  "end": {
+                                    "line": 85,
+                                    "column": 50
+                                  }
+                                },
+                                "extra": {
+                                  "rawValue": "load() param expected: id",
+                                  "raw": "\"load() param expected: id\""
+                                },
+                                "value": "load() param expected: id"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "type": "ReturnStatement",
+                          "start": 5059,
+                          "end": 5066,
+                          "loc": {
+                            "start": {
+                              "line": 86,
+                              "column": 12
+                            },
+                            "end": {
+                              "line": 86,
+                              "column": 19
+                            }
+                          },
+                          "argument": null
+                        }
+                      ],
+                      "directives": []
+                    },
+                    "alternate": null
+                  },
+                  {
+                    "type": "IfStatement",
+                    "start": 5085,
+                    "end": 5243,
+                    "loc": {
+                      "start": {
+                        "line": 88,
+                        "column": 8
+                      },
+                      "end": {
+                        "line": 91,
+                        "column": 9
+                      }
+                    },
+                    "test": {
+                      "type": "MemberExpression",
+                      "start": 5089,
+                      "end": 5128,
+                      "loc": {
+                        "start": {
+                          "line": 88,
+                          "column": 12
+                        },
+                        "end": {
+                          "line": 88,
+                          "column": 51
+                        }
+                      },
+                      "object": {
+                        "type": "MemberExpression",
+                        "start": 5089,
+                        "end": 5117,
+                        "loc": {
+                          "start": {
+                            "line": 88,
+                            "column": 12
+                          },
+                          "end": {
+                            "line": 88,
+                            "column": 40
+                          }
+                        },
+                        "object": {
+                          "type": "MemberExpression",
+                          "start": 5089,
+                          "end": 5106,
+                          "loc": {
+                            "start": {
+                              "line": 88,
+                              "column": 12
+                            },
+                            "end": {
+                              "line": 88,
+                              "column": 29
+                            }
+                          },
+                          "object": {
+                            "type": "MemberExpression",
+                            "start": 5089,
+                            "end": 5100,
+                            "loc": {
+                              "start": {
+                                "line": 88,
+                                "column": 12
+                              },
+                              "end": {
+                                "line": 88,
+                                "column": 23
+                              }
+                            },
+                            "object": {
+                              "type": "ThisExpression",
+                              "start": 5089,
+                              "end": 5093,
+                              "loc": {
+                                "start": {
+                                  "line": 88,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "line": 88,
+                                  "column": 16
+                                }
+                              }
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "start": 5094,
+                              "end": 5100,
+                              "loc": {
+                                "start": {
+                                  "line": 88,
+                                  "column": 17
+                                },
+                                "end": {
+                                  "line": 88,
+                                  "column": 23
+                                },
+                                "identifierName": "viewer"
+                              },
+                              "name": "viewer"
+                            },
+                            "computed": false
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 5101,
+                            "end": 5106,
+                            "loc": {
+                              "start": {
+                                "line": 88,
+                                "column": 24
+                              },
+                              "end": {
+                                "line": 88,
+                                "column": 29
+                              },
+                              "identifierName": "scene"
+                            },
+                            "name": "scene"
+                          },
+                          "computed": false
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "start": 5107,
+                          "end": 5117,
+                          "loc": {
+                            "start": {
+                              "line": 88,
+                              "column": 30
+                            },
+                            "end": {
+                              "line": 88,
+                              "column": 40
+                            },
+                            "identifierName": "components"
+                          },
+                          "name": "components"
+                        },
+                        "computed": false
+                      },
+                      "property": {
+                        "type": "MemberExpression",
+                        "start": 5118,
+                        "end": 5127,
+                        "loc": {
+                          "start": {
+                            "line": 88,
+                            "column": 41
+                          },
+                          "end": {
+                            "line": 88,
+                            "column": 50
+                          }
+                        },
+                        "object": {
+                          "type": "Identifier",
+                          "start": 5118,
+                          "end": 5124,
+                          "loc": {
+                            "start": {
+                              "line": 88,
+                              "column": 41
+                            },
+                            "end": {
+                              "line": 88,
+                              "column": 47
+                            },
+                            "identifierName": "params"
+                          },
+                          "name": "params"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "start": 5125,
+                          "end": 5127,
+                          "loc": {
+                            "start": {
+                              "line": 88,
+                              "column": 48
+                            },
+                            "end": {
+                              "line": 88,
+                              "column": 50
+                            },
+                            "identifierName": "id"
+                          },
+                          "name": "id"
+                        },
+                        "computed": false
+                      },
+                      "computed": true
+                    },
+                    "consequent": {
+                      "type": "BlockStatement",
+                      "start": 5130,
+                      "end": 5243,
+                      "loc": {
+                        "start": {
+                          "line": 88,
+                          "column": 53
+                        },
+                        "end": {
+                          "line": 91,
+                          "column": 9
+                        }
+                      },
+                      "body": [
+                        {
+                          "type": "ExpressionStatement",
+                          "start": 5144,
+                          "end": 5213,
+                          "loc": {
+                            "start": {
+                              "line": 89,
+                              "column": 12
+                            },
+                            "end": {
+                              "line": 89,
+                              "column": 81
+                            }
+                          },
+                          "expression": {
+                            "type": "CallExpression",
+                            "start": 5144,
+                            "end": 5212,
+                            "loc": {
+                              "start": {
+                                "line": 89,
+                                "column": 12
+                              },
+                              "end": {
+                                "line": 89,
+                                "column": 80
+                              }
+                            },
+                            "callee": {
+                              "type": "MemberExpression",
+                              "start": 5144,
+                              "end": 5154,
+                              "loc": {
+                                "start": {
+                                  "line": 89,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "line": 89,
+                                  "column": 22
+                                }
+                              },
+                              "object": {
+                                "type": "ThisExpression",
+                                "start": 5144,
+                                "end": 5148,
+                                "loc": {
+                                  "start": {
+                                    "line": 89,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "line": 89,
+                                    "column": 16
+                                  }
+                                }
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "start": 5149,
+                                "end": 5154,
+                                "loc": {
+                                  "start": {
+                                    "line": 89,
+                                    "column": 17
+                                  },
+                                  "end": {
+                                    "line": 89,
+                                    "column": 22
+                                  },
+                                  "identifierName": "error"
+                                },
+                                "name": "error"
+                              },
+                              "computed": false
+                            },
+                            "arguments": [
+                              {
+                                "type": "BinaryExpression",
+                                "start": 5155,
+                                "end": 5211,
+                                "loc": {
+                                  "start": {
+                                    "line": 89,
+                                    "column": 23
+                                  },
+                                  "end": {
+                                    "line": 89,
+                                    "column": 79
+                                  }
+                                },
+                                "left": {
+                                  "type": "StringLiteral",
+                                  "start": 5155,
+                                  "end": 5206,
+                                  "loc": {
+                                    "start": {
+                                      "line": 89,
+                                      "column": 23
+                                    },
+                                    "end": {
+                                      "line": 89,
+                                      "column": 74
+                                    }
+                                  },
+                                  "extra": {
+                                    "rawValue": "Component with this ID already exists in viewer: ",
+                                    "raw": "\"Component with this ID already exists in viewer: \""
+                                  },
+                                  "value": "Component with this ID already exists in viewer: "
+                                },
+                                "operator": "+",
+                                "right": {
+                                  "type": "Identifier",
+                                  "start": 5209,
+                                  "end": 5211,
+                                  "loc": {
+                                    "start": {
+                                      "line": 89,
+                                      "column": 77
+                                    },
+                                    "end": {
+                                      "line": 89,
+                                      "column": 79
+                                    },
+                                    "identifierName": "id"
+                                  },
+                                  "name": "id"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "type": "ReturnStatement",
+                          "start": 5226,
+                          "end": 5233,
+                          "loc": {
+                            "start": {
+                              "line": 90,
+                              "column": 12
+                            },
+                            "end": {
+                              "line": 90,
+                              "column": 19
+                            }
+                          },
+                          "argument": null
+                        }
+                      ],
+                      "directives": []
+                    },
+                    "alternate": null
+                  },
+                  {
+                    "type": "VariableDeclaration",
+                    "start": 5252,
+                    "end": 5308,
+                    "loc": {
+                      "start": {
+                        "line": 92,
+                        "column": 8
+                      },
+                      "end": {
+                        "line": 92,
+                        "column": 64
+                      }
+                    },
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "start": 5256,
+                        "end": 5307,
+                        "loc": {
+                          "start": {
+                            "line": 92,
+                            "column": 12
+                          },
+                          "end": {
+                            "line": 92,
+                            "column": 63
+                          }
+                        },
+                        "id": {
+                          "type": "Identifier",
+                          "start": 5256,
+                          "end": 5261,
+                          "loc": {
+                            "start": {
+                              "line": 92,
+                              "column": 12
+                            },
+                            "end": {
+                              "line": 92,
+                              "column": 17
+                            },
+                            "identifierName": "model"
+                          },
+                          "name": "model"
+                        },
+                        "init": {
+                          "type": "NewExpression",
+                          "start": 5264,
+                          "end": 5307,
+                          "loc": {
+                            "start": {
+                              "line": 92,
+                              "column": 20
+                            },
+                            "end": {
+                              "line": 92,
+                              "column": 63
+                            }
+                          },
+                          "callee": {
+                            "type": "Identifier",
+                            "start": 5268,
+                            "end": 5280,
+                            "loc": {
+                              "start": {
+                                "line": 92,
+                                "column": 24
+                              },
+                              "end": {
+                                "line": 92,
+                                "column": 36
+                              },
+                              "identifierName": "GLTFBigModel"
+                            },
+                            "name": "GLTFBigModel"
+                          },
+                          "arguments": [
+                            {
+                              "type": "MemberExpression",
+                              "start": 5281,
+                              "end": 5298,
+                              "loc": {
+                                "start": {
+                                  "line": 92,
+                                  "column": 37
+                                },
+                                "end": {
+                                  "line": 92,
+                                  "column": 54
+                                }
+                              },
+                              "object": {
+                                "type": "MemberExpression",
+                                "start": 5281,
+                                "end": 5292,
+                                "loc": {
+                                  "start": {
+                                    "line": 92,
+                                    "column": 37
+                                  },
+                                  "end": {
+                                    "line": 92,
+                                    "column": 48
+                                  }
+                                },
+                                "object": {
+                                  "type": "ThisExpression",
+                                  "start": 5281,
+                                  "end": 5285,
+                                  "loc": {
+                                    "start": {
+                                      "line": 92,
+                                      "column": 37
+                                    },
+                                    "end": {
+                                      "line": 92,
+                                      "column": 41
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "start": 5286,
+                                  "end": 5292,
+                                  "loc": {
+                                    "start": {
+                                      "line": 92,
+                                      "column": 42
+                                    },
+                                    "end": {
+                                      "line": 92,
+                                      "column": 48
+                                    },
+                                    "identifierName": "viewer"
+                                  },
+                                  "name": "viewer"
+                                },
+                                "computed": false
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "start": 5293,
+                                "end": 5298,
+                                "loc": {
+                                  "start": {
+                                    "line": 92,
+                                    "column": 49
+                                  },
+                                  "end": {
+                                    "line": 92,
+                                    "column": 54
+                                  },
+                                  "identifierName": "scene"
+                                },
+                                "name": "scene"
+                              },
+                              "computed": false
+                            },
+                            {
+                              "type": "Identifier",
+                              "start": 5300,
+                              "end": 5306,
+                              "loc": {
+                                "start": {
+                                  "line": 92,
+                                  "column": 56
+                                },
+                                "end": {
+                                  "line": 92,
+                                  "column": 62
+                                },
+                                "identifierName": "params"
+                              },
+                              "name": "params"
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "kind": "var"
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "start": 5317,
+                    "end": 5330,
+                    "loc": {
+                      "start": {
+                        "line": 93,
+                        "column": 8
+                      },
+                      "end": {
+                        "line": 93,
+                        "column": 21
+                      }
+                    },
+                    "argument": {
+                      "type": "Identifier",
+                      "start": 5324,
+                      "end": 5329,
+                      "loc": {
+                        "start": {
+                          "line": 93,
+                          "column": 15
+                        },
+                        "end": {
+                          "line": 93,
+                          "column": 20
+                        },
+                        "identifierName": "model"
+                      },
+                      "name": "model"
+                    },
+                    "trailingComments": [
+                      {
+                        "type": "CommentLine",
+                        "value": " TODO: register loading params within this plugin for inclusion in bookmarks",
+                        "start": 5331,
+                        "end": 5409,
+                        "loc": {
+                          "start": {
+                            "line": 93,
+                            "column": 22
+                          },
+                          "end": {
+                            "line": 93,
+                            "column": 100
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "directives": []
+              },
+              "leadingComments": [
+                {
+                  "type": "CommentBlock",
+                  "value": "*\n     Loads a glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file. You can set this to a new file path at any time, which will cause the\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
+                  "start": 1431,
+                  "end": 4948,
+                  "loc": {
+                    "start": {
+                      "line": 51,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 82,
+                      "column": 7
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "leadingComments": [],
+        "name": "_",
+        "trailingComments": []
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 5419,
+        "end": 5447,
+        "loc": {
+          "start": {
+            "line": 97,
+            "column": 0
+          },
+          "end": {
+            "line": 97,
+            "column": 28
+          }
+        },
+        "declaration": null,
+        "specifiers": [
+          {
+            "type": "ExportSpecifier",
+            "start": 5427,
+            "end": 5446,
+            "loc": {
+              "start": {
+                "line": 97,
+                "column": 8
+              },
+              "end": {
+                "line": 97,
+                "column": 27
+              }
+            },
+            "local": {
+              "type": "Identifier",
+              "start": 5427,
+              "end": 5446,
+              "loc": {
+                "start": {
+                  "line": 97,
+                  "column": 8
+                },
+                "end": {
+                  "line": 97,
+                  "column": 27
+                },
+                "identifierName": "GLTFBigModelsPlugin"
+              },
+              "name": "GLTFBigModelsPlugin"
+            },
+            "exported": {
+              "type": "Identifier",
+              "start": 5427,
+              "end": 5446,
+              "loc": {
+                "start": {
+                  "line": 97,
+                  "column": 8
+                },
+                "end": {
+                  "line": 97,
+                  "column": 27
+                },
+                "identifierName": "GLTFBigModelsPlugin"
+              },
+              "name": "GLTFBigModelsPlugin"
+            }
+          }
+        ],
+        "source": null
+      },
+      {
+        "type": "ExportNamedDeclaration",
+        "start": 5419,
+        "end": 5447,
+        "loc": {
+          "start": {
+            "line": 97,
+            "column": 0
+          },
+          "end": {
+            "line": 97,
+            "column": 28
+          }
+        },
+        "declaration": {
+          "type": "ClassDeclaration",
+          "start": 1018,
+          "end": 5417,
+          "loc": {
+            "start": {
+              "line": 39,
+              "column": 0
+            },
+            "end": {
+              "line": 95,
+              "column": 1
+            }
+          },
+          "id": {
+            "type": "Identifier",
+            "start": 1024,
+            "end": 1043,
+            "loc": {
+              "start": {
+                "line": 39,
+                "column": 6
+              },
+              "end": {
+                "line": 39,
+                "column": 25
+              },
+              "identifierName": "GLTFBigModelsPlugin"
+            },
+            "name": "GLTFBigModelsPlugin",
+            "leadingComments": null
+          },
+          "superClass": {
+            "type": "Identifier",
+            "start": 1052,
+            "end": 1064,
+            "loc": {
+              "start": {
+                "line": 39,
+                "column": 34
+              },
+              "end": {
+                "line": 39,
+                "column": 46
+              },
+              "identifierName": "ModelsPlugin"
+            },
+            "name": "ModelsPlugin"
+          },
+          "body": {
+            "type": "ClassBody",
+            "start": 1065,
+            "end": 5417,
+            "loc": {
+              "start": {
+                "line": 39,
+                "column": 47
+              },
+              "end": {
+                "line": 95,
+                "column": 1
+              }
+            },
+            "body": [
+              {
+                "type": "ClassMethod",
+                "start": 1334,
+                "end": 1425,
+                "loc": {
+                  "start": {
+                    "line": 47,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 49,
+                    "column": 5
+                  }
+                },
+                "static": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 1334,
+                  "end": 1345,
+                  "loc": {
+                    "start": {
+                      "line": 47,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 47,
+                      "column": 15
+                    },
+                    "identifierName": "constructor"
+                  },
+                  "name": "constructor",
+                  "leadingComments": null
+                },
+                "kind": "constructor",
+                "id": null,
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "start": 1346,
+                    "end": 1352,
+                    "loc": {
+                      "start": {
+                        "line": 47,
+                        "column": 16
+                      },
+                      "end": {
+                        "line": 47,
+                        "column": 22
+                      },
+                      "identifierName": "viewer"
+                    },
+                    "name": "viewer"
+                  },
+                  {
+                    "type": "Identifier",
+                    "start": 1354,
+                    "end": 1357,
+                    "loc": {
+                      "start": {
+                        "line": 47,
+                        "column": 24
+                      },
+                      "end": {
+                        "line": 47,
+                        "column": 27
+                      },
+                      "identifierName": "cfg"
+                    },
+                    "name": "cfg"
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "start": 1359,
+                  "end": 1425,
+                  "loc": {
+                    "start": {
+                      "line": 47,
+                      "column": 29
+                    },
+                    "end": {
+                      "line": 49,
+                      "column": 5
+                    }
+                  },
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "start": 1369,
+                      "end": 1419,
+                      "loc": {
+                        "start": {
+                          "line": 48,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 48,
+                          "column": 58
+                        }
+                      },
+                      "expression": {
+                        "type": "CallExpression",
+                        "start": 1369,
+                        "end": 1418,
+                        "loc": {
+                          "start": {
+                            "line": 48,
+                            "column": 8
+                          },
+                          "end": {
+                            "line": 48,
+                            "column": 57
+                          }
+                        },
+                        "callee": {
+                          "type": "Super",
+                          "start": 1369,
+                          "end": 1374,
+                          "loc": {
+                            "start": {
+                              "line": 48,
+                              "column": 8
+                            },
+                            "end": {
+                              "line": 48,
+                              "column": 13
+                            }
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "StringLiteral",
+                            "start": 1375,
+                            "end": 1390,
+                            "loc": {
+                              "start": {
+                                "line": 48,
+                                "column": 14
+                              },
+                              "end": {
+                                "line": 48,
+                                "column": 29
+                              }
+                            },
+                            "extra": {
+                              "rawValue": "GLTFBigModels",
+                              "raw": "\"GLTFBigModels\""
+                            },
+                            "value": "GLTFBigModels"
+                          },
+                          {
+                            "type": "Identifier",
+                            "start": 1392,
+                            "end": 1398,
+                            "loc": {
+                              "start": {
+                                "line": 48,
+                                "column": 31
+                              },
+                              "end": {
+                                "line": 48,
+                                "column": 37
+                              },
+                              "identifierName": "viewer"
+                            },
+                            "name": "viewer"
+                          },
+                          {
+                            "type": "Identifier",
+                            "start": 1400,
+                            "end": 1412,
+                            "loc": {
+                              "start": {
+                                "line": 48,
+                                "column": 39
+                              },
+                              "end": {
+                                "line": 48,
+                                "column": 51
+                              },
+                              "identifierName": "GLTFBigModel"
+                            },
+                            "name": "GLTFBigModel"
+                          },
+                          {
+                            "type": "Identifier",
+                            "start": 1414,
+                            "end": 1417,
+                            "loc": {
+                              "start": {
+                                "line": 48,
+                                "column": 53
+                              },
+                              "end": {
+                                "line": 48,
+                                "column": 56
+                              },
+                              "identifierName": "cfg"
+                            },
+                            "name": "cfg"
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "directives": [],
+                  "trailingComments": null
+                },
+                "leadingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n     * @constructor\n     * @param {Viewer} viewer The Viewer.\n     * @param {Object} cfg  Plugin configuration.\n     * @param {String} [cfg.id=\"GLTFBigModels\"] Optional ID for this plugin, with which we can find it within {@link Viewer#plugins}.\n     ",
+                    "start": 1072,
+                    "end": 1329,
+                    "loc": {
+                      "start": {
+                        "line": 41,
+                        "column": 4
+                      },
+                      "end": {
+                        "line": 46,
+                        "column": 7
+                      }
+                    }
+                  }
+                ],
+                "trailingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n     Loads a glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file. You can set this to a new file path at any time, which will cause the\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
+                    "start": 1431,
+                    "end": 4948,
+                    "loc": {
+                      "start": {
+                        "line": 51,
+                        "column": 4
+                      },
+                      "end": {
+                        "line": 82,
+                        "column": 7
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "ClassMethod",
+                "start": 4953,
+                "end": 5415,
+                "loc": {
+                  "start": {
+                    "line": 83,
+                    "column": 4
+                  },
+                  "end": {
+                    "line": 94,
+                    "column": 5
+                  }
+                },
+                "static": false,
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "start": 4953,
+                  "end": 4957,
+                  "loc": {
+                    "start": {
+                      "line": 83,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 83,
+                      "column": 8
+                    },
+                    "identifierName": "load"
+                  },
+                  "name": "load",
+                  "leadingComments": null
+                },
+                "kind": "method",
+                "id": null,
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "start": 4958,
+                    "end": 4964,
+                    "loc": {
+                      "start": {
+                        "line": 83,
+                        "column": 9
+                      },
+                      "end": {
+                        "line": 83,
+                        "column": 15
+                      },
+                      "identifierName": "params"
+                    },
+                    "name": "params"
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "start": 4966,
+                  "end": 5415,
+                  "loc": {
+                    "start": {
+                      "line": 83,
+                      "column": 17
+                    },
+                    "end": {
+                      "line": 94,
+                      "column": 5
+                    }
+                  },
+                  "body": [
+                    {
+                      "type": "IfStatement",
+                      "start": 4976,
+                      "end": 5076,
+                      "loc": {
+                        "start": {
+                          "line": 84,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 87,
+                          "column": 9
+                        }
+                      },
+                      "test": {
+                        "type": "UnaryExpression",
+                        "start": 4980,
+                        "end": 4990,
+                        "loc": {
+                          "start": {
+                            "line": 84,
+                            "column": 12
+                          },
+                          "end": {
+                            "line": 84,
+                            "column": 22
+                          }
+                        },
+                        "operator": "!",
+                        "prefix": true,
+                        "argument": {
+                          "type": "MemberExpression",
+                          "start": 4981,
+                          "end": 4990,
+                          "loc": {
+                            "start": {
+                              "line": 84,
+                              "column": 13
+                            },
+                            "end": {
+                              "line": 84,
+                              "column": 22
+                            }
+                          },
+                          "object": {
+                            "type": "Identifier",
+                            "start": 4981,
+                            "end": 4987,
+                            "loc": {
+                              "start": {
+                                "line": 84,
+                                "column": 13
+                              },
+                              "end": {
+                                "line": 84,
+                                "column": 19
+                              },
+                              "identifierName": "params"
+                            },
+                            "name": "params"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 4988,
+                            "end": 4990,
+                            "loc": {
+                              "start": {
+                                "line": 84,
+                                "column": 20
+                              },
+                              "end": {
+                                "line": 84,
+                                "column": 22
+                              },
+                              "identifierName": "id"
+                            },
+                            "name": "id"
+                          },
+                          "computed": false
+                        },
+                        "extra": {
+                          "parenthesizedArgument": false
+                        }
+                      },
+                      "consequent": {
+                        "type": "BlockStatement",
+                        "start": 4992,
+                        "end": 5076,
+                        "loc": {
+                          "start": {
+                            "line": 84,
+                            "column": 24
+                          },
+                          "end": {
+                            "line": 87,
+                            "column": 9
+                          }
+                        },
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "start": 5006,
+                            "end": 5046,
+                            "loc": {
+                              "start": {
+                                "line": 85,
+                                "column": 12
+                              },
+                              "end": {
+                                "line": 85,
+                                "column": 52
+                              }
+                            },
+                            "expression": {
+                              "type": "CallExpression",
+                              "start": 5006,
+                              "end": 5045,
+                              "loc": {
+                                "start": {
+                                  "line": 85,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "line": 85,
+                                  "column": 51
+                                }
+                              },
+                              "callee": {
+                                "type": "MemberExpression",
+                                "start": 5006,
+                                "end": 5016,
+                                "loc": {
+                                  "start": {
+                                    "line": 85,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "line": 85,
+                                    "column": 22
+                                  }
+                                },
+                                "object": {
+                                  "type": "ThisExpression",
+                                  "start": 5006,
+                                  "end": 5010,
+                                  "loc": {
+                                    "start": {
+                                      "line": 85,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "line": 85,
+                                      "column": 16
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "start": 5011,
+                                  "end": 5016,
+                                  "loc": {
+                                    "start": {
+                                      "line": 85,
+                                      "column": 17
+                                    },
+                                    "end": {
+                                      "line": 85,
+                                      "column": 22
+                                    },
+                                    "identifierName": "error"
+                                  },
+                                  "name": "error"
+                                },
+                                "computed": false
+                              },
+                              "arguments": [
+                                {
+                                  "type": "StringLiteral",
+                                  "start": 5017,
+                                  "end": 5044,
+                                  "loc": {
+                                    "start": {
+                                      "line": 85,
+                                      "column": 23
+                                    },
+                                    "end": {
+                                      "line": 85,
+                                      "column": 50
+                                    }
+                                  },
+                                  "extra": {
+                                    "rawValue": "load() param expected: id",
+                                    "raw": "\"load() param expected: id\""
+                                  },
+                                  "value": "load() param expected: id"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "ReturnStatement",
+                            "start": 5059,
+                            "end": 5066,
+                            "loc": {
+                              "start": {
+                                "line": 86,
+                                "column": 12
+                              },
+                              "end": {
+                                "line": 86,
+                                "column": 19
+                              }
+                            },
+                            "argument": null
+                          }
+                        ],
+                        "directives": []
+                      },
+                      "alternate": null
+                    },
+                    {
+                      "type": "IfStatement",
+                      "start": 5085,
+                      "end": 5243,
+                      "loc": {
+                        "start": {
+                          "line": 88,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 91,
+                          "column": 9
+                        }
+                      },
+                      "test": {
+                        "type": "MemberExpression",
+                        "start": 5089,
+                        "end": 5128,
+                        "loc": {
+                          "start": {
+                            "line": 88,
+                            "column": 12
+                          },
+                          "end": {
+                            "line": 88,
+                            "column": 51
+                          }
+                        },
+                        "object": {
+                          "type": "MemberExpression",
+                          "start": 5089,
+                          "end": 5117,
+                          "loc": {
+                            "start": {
+                              "line": 88,
+                              "column": 12
+                            },
+                            "end": {
+                              "line": 88,
+                              "column": 40
+                            }
+                          },
+                          "object": {
+                            "type": "MemberExpression",
+                            "start": 5089,
+                            "end": 5106,
+                            "loc": {
+                              "start": {
+                                "line": 88,
+                                "column": 12
+                              },
+                              "end": {
+                                "line": 88,
+                                "column": 29
+                              }
+                            },
+                            "object": {
+                              "type": "MemberExpression",
+                              "start": 5089,
+                              "end": 5100,
+                              "loc": {
+                                "start": {
+                                  "line": 88,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "line": 88,
+                                  "column": 23
+                                }
+                              },
+                              "object": {
+                                "type": "ThisExpression",
+                                "start": 5089,
+                                "end": 5093,
+                                "loc": {
+                                  "start": {
+                                    "line": 88,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "line": 88,
+                                    "column": 16
+                                  }
+                                }
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "start": 5094,
+                                "end": 5100,
+                                "loc": {
+                                  "start": {
+                                    "line": 88,
+                                    "column": 17
+                                  },
+                                  "end": {
+                                    "line": 88,
+                                    "column": 23
+                                  },
+                                  "identifierName": "viewer"
+                                },
+                                "name": "viewer"
+                              },
+                              "computed": false
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "start": 5101,
+                              "end": 5106,
+                              "loc": {
+                                "start": {
+                                  "line": 88,
+                                  "column": 24
+                                },
+                                "end": {
+                                  "line": 88,
+                                  "column": 29
+                                },
+                                "identifierName": "scene"
+                              },
+                              "name": "scene"
+                            },
+                            "computed": false
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 5107,
+                            "end": 5117,
+                            "loc": {
+                              "start": {
+                                "line": 88,
+                                "column": 30
+                              },
+                              "end": {
+                                "line": 88,
+                                "column": 40
+                              },
+                              "identifierName": "components"
+                            },
+                            "name": "components"
+                          },
+                          "computed": false
+                        },
+                        "property": {
+                          "type": "MemberExpression",
+                          "start": 5118,
+                          "end": 5127,
+                          "loc": {
+                            "start": {
+                              "line": 88,
+                              "column": 41
+                            },
+                            "end": {
+                              "line": 88,
+                              "column": 50
+                            }
+                          },
+                          "object": {
+                            "type": "Identifier",
+                            "start": 5118,
+                            "end": 5124,
+                            "loc": {
+                              "start": {
+                                "line": 88,
+                                "column": 41
+                              },
+                              "end": {
+                                "line": 88,
+                                "column": 47
+                              },
+                              "identifierName": "params"
+                            },
+                            "name": "params"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "start": 5125,
+                            "end": 5127,
+                            "loc": {
+                              "start": {
+                                "line": 88,
+                                "column": 48
+                              },
+                              "end": {
+                                "line": 88,
+                                "column": 50
+                              },
+                              "identifierName": "id"
+                            },
+                            "name": "id"
+                          },
+                          "computed": false
+                        },
+                        "computed": true
+                      },
+                      "consequent": {
+                        "type": "BlockStatement",
+                        "start": 5130,
+                        "end": 5243,
+                        "loc": {
+                          "start": {
+                            "line": 88,
+                            "column": 53
+                          },
+                          "end": {
+                            "line": 91,
+                            "column": 9
+                          }
+                        },
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "start": 5144,
+                            "end": 5213,
+                            "loc": {
+                              "start": {
+                                "line": 89,
+                                "column": 12
+                              },
+                              "end": {
+                                "line": 89,
+                                "column": 81
+                              }
+                            },
+                            "expression": {
+                              "type": "CallExpression",
+                              "start": 5144,
+                              "end": 5212,
+                              "loc": {
+                                "start": {
+                                  "line": 89,
+                                  "column": 12
+                                },
+                                "end": {
+                                  "line": 89,
+                                  "column": 80
+                                }
+                              },
+                              "callee": {
+                                "type": "MemberExpression",
+                                "start": 5144,
+                                "end": 5154,
+                                "loc": {
+                                  "start": {
+                                    "line": 89,
+                                    "column": 12
+                                  },
+                                  "end": {
+                                    "line": 89,
+                                    "column": 22
+                                  }
+                                },
+                                "object": {
+                                  "type": "ThisExpression",
+                                  "start": 5144,
+                                  "end": 5148,
+                                  "loc": {
+                                    "start": {
+                                      "line": 89,
+                                      "column": 12
+                                    },
+                                    "end": {
+                                      "line": 89,
+                                      "column": 16
+                                    }
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "start": 5149,
+                                  "end": 5154,
+                                  "loc": {
+                                    "start": {
+                                      "line": 89,
+                                      "column": 17
+                                    },
+                                    "end": {
+                                      "line": 89,
+                                      "column": 22
+                                    },
+                                    "identifierName": "error"
+                                  },
+                                  "name": "error"
+                                },
+                                "computed": false
+                              },
+                              "arguments": [
+                                {
+                                  "type": "BinaryExpression",
+                                  "start": 5155,
+                                  "end": 5211,
+                                  "loc": {
+                                    "start": {
+                                      "line": 89,
+                                      "column": 23
+                                    },
+                                    "end": {
+                                      "line": 89,
+                                      "column": 79
+                                    }
+                                  },
+                                  "left": {
+                                    "type": "StringLiteral",
+                                    "start": 5155,
+                                    "end": 5206,
+                                    "loc": {
+                                      "start": {
+                                        "line": 89,
+                                        "column": 23
+                                      },
+                                      "end": {
+                                        "line": 89,
+                                        "column": 74
+                                      }
+                                    },
+                                    "extra": {
+                                      "rawValue": "Component with this ID already exists in viewer: ",
+                                      "raw": "\"Component with this ID already exists in viewer: \""
+                                    },
+                                    "value": "Component with this ID already exists in viewer: "
+                                  },
+                                  "operator": "+",
+                                  "right": {
+                                    "type": "Identifier",
+                                    "start": 5209,
+                                    "end": 5211,
+                                    "loc": {
+                                      "start": {
+                                        "line": 89,
+                                        "column": 77
+                                      },
+                                      "end": {
+                                        "line": 89,
+                                        "column": 79
+                                      },
+                                      "identifierName": "id"
+                                    },
+                                    "name": "id"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "ReturnStatement",
+                            "start": 5226,
+                            "end": 5233,
+                            "loc": {
+                              "start": {
+                                "line": 90,
+                                "column": 12
+                              },
+                              "end": {
+                                "line": 90,
+                                "column": 19
+                              }
+                            },
+                            "argument": null
+                          }
+                        ],
+                        "directives": []
+                      },
+                      "alternate": null
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "start": 5252,
+                      "end": 5308,
+                      "loc": {
+                        "start": {
+                          "line": 92,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 92,
+                          "column": 64
+                        }
+                      },
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "start": 5256,
+                          "end": 5307,
+                          "loc": {
+                            "start": {
+                              "line": 92,
+                              "column": 12
+                            },
+                            "end": {
+                              "line": 92,
+                              "column": 63
+                            }
+                          },
+                          "id": {
+                            "type": "Identifier",
+                            "start": 5256,
+                            "end": 5261,
+                            "loc": {
+                              "start": {
+                                "line": 92,
+                                "column": 12
+                              },
+                              "end": {
+                                "line": 92,
+                                "column": 17
+                              },
+                              "identifierName": "model"
+                            },
+                            "name": "model"
+                          },
+                          "init": {
+                            "type": "NewExpression",
+                            "start": 5264,
+                            "end": 5307,
+                            "loc": {
+                              "start": {
+                                "line": 92,
+                                "column": 20
+                              },
+                              "end": {
+                                "line": 92,
+                                "column": 63
+                              }
+                            },
+                            "callee": {
+                              "type": "Identifier",
+                              "start": 5268,
+                              "end": 5280,
+                              "loc": {
+                                "start": {
+                                  "line": 92,
+                                  "column": 24
+                                },
+                                "end": {
+                                  "line": 92,
+                                  "column": 36
+                                },
+                                "identifierName": "GLTFBigModel"
+                              },
+                              "name": "GLTFBigModel"
+                            },
+                            "arguments": [
+                              {
+                                "type": "MemberExpression",
+                                "start": 5281,
+                                "end": 5298,
+                                "loc": {
+                                  "start": {
+                                    "line": 92,
+                                    "column": 37
+                                  },
+                                  "end": {
+                                    "line": 92,
+                                    "column": 54
+                                  }
+                                },
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "start": 5281,
+                                  "end": 5292,
+                                  "loc": {
+                                    "start": {
+                                      "line": 92,
+                                      "column": 37
+                                    },
+                                    "end": {
+                                      "line": 92,
+                                      "column": 48
+                                    }
+                                  },
+                                  "object": {
+                                    "type": "ThisExpression",
+                                    "start": 5281,
+                                    "end": 5285,
+                                    "loc": {
+                                      "start": {
+                                        "line": 92,
+                                        "column": 37
+                                      },
+                                      "end": {
+                                        "line": 92,
+                                        "column": 41
+                                      }
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "start": 5286,
+                                    "end": 5292,
+                                    "loc": {
+                                      "start": {
+                                        "line": 92,
+                                        "column": 42
+                                      },
+                                      "end": {
+                                        "line": 92,
+                                        "column": 48
+                                      },
+                                      "identifierName": "viewer"
+                                    },
+                                    "name": "viewer"
+                                  },
+                                  "computed": false
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "start": 5293,
+                                  "end": 5298,
+                                  "loc": {
+                                    "start": {
+                                      "line": 92,
+                                      "column": 49
+                                    },
+                                    "end": {
+                                      "line": 92,
+                                      "column": 54
+                                    },
+                                    "identifierName": "scene"
+                                  },
+                                  "name": "scene"
+                                },
+                                "computed": false
+                              },
+                              {
+                                "type": "Identifier",
+                                "start": 5300,
+                                "end": 5306,
+                                "loc": {
+                                  "start": {
+                                    "line": 92,
+                                    "column": 56
+                                  },
+                                  "end": {
+                                    "line": 92,
+                                    "column": 62
+                                  },
+                                  "identifierName": "params"
+                                },
+                                "name": "params"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "kind": "var"
+                    },
+                    {
+                      "type": "ReturnStatement",
+                      "start": 5317,
+                      "end": 5330,
+                      "loc": {
+                        "start": {
+                          "line": 93,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 93,
+                          "column": 21
+                        }
+                      },
+                      "argument": {
+                        "type": "Identifier",
+                        "start": 5324,
+                        "end": 5329,
+                        "loc": {
+                          "start": {
+                            "line": 93,
+                            "column": 15
+                          },
+                          "end": {
+                            "line": 93,
+                            "column": 20
+                          },
+                          "identifierName": "model"
+                        },
+                        "name": "model"
+                      },
+                      "trailingComments": [
+                        {
+                          "type": "CommentLine",
+                          "value": " TODO: register loading params within this plugin for inclusion in bookmarks",
+                          "start": 5331,
+                          "end": 5409,
+                          "loc": {
+                            "start": {
+                              "line": 93,
+                              "column": 22
+                            },
+                            "end": {
+                              "line": 93,
+                              "column": 100
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ],
+                  "directives": []
+                },
+                "leadingComments": [
+                  {
+                    "type": "CommentBlock",
+                    "value": "*\n     Loads a glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file. You can set this to a new file path at any time, which will cause the\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
+                    "start": 1431,
+                    "end": 4948,
+                    "loc": {
+                      "start": {
+                        "line": 51,
+                        "column": 4
+                      },
+                      "end": {
+                        "line": 82,
+                        "column": 7
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * A viewer plugin that loads large models from [glTF](https://www.khronos.org/gltf/).\n *\n * @example\n *\n * // Create a viewer\n * const viewer = new Viewer({\n *      canvasId: \"glcanvas\"\n * });\n *\n * // Create a GLTFBigModels plugin within the viewer\n * var plugin = new GLTFBigModelsPlugin(viewer, {\n *      id: \"GLTFBigModels\"  // Optional plugin ID\n * });\n *\n * // We can also get the plugin by its ID on the viewer\n * plugin = viewer.plugins.GLTFBigModels;\n *\n * // Load the big glTF model\n * // These params can include all the xeogl.GLTFModel configs\n * const model = plugin.load({\n *      id: \"myModel\",\n *      src: \"./models/gltf/mygltfmodel.gltf\"\n * });\n *\n * // The model is a xeogl.Model\n *\n * // When the model has loaded, fit it to view\n * model.on(\"loaded\", function() {\n *      viewer.cameraFlight.flyTo(model);\n * });\n *\n * @class GLTFBigModelsPlugin\n *\n ",
+              "start": 139,
+              "end": 1017,
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 0
+                },
+                "end": {
+                  "line": 38,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "__PseudoExport__": false,
+          "trailingComments": []
+        },
+        "specifiers": null,
+        "source": null,
+        "leadingComments": null
+      }
+    ],
+    "directives": []
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * A viewer plugin that loads large models from [glTF](https://www.khronos.org/gltf/).\n *\n * @example\n *\n * // Create a viewer\n * const viewer = new Viewer({\n *      canvasId: \"glcanvas\"\n * });\n *\n * // Create a GLTFBigModels plugin within the viewer\n * var plugin = new GLTFBigModelsPlugin(viewer, {\n *      id: \"GLTFBigModels\"  // Optional plugin ID\n * });\n *\n * // We can also get the plugin by its ID on the viewer\n * plugin = viewer.plugins.GLTFBigModels;\n *\n * // Load the big glTF model\n * // These params can include all the xeogl.GLTFModel configs\n * const model = plugin.load({\n *      id: \"myModel\",\n *      src: \"./models/gltf/mygltfmodel.gltf\"\n * });\n *\n * // The model is a xeogl.Model\n *\n * // When the model has loaded, fit it to view\n * model.on(\"loaded\", function() {\n *      viewer.cameraFlight.flyTo(model);\n * });\n *\n * @class GLTFBigModelsPlugin\n *\n ",
+      "start": 139,
+      "end": 1017,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 38,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * @constructor\n     * @param {Viewer} viewer The Viewer.\n     * @param {Object} cfg  Plugin configuration.\n     * @param {String} [cfg.id=\"GLTFBigModels\"] Optional ID for this plugin, with which we can find it within {@link Viewer#plugins}.\n     ",
+      "start": 1072,
+      "end": 1329,
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 4
+        },
+        "end": {
+          "line": 46,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     Loads a glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file. You can set this to a new file path at any time, which will cause the\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
+      "start": 1431,
+      "end": 4948,
+      "loc": {
+        "start": {
+          "line": 51,
+          "column": 4
+        },
+        "end": {
+          "line": 82,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " TODO: register loading params within this plugin for inclusion in bookmarks",
+      "start": 5331,
+      "end": 5409,
+      "loc": {
+        "start": {
+          "line": 93,
+          "column": 22
+        },
+        "end": {
+          "line": 93,
+          "column": 100
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 0,
+      "end": 6,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 7,
+      "end": 8,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 7
+        },
+        "end": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ModelsPlugin",
+      "start": 8,
+      "end": 20,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 8
+        },
+        "end": {
+          "line": 1,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 20,
+      "end": 21,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 20
+        },
+        "end": {
+          "line": 1,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 22,
+      "end": 26,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 22
+        },
+        "end": {
+          "line": 1,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "./../../../viewer/ModelsPlugin.js",
+      "start": 27,
+      "end": 62,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 27
+        },
+        "end": {
+          "line": 1,
+          "column": 62
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 62,
+      "end": 63,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 62
+        },
+        "end": {
+          "line": 1,
+          "column": 63
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 64,
+      "end": 70,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 71,
+      "end": 72,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 7
+        },
+        "end": {
+          "line": 2,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "GLTFBigModel",
+      "start": 72,
+      "end": 84,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 8
+        },
+        "end": {
+          "line": 2,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 84,
+      "end": 85,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 20
+        },
+        "end": {
+          "line": 2,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 86,
+      "end": 90,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 22
+        },
+        "end": {
+          "line": 2,
+          "column": 26
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "../../../xeogl/GLTFBigModel/GLTFBigModel.js",
+      "start": 91,
+      "end": 136,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 27
+        },
+        "end": {
+          "line": 2,
+          "column": 72
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 136,
+      "end": 137,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 72
+        },
+        "end": {
+          "line": 2,
+          "column": 73
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * A viewer plugin that loads large models from [glTF](https://www.khronos.org/gltf/).\n *\n * @example\n *\n * // Create a viewer\n * const viewer = new Viewer({\n *      canvasId: \"glcanvas\"\n * });\n *\n * // Create a GLTFBigModels plugin within the viewer\n * var plugin = new GLTFBigModelsPlugin(viewer, {\n *      id: \"GLTFBigModels\"  // Optional plugin ID\n * });\n *\n * // We can also get the plugin by its ID on the viewer\n * plugin = viewer.plugins.GLTFBigModels;\n *\n * // Load the big glTF model\n * // These params can include all the xeogl.GLTFModel configs\n * const model = plugin.load({\n *      id: \"myModel\",\n *      src: \"./models/gltf/mygltfmodel.gltf\"\n * });\n *\n * // The model is a xeogl.Model\n *\n * // When the model has loaded, fit it to view\n * model.on(\"loaded\", function() {\n *      viewer.cameraFlight.flyTo(model);\n * });\n *\n * @class GLTFBigModelsPlugin\n *\n ",
+      "start": 139,
+      "end": 1017,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 38,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "class",
+        "keyword": "class",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "class",
+      "start": 1018,
+      "end": 1023,
+      "loc": {
+        "start": {
+          "line": 39,
+          "column": 0
+        },
+        "end": {
+          "line": 39,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "GLTFBigModelsPlugin",
+      "start": 1024,
+      "end": 1043,
+      "loc": {
+        "start": {
+          "line": 39,
+          "column": 6
+        },
+        "end": {
+          "line": 39,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "extends",
+        "keyword": "extends",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "extends",
+      "start": 1044,
+      "end": 1051,
+      "loc": {
+        "start": {
+          "line": 39,
+          "column": 26
+        },
+        "end": {
+          "line": 39,
+          "column": 33
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ModelsPlugin",
+      "start": 1052,
+      "end": 1064,
+      "loc": {
+        "start": {
+          "line": 39,
+          "column": 34
+        },
+        "end": {
+          "line": 39,
+          "column": 46
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1065,
+      "end": 1066,
+      "loc": {
+        "start": {
+          "line": 39,
+          "column": 47
+        },
+        "end": {
+          "line": 39,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     * @constructor\n     * @param {Viewer} viewer The Viewer.\n     * @param {Object} cfg  Plugin configuration.\n     * @param {String} [cfg.id=\"GLTFBigModels\"] Optional ID for this plugin, with which we can find it within {@link Viewer#plugins}.\n     ",
+      "start": 1072,
+      "end": 1329,
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 4
+        },
+        "end": {
+          "line": 46,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "constructor",
+      "start": 1334,
+      "end": 1345,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 4
+        },
+        "end": {
+          "line": 47,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1345,
+      "end": 1346,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 15
+        },
+        "end": {
+          "line": 47,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "viewer",
+      "start": 1346,
+      "end": 1352,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 16
+        },
+        "end": {
+          "line": 47,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1352,
+      "end": 1353,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 22
+        },
+        "end": {
+          "line": 47,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "cfg",
+      "start": 1354,
+      "end": 1357,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 24
+        },
+        "end": {
+          "line": 47,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1357,
+      "end": 1358,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 27
+        },
+        "end": {
+          "line": 47,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1359,
+      "end": 1360,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 29
+        },
+        "end": {
+          "line": 47,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "super",
+        "keyword": "super",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "super",
+      "start": 1369,
+      "end": 1374,
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 8
+        },
+        "end": {
+          "line": 48,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1374,
+      "end": 1375,
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 13
+        },
+        "end": {
+          "line": 48,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "GLTFBigModels",
+      "start": 1375,
+      "end": 1390,
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 14
+        },
+        "end": {
+          "line": 48,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1390,
+      "end": 1391,
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 29
+        },
+        "end": {
+          "line": 48,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "viewer",
+      "start": 1392,
+      "end": 1398,
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 31
+        },
+        "end": {
+          "line": 48,
+          "column": 37
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1398,
+      "end": 1399,
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 37
+        },
+        "end": {
+          "line": 48,
+          "column": 38
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "GLTFBigModel",
+      "start": 1400,
+      "end": 1412,
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 39
+        },
+        "end": {
+          "line": 48,
+          "column": 51
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1412,
+      "end": 1413,
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 51
+        },
+        "end": {
+          "line": 48,
+          "column": 52
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "cfg",
+      "start": 1414,
+      "end": 1417,
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 53
+        },
+        "end": {
+          "line": 48,
+          "column": 56
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1417,
+      "end": 1418,
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 56
+        },
+        "end": {
+          "line": 48,
+          "column": 57
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1418,
+      "end": 1419,
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 57
+        },
+        "end": {
+          "line": 48,
+          "column": 58
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1424,
+      "end": 1425,
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 4
+        },
+        "end": {
+          "line": 49,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n     Loads a glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file. You can set this to a new file path at any time, which will cause the\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
+      "start": 1431,
+      "end": 4948,
+      "loc": {
+        "start": {
+          "line": 51,
+          "column": 4
+        },
+        "end": {
+          "line": 82,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "load",
+      "start": 4953,
+      "end": 4957,
+      "loc": {
+        "start": {
+          "line": 83,
+          "column": 4
+        },
+        "end": {
+          "line": 83,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4957,
+      "end": 4958,
+      "loc": {
+        "start": {
+          "line": 83,
+          "column": 8
+        },
+        "end": {
+          "line": 83,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "params",
+      "start": 4958,
+      "end": 4964,
+      "loc": {
+        "start": {
+          "line": 83,
+          "column": 9
+        },
+        "end": {
+          "line": 83,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4964,
+      "end": 4965,
+      "loc": {
+        "start": {
+          "line": 83,
+          "column": 15
+        },
+        "end": {
+          "line": 83,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4966,
+      "end": 4967,
+      "loc": {
+        "start": {
+          "line": 83,
+          "column": 17
+        },
+        "end": {
+          "line": 83,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "if",
+        "keyword": "if",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "if",
+      "start": 4976,
+      "end": 4978,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 8
+        },
+        "end": {
+          "line": 84,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4979,
+      "end": 4980,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 11
+        },
+        "end": {
+          "line": 84,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "prefix",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": true,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "!",
+      "start": 4980,
+      "end": 4981,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 12
+        },
+        "end": {
+          "line": 84,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "params",
+      "start": 4981,
+      "end": 4987,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 13
+        },
+        "end": {
+          "line": 84,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 4987,
+      "end": 4988,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 19
+        },
+        "end": {
+          "line": 84,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "id",
+      "start": 4988,
+      "end": 4990,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 20
+        },
+        "end": {
+          "line": 84,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4990,
+      "end": 4991,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 22
+        },
+        "end": {
+          "line": 84,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 4992,
+      "end": 4993,
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 24
+        },
+        "end": {
+          "line": 84,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 5006,
+      "end": 5010,
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 12
+        },
+        "end": {
+          "line": 85,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5010,
+      "end": 5011,
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 16
+        },
+        "end": {
+          "line": 85,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "error",
+      "start": 5011,
+      "end": 5016,
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 17
+        },
+        "end": {
+          "line": 85,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5016,
+      "end": 5017,
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 22
+        },
+        "end": {
+          "line": 85,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "load() param expected: id",
+      "start": 5017,
+      "end": 5044,
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 23
+        },
+        "end": {
+          "line": 85,
+          "column": 50
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5044,
+      "end": 5045,
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 50
+        },
+        "end": {
+          "line": 85,
+          "column": 51
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5045,
+      "end": 5046,
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 51
+        },
+        "end": {
+          "line": 85,
+          "column": 52
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "return",
+        "keyword": "return",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "return",
+      "start": 5059,
+      "end": 5065,
+      "loc": {
+        "start": {
+          "line": 86,
+          "column": 12
+        },
+        "end": {
+          "line": 86,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5065,
+      "end": 5066,
+      "loc": {
+        "start": {
+          "line": 86,
+          "column": 18
+        },
+        "end": {
+          "line": 86,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5075,
+      "end": 5076,
+      "loc": {
+        "start": {
+          "line": 87,
+          "column": 8
+        },
+        "end": {
+          "line": 87,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "if",
+        "keyword": "if",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "if",
+      "start": 5085,
+      "end": 5087,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 8
+        },
+        "end": {
+          "line": 88,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5088,
+      "end": 5089,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 11
+        },
+        "end": {
+          "line": 88,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 5089,
+      "end": 5093,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 12
+        },
+        "end": {
+          "line": 88,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5093,
+      "end": 5094,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 16
+        },
+        "end": {
+          "line": 88,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "viewer",
+      "start": 5094,
+      "end": 5100,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 17
+        },
+        "end": {
+          "line": 88,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5100,
+      "end": 5101,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 23
+        },
+        "end": {
+          "line": 88,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "scene",
+      "start": 5101,
+      "end": 5106,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 24
+        },
+        "end": {
+          "line": 88,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5106,
+      "end": 5107,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 29
+        },
+        "end": {
+          "line": 88,
+          "column": 30
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "components",
+      "start": 5107,
+      "end": 5117,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 30
+        },
+        "end": {
+          "line": 88,
+          "column": 40
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "[",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5117,
+      "end": 5118,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 40
+        },
+        "end": {
+          "line": 88,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "params",
+      "start": 5118,
+      "end": 5124,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 41
+        },
+        "end": {
+          "line": 88,
+          "column": 47
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5124,
+      "end": 5125,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 47
+        },
+        "end": {
+          "line": 88,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "id",
+      "start": 5125,
+      "end": 5127,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 48
+        },
+        "end": {
+          "line": 88,
+          "column": 50
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "]",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5127,
+      "end": 5128,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 50
+        },
+        "end": {
+          "line": 88,
+          "column": 51
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5128,
+      "end": 5129,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 51
+        },
+        "end": {
+          "line": 88,
+          "column": 52
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5130,
+      "end": 5131,
+      "loc": {
+        "start": {
+          "line": 88,
+          "column": 53
+        },
+        "end": {
+          "line": 88,
+          "column": 54
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 5144,
+      "end": 5148,
+      "loc": {
+        "start": {
+          "line": 89,
+          "column": 12
+        },
+        "end": {
+          "line": 89,
+          "column": 16
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5148,
+      "end": 5149,
+      "loc": {
+        "start": {
+          "line": 89,
+          "column": 16
+        },
+        "end": {
+          "line": 89,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "error",
+      "start": 5149,
+      "end": 5154,
+      "loc": {
+        "start": {
+          "line": 89,
+          "column": 17
+        },
+        "end": {
+          "line": 89,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5154,
+      "end": 5155,
+      "loc": {
+        "start": {
+          "line": 89,
+          "column": 22
+        },
+        "end": {
+          "line": 89,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "Component with this ID already exists in viewer: ",
+      "start": 5155,
+      "end": 5206,
+      "loc": {
+        "start": {
+          "line": 89,
+          "column": 23
+        },
+        "end": {
+          "line": 89,
+          "column": 74
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "+/-",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": true,
+        "postfix": false,
+        "binop": 9,
+        "updateContext": null
+      },
+      "value": "+",
+      "start": 5207,
+      "end": 5208,
+      "loc": {
+        "start": {
+          "line": 89,
+          "column": 75
+        },
+        "end": {
+          "line": 89,
+          "column": 76
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "id",
+      "start": 5209,
+      "end": 5211,
+      "loc": {
+        "start": {
+          "line": 89,
+          "column": 77
+        },
+        "end": {
+          "line": 89,
+          "column": 79
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5211,
+      "end": 5212,
+      "loc": {
+        "start": {
+          "line": 89,
+          "column": 79
+        },
+        "end": {
+          "line": 89,
+          "column": 80
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5212,
+      "end": 5213,
+      "loc": {
+        "start": {
+          "line": 89,
+          "column": 80
+        },
+        "end": {
+          "line": 89,
+          "column": 81
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "return",
+        "keyword": "return",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "return",
+      "start": 5226,
+      "end": 5232,
+      "loc": {
+        "start": {
+          "line": 90,
+          "column": 12
+        },
+        "end": {
+          "line": 90,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5232,
+      "end": 5233,
+      "loc": {
+        "start": {
+          "line": 90,
+          "column": 18
+        },
+        "end": {
+          "line": 90,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5242,
+      "end": 5243,
+      "loc": {
+        "start": {
+          "line": 91,
+          "column": 8
+        },
+        "end": {
+          "line": 91,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "var",
+        "keyword": "var",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "var",
+      "start": 5252,
+      "end": 5255,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 8
+        },
+        "end": {
+          "line": 92,
+          "column": 11
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "model",
+      "start": 5256,
+      "end": 5261,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 12
+        },
+        "end": {
+          "line": 92,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": true,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "=",
+      "start": 5262,
+      "end": 5263,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 18
+        },
+        "end": {
+          "line": 92,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "new",
+        "keyword": "new",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "new",
+      "start": 5264,
+      "end": 5267,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 20
+        },
+        "end": {
+          "line": 92,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "GLTFBigModel",
+      "start": 5268,
+      "end": 5280,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 24
+        },
+        "end": {
+          "line": 92,
+          "column": 36
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5280,
+      "end": 5281,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 36
+        },
+        "end": {
+          "line": 92,
+          "column": 37
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "this",
+        "keyword": "this",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "this",
+      "start": 5281,
+      "end": 5285,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 37
+        },
+        "end": {
+          "line": 92,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5285,
+      "end": 5286,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 41
+        },
+        "end": {
+          "line": 92,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "viewer",
+      "start": 5286,
+      "end": 5292,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 42
+        },
+        "end": {
+          "line": 92,
+          "column": 48
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ".",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5292,
+      "end": 5293,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 48
+        },
+        "end": {
+          "line": 92,
+          "column": 49
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "scene",
+      "start": 5293,
+      "end": 5298,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 49
+        },
+        "end": {
+          "line": 92,
+          "column": 54
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5298,
+      "end": 5299,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 54
+        },
+        "end": {
+          "line": 92,
+          "column": 55
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "params",
+      "start": 5300,
+      "end": 5306,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 56
+        },
+        "end": {
+          "line": 92,
+          "column": 62
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5306,
+      "end": 5307,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 62
+        },
+        "end": {
+          "line": 92,
+          "column": 63
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5307,
+      "end": 5308,
+      "loc": {
+        "start": {
+          "line": 92,
+          "column": 63
+        },
+        "end": {
+          "line": 92,
+          "column": 64
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "return",
+        "keyword": "return",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "return",
+      "start": 5317,
+      "end": 5323,
+      "loc": {
+        "start": {
+          "line": 93,
+          "column": 8
+        },
+        "end": {
+          "line": 93,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "model",
+      "start": 5324,
+      "end": 5329,
+      "loc": {
+        "start": {
+          "line": 93,
+          "column": 15
+        },
+        "end": {
+          "line": 93,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5329,
+      "end": 5330,
+      "loc": {
+        "start": {
+          "line": 93,
+          "column": 20
+        },
+        "end": {
+          "line": 93,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": "CommentLine",
+      "value": " TODO: register loading params within this plugin for inclusion in bookmarks",
+      "start": 5331,
+      "end": 5409,
+      "loc": {
+        "start": {
+          "line": 93,
+          "column": 22
+        },
+        "end": {
+          "line": 93,
+          "column": 100
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5414,
+      "end": 5415,
+      "loc": {
+        "start": {
+          "line": 94,
+          "column": 4
+        },
+        "end": {
+          "line": 94,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5416,
+      "end": 5417,
+      "loc": {
+        "start": {
+          "line": 95,
+          "column": 0
+        },
+        "end": {
+          "line": 95,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 5419,
+      "end": 5425,
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 0
+        },
+        "end": {
+          "line": 97,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "{",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5426,
+      "end": 5427,
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 7
+        },
+        "end": {
+          "line": 97,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "GLTFBigModelsPlugin",
+      "start": 5427,
+      "end": 5446,
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 8
+        },
+        "end": {
+          "line": 97,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "}",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 5446,
+      "end": 5447,
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 27
+        },
+        "end": {
+          "line": 97,
+          "column": 28
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 5448,
+      "end": 5448,
+      "loc": {
+        "start": {
+          "line": 98,
+          "column": 0
+        },
+        "end": {
+          "line": 98,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

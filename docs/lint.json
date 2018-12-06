@@ -1,47 +1,64 @@
 [
   {
-    "name": "ModelsPlugin#load",
-    "filePath": "viewer/ModelsPlugin.js",
+    "name": "LightsPlugin#createLight",
+    "filePath": "viewer/plugins/LightsPlugin/LightsPlugin.js",
     "lines": [
       {
-        "lineNumber": 40,
+        "lineNumber": 113,
         "line": "    /**"
       },
       {
-        "lineNumber": 41,
-        "line": "     * Loads a model into this Plugin's {@link Viewer}."
+        "lineNumber": 114,
+        "line": "     Creates a directional light source."
       },
       {
-        "lineNumber": 42,
-        "line": "     *"
+        "lineNumber": 115,
+        "line": ""
       },
       {
-        "lineNumber": 43,
-        "line": "     * @param params {*} Configs"
+        "lineNumber": 116,
+        "line": "     @param {Object} params Light source configuration."
       },
       {
-        "lineNumber": 44,
-        "line": "     * @param params.id {String} Optional ID, unique among all components in the viewer's scene."
+        "lineNumber": 117,
+        "line": "     @param {String} id Unique ID to assign to the light source."
       },
       {
-        "lineNumber": 45,
-        "line": "     * @returns {{xeogl.Model}} A <a href=\"http://xeogl.org/docs/classes/Model.html\">xeogl.Model</a> representing the loaded model"
+        "lineNumber": 118,
+        "line": "     @param {[Number, Number, Number]} [params.dir=[0,0,-1]} Direction vector."
       },
       {
-        "lineNumber": 46,
+        "lineNumber": 119,
+        "line": "     @param {[Number, Number, Number]} [params.color=[0,0,-1]} RGB color."
+      },
+      {
+        "lineNumber": 120,
+        "line": "     @param {Number} [params.intensity=1} Intensity."
+      },
+      {
+        "lineNumber": 121,
+        "line": "     @param {String} [space=\"view\"] \"view\" for head-mounted, \"world\" to position in world-space."
+      },
+      {
+        "lineNumber": 122,
+        "line": "     @returns {xeogl.DirLight} The new light source."
+      },
+      {
+        "lineNumber": 123,
         "line": "     */"
       },
       {
-        "lineNumber": 47,
-        "line": "    load(params, ok) {"
+        "lineNumber": 124,
+        "line": "    createLight(params) {"
       }
     ],
     "codeParams": [
-      "params",
-      "ok"
+      "params"
     ],
     "docParams": [
-      "params"
+      "params",
+      "id",
+      "space"
     ]
   }
 ]

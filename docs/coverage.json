@@ -1,30 +1,29 @@
 {
-  "coverage": "33.12%",
-  "expectCount": 314,
-  "actualCount": 104,
+  "coverage": "36.17%",
+  "expectCount": 387,
+  "actualCount": 140,
   "files": {
     "viewer/ModelsPlugin.js": {
       "expectCount": 13,
       "actualCount": 12,
       "undocumentLines": [
-        122
+        119
       ]
     },
     "viewer/Plugin.js": {
-      "expectCount": 13,
-      "actualCount": 13,
+      "expectCount": 14,
+      "actualCount": 14,
       "undocumentLines": []
     },
     "viewer/Viewer.js": {
-      "expectCount": 24,
-      "actualCount": 18,
+      "expectCount": 25,
+      "actualCount": 20,
       "undocumentLines": [
-        360,
-        367,
         374,
-        17,
-        347,
-        355
+        381,
+        388,
+        361,
+        369
       ]
     },
     "viewer/plugins/AxisGizmoPlugin/AxisGizmoPlugin.js": {
@@ -42,19 +41,102 @@
         187
       ]
     },
-    "viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js": {
-      "expectCount": 15,
-      "actualCount": 14,
-      "undocumentLines": [
-        51
-      ]
-    },
-    "viewer/plugins/BIMServerModelsPlugin/lib/BIMServerGeometryLoader.js": {
+    "viewer/plugins/BIMServerBigModelsPlugin/lib/BIMServerGeometryLoader.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
     },
-    "viewer/plugins/BIMServerModelsPlugin/lib/BIMServerGeometryLoaderOLD.js": {
+    "viewer/plugins/BIMServerBigModelsPlugin/lib/BIMServerModel.js": {
+      "expectCount": 7,
+      "actualCount": 1,
+      "undocumentLines": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        13
+      ]
+    },
+    "viewer/plugins/BIMServerBigModelsPlugin/lib/DataInputStreamReader.js": {
+      "expectCount": 19,
+      "actualCount": 1,
+      "undocumentLines": [
+        8,
+        9,
+        10,
+        11,
+        14,
+        23,
+        27,
+        36,
+        45,
+        51,
+        57,
+        63,
+        69,
+        75,
+        85,
+        91,
+        101,
+        107
+      ]
+    },
+    "viewer/plugins/BIMServerBigModelsPlugin/lib/StringView.js": {
+      "expectCount": 16,
+      "actualCount": 1,
+      "undocumentLines": [
+        330,
+        350,
+        393,
+        397,
+        408,
+        425,
+        431,
+        448,
+        467,
+        488,
+        510,
+        523,
+        574,
+        592,
+        629
+      ]
+    },
+    "viewer/plugins/BIMServerBigModelsPlugin/lib/defaultMaterials.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "viewer/plugins/BIMServerBigModelsPlugin/lib/preloadQuery.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "viewer/plugins/BIMServerBigModelsPlugin/lib/utils.js": {
+      "expectCount": 3,
+      "actualCount": 1,
+      "undocumentLines": [
+        1,
+        11
+      ]
+    },
+    "viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js": {
+      "expectCount": 10,
+      "actualCount": 10,
+      "undocumentLines": []
+    },
+    "viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js": {
+      "expectCount": 10,
+      "actualCount": 10,
+      "undocumentLines": []
+    },
+    "viewer/plugins/BIMServerModelsPlugin/lib/BIMServerBigGeometryLoader.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "viewer/plugins/BIMServerModelsPlugin/lib/BIMServerGeometryLoader.js": {
       "expectCount": 1,
       "actualCount": 1,
       "undocumentLines": []
@@ -95,33 +177,6 @@
         107
       ]
     },
-    "viewer/plugins/BIMServerModelsPlugin/lib/EventHandler.js": {
-      "expectCount": 4,
-      "actualCount": 1,
-      "undocumentLines": [
-        8,
-        12,
-        27
-      ]
-    },
-    "viewer/plugins/BIMServerModelsPlugin/lib/MetaDataReader.js": {
-      "expectCount": 4,
-      "actualCount": 2,
-      "undocumentLines": [
-        28,
-        64
-      ]
-    },
-    "viewer/plugins/BIMServerModelsPlugin/lib/Notifier.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
-    "viewer/plugins/BIMServerModelsPlugin/lib/StaticTreeRenderer.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
     "viewer/plugins/BIMServerModelsPlugin/lib/StringView.js": {
       "expectCount": 16,
       "actualCount": 1,
@@ -153,17 +208,19 @@
       "actualCount": 1,
       "undocumentLines": []
     },
-    "viewer/plugins/BIMServerModelsPlugin/lib/request.js": {
-      "expectCount": 1,
-      "actualCount": 1,
-      "undocumentLines": []
-    },
     "viewer/plugins/BIMServerModelsPlugin/lib/utils.js": {
       "expectCount": 3,
       "actualCount": 1,
       "undocumentLines": [
         1,
         11
+      ]
+    },
+    "viewer/plugins/ClipsPlugin/ClipsPlugin.js": {
+      "expectCount": 10,
+      "actualCount": 9,
+      "undocumentLines": [
+        58
       ]
     },
     "viewer/plugins/GLTFBigModelsPlugin/GLTFBigModelsPlugin.js": {
@@ -175,21 +232,33 @@
       "expectCount": 4,
       "actualCount": 3,
       "undocumentLines": [
-        65
+        130
+      ]
+    },
+    "viewer/plugins/LightsPlugin/LightsPlugin.js": {
+      "expectCount": 9,
+      "actualCount": 7,
+      "undocumentLines": [
+        64,
+        66
       ]
     },
     "viewer/plugins/OBJModelsPlugin/OBJModelsPlugin.js": {
       "expectCount": 3,
-      "actualCount": 2,
-      "undocumentLines": [
-        51
-      ]
+      "actualCount": 3,
+      "undocumentLines": []
     },
     "viewer/plugins/STLModelsPlugin/STLModelsPlugin.js": {
       "expectCount": 3,
-      "actualCount": 2,
+      "actualCount": 3,
+      "undocumentLines": []
+    },
+    "viewer/plugins/SkyboxesPlugin/SkyboxesPlugin.js": {
+      "expectCount": 10,
+      "actualCount": 8,
       "undocumentLines": [
-        50
+        61,
+        63
       ]
     },
     "viewer/plugins/XML3DModelsPlugin/XML3DModel.js": {
@@ -228,7 +297,7 @@
       "expectCount": 4,
       "actualCount": 3,
       "undocumentLines": [
-        50
+        85
       ]
     },
     "viewer/plugins/XML3DModelsPlugin/zipjs/tests/test1.js": {

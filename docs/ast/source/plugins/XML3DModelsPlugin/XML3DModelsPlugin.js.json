@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 6281,
+  "end": 6449,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 137,
+      "line": 139,
       "column": 26
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 6281,
+    "end": 6449,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 137,
+        "line": 139,
         "column": 26
       }
     },
@@ -221,14 +221,14 @@
       {
         "type": "Identifier",
         "start": 2441,
-        "end": 6253,
+        "end": 6421,
         "loc": {
           "start": {
             "line": 67,
             "column": 0
           },
           "end": {
-            "line": 135,
+            "line": 137,
             "column": 1
           }
         },
@@ -270,14 +270,14 @@
         "body": {
           "type": "ClassBody",
           "start": 2486,
-          "end": 6253,
+          "end": 6421,
           "loc": {
             "start": {
               "line": 67,
               "column": 45
             },
             "end": {
-              "line": 135,
+              "line": 137,
               "column": 1
             }
           },
@@ -961,16 +961,16 @@
               "trailingComments": [
                 {
                   "type": "CommentBlock",
-                  "value": "*\n     * Loads a 3DXML model from a file into this XML3DModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to a 3DXML file.\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.lambertMaterials=false]  When true, gives each [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html)\n     * the same [xeogl.LambertMaterial](http://xeogl.org/docs/classes/LambertMaterial.html) and a ````colorize````\n     * value set the to diffuse color extracted from the 3DXML material. This is typically used for large CAD models and\n     * will cause loading to ignore textures in the 3DXML.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the 3DXML.\n     * When false, ignores backfaces.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded 3DXML model.\n     ",
+                  "value": "*\n     * Loads a 3DXML model from a file into this XML3DModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to a 3DXML file.\n     *\n     * @param {String} [params.metadataSrc] Path to an optional metadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.lambertMaterials=false]  When true, gives each [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html)\n     * the same [xeogl.LambertMaterial](http://xeogl.org/docs/classes/LambertMaterial.html) and a ````colorize````\n     * value set the to diffuse color extracted from the 3DXML material. This is typically used for large CAD models and\n     * will cause loading to ignore textures in the 3DXML.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the 3DXML.\n     * When false, ignores backfaces.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded 3DXML model.\n     ",
                   "start": 3408,
-                  "end": 6131,
+                  "end": 6299,
                   "loc": {
                     "start": {
                       "line": 88,
                       "column": 4
                     },
                     "end": {
-                      "line": 130,
+                      "line": 132,
                       "column": 7
                     }
                   }
@@ -979,15 +979,15 @@
             },
             {
               "type": "ClassMethod",
-              "start": 6136,
-              "end": 6251,
+              "start": 6304,
+              "end": 6419,
               "loc": {
                 "start": {
-                  "line": 131,
+                  "line": 133,
                   "column": 4
                 },
                 "end": {
-                  "line": 134,
+                  "line": 136,
                   "column": 5
                 }
               },
@@ -995,15 +995,15 @@
               "computed": false,
               "key": {
                 "type": "Identifier",
-                "start": 6136,
-                "end": 6140,
+                "start": 6304,
+                "end": 6308,
                 "loc": {
                   "start": {
-                    "line": 131,
+                    "line": 133,
                     "column": 4
                   },
                   "end": {
-                    "line": 131,
+                    "line": 133,
                     "column": 8
                   },
                   "identifierName": "load"
@@ -1019,15 +1019,15 @@
               "params": [
                 {
                   "type": "Identifier",
-                  "start": 6141,
-                  "end": 6147,
+                  "start": 6309,
+                  "end": 6315,
                   "loc": {
                     "start": {
-                      "line": 131,
+                      "line": 133,
                       "column": 9
                     },
                     "end": {
-                      "line": 131,
+                      "line": 133,
                       "column": 15
                     },
                     "identifierName": "params"
@@ -1037,73 +1037,73 @@
               ],
               "body": {
                 "type": "BlockStatement",
-                "start": 6149,
-                "end": 6251,
+                "start": 6317,
+                "end": 6419,
                 "loc": {
                   "start": {
-                    "line": 131,
+                    "line": 133,
                     "column": 17
                   },
                   "end": {
-                    "line": 134,
+                    "line": 136,
                     "column": 5
                   }
                 },
                 "body": [
                   {
                     "type": "ExpressionStatement",
-                    "start": 6159,
-                    "end": 6210,
+                    "start": 6327,
+                    "end": 6378,
                     "loc": {
                       "start": {
-                        "line": 132,
+                        "line": 134,
                         "column": 8
                       },
                       "end": {
-                        "line": 132,
+                        "line": 134,
                         "column": 59
                       }
                     },
                     "expression": {
                       "type": "AssignmentExpression",
-                      "start": 6159,
-                      "end": 6209,
+                      "start": 6327,
+                      "end": 6377,
                       "loc": {
                         "start": {
-                          "line": 132,
+                          "line": 134,
                           "column": 8
                         },
                         "end": {
-                          "line": 132,
+                          "line": 134,
                           "column": 58
                         }
                       },
                       "operator": "=",
                       "left": {
                         "type": "MemberExpression",
-                        "start": 6159,
-                        "end": 6183,
+                        "start": 6327,
+                        "end": 6351,
                         "loc": {
                           "start": {
-                            "line": 132,
+                            "line": 134,
                             "column": 8
                           },
                           "end": {
-                            "line": 132,
+                            "line": 134,
                             "column": 32
                           }
                         },
                         "object": {
                           "type": "Identifier",
-                          "start": 6159,
-                          "end": 6165,
+                          "start": 6327,
+                          "end": 6333,
                           "loc": {
                             "start": {
-                              "line": 132,
+                              "line": 134,
                               "column": 8
                             },
                             "end": {
-                              "line": 132,
+                              "line": 134,
                               "column": 14
                             },
                             "identifierName": "params"
@@ -1112,15 +1112,15 @@
                         },
                         "property": {
                           "type": "Identifier",
-                          "start": 6166,
-                          "end": 6183,
+                          "start": 6334,
+                          "end": 6351,
                           "loc": {
                             "start": {
-                              "line": 132,
+                              "line": 134,
                               "column": 15
                             },
                             "end": {
-                              "line": 132,
+                              "line": 134,
                               "column": 32
                             },
                             "identifierName": "workerScriptsPath"
@@ -1131,44 +1131,44 @@
                       },
                       "right": {
                         "type": "MemberExpression",
-                        "start": 6186,
-                        "end": 6209,
+                        "start": 6354,
+                        "end": 6377,
                         "loc": {
                           "start": {
-                            "line": 132,
+                            "line": 134,
                             "column": 35
                           },
                           "end": {
-                            "line": 132,
+                            "line": 134,
                             "column": 58
                           }
                         },
                         "object": {
                           "type": "ThisExpression",
-                          "start": 6186,
-                          "end": 6190,
+                          "start": 6354,
+                          "end": 6358,
                           "loc": {
                             "start": {
-                              "line": 132,
+                              "line": 134,
                               "column": 35
                             },
                             "end": {
-                              "line": 132,
+                              "line": 134,
                               "column": 39
                             }
                           }
                         },
                         "property": {
                           "type": "Identifier",
-                          "start": 6191,
-                          "end": 6209,
+                          "start": 6359,
+                          "end": 6377,
                           "loc": {
                             "start": {
-                              "line": 132,
+                              "line": 134,
                               "column": 40
                             },
                             "end": {
-                              "line": 132,
+                              "line": 134,
                               "column": 58
                             },
                             "identifierName": "_workerScriptsPath"
@@ -1181,72 +1181,72 @@
                   },
                   {
                     "type": "ReturnStatement",
-                    "start": 6219,
-                    "end": 6245,
+                    "start": 6387,
+                    "end": 6413,
                     "loc": {
                       "start": {
-                        "line": 133,
+                        "line": 135,
                         "column": 8
                       },
                       "end": {
-                        "line": 133,
+                        "line": 135,
                         "column": 34
                       }
                     },
                     "argument": {
                       "type": "CallExpression",
-                      "start": 6226,
-                      "end": 6244,
+                      "start": 6394,
+                      "end": 6412,
                       "loc": {
                         "start": {
-                          "line": 133,
+                          "line": 135,
                           "column": 15
                         },
                         "end": {
-                          "line": 133,
+                          "line": 135,
                           "column": 33
                         }
                       },
                       "callee": {
                         "type": "MemberExpression",
-                        "start": 6226,
-                        "end": 6236,
+                        "start": 6394,
+                        "end": 6404,
                         "loc": {
                           "start": {
-                            "line": 133,
+                            "line": 135,
                             "column": 15
                           },
                           "end": {
-                            "line": 133,
+                            "line": 135,
                             "column": 25
                           }
                         },
                         "object": {
                           "type": "Super",
-                          "start": 6226,
-                          "end": 6231,
+                          "start": 6394,
+                          "end": 6399,
                           "loc": {
                             "start": {
-                              "line": 133,
+                              "line": 135,
                               "column": 15
                             },
                             "end": {
-                              "line": 133,
+                              "line": 135,
                               "column": 20
                             }
                           }
                         },
                         "property": {
                           "type": "Identifier",
-                          "start": 6232,
-                          "end": 6236,
+                          "start": 6400,
+                          "end": 6404,
                           "loc": {
                             "start": {
-                              "line": 133,
+                              "line": 135,
                               "column": 21
                             },
                             "end": {
-                              "line": 133,
+                              "line": 135,
                               "column": 25
                             },
                             "identifierName": "load"
@@ -1258,15 +1258,15 @@
                       "arguments": [
                         {
                           "type": "Identifier",
-                          "start": 6237,
-                          "end": 6243,
+                          "start": 6405,
+                          "end": 6411,
                           "loc": {
                             "start": {
-                              "line": 133,
+                              "line": 135,
                               "column": 26
                             },
                             "end": {
-                              "line": 133,
+                              "line": 135,
                               "column": 32
                             },
                             "identifierName": "params"
@@ -1282,16 +1282,16 @@
               "leadingComments": [
                 {
                   "type": "CommentBlock",
-                  "value": "*\n     * Loads a 3DXML model from a file into this XML3DModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to a 3DXML file.\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.lambertMaterials=false]  When true, gives each [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html)\n     * the same [xeogl.LambertMaterial](http://xeogl.org/docs/classes/LambertMaterial.html) and a ````colorize````\n     * value set the to diffuse color extracted from the 3DXML material. This is typically used for large CAD models and\n     * will cause loading to ignore textures in the 3DXML.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the 3DXML.\n     * When false, ignores backfaces.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded 3DXML model.\n     ",
+                  "value": "*\n     * Loads a 3DXML model from a file into this XML3DModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to a 3DXML file.\n     *\n     * @param {String} [params.metadataSrc] Path to an optional metadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.lambertMaterials=false]  When true, gives each [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html)\n     * the same [xeogl.LambertMaterial](http://xeogl.org/docs/classes/LambertMaterial.html) and a ````colorize````\n     * value set the to diffuse color extracted from the 3DXML material. This is typically used for large CAD models and\n     * will cause loading to ignore textures in the 3DXML.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the 3DXML.\n     * When false, ignores backfaces.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded 3DXML model.\n     ",
                   "start": 3408,
-                  "end": 6131,
+                  "end": 6299,
                   "loc": {
                     "start": {
                       "line": 88,
                       "column": 4
                     },
                     "end": {
-                      "line": 130,
+                      "line": 132,
                       "column": 7
                     }
                   }
@@ -1306,15 +1306,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 6255,
-        "end": 6281,
+        "start": 6423,
+        "end": 6449,
         "loc": {
           "start": {
-            "line": 137,
+            "line": 139,
             "column": 0
           },
           "end": {
-            "line": 137,
+            "line": 139,
             "column": 26
           }
         },
@@ -1322,29 +1322,29 @@
         "specifiers": [
           {
             "type": "ExportSpecifier",
-            "start": 6263,
-            "end": 6280,
+            "start": 6431,
+            "end": 6448,
             "loc": {
               "start": {
-                "line": 137,
+                "line": 139,
                 "column": 8
               },
               "end": {
-                "line": 137,
+                "line": 139,
                 "column": 25
               }
             },
             "local": {
               "type": "Identifier",
-              "start": 6263,
-              "end": 6280,
+              "start": 6431,
+              "end": 6448,
               "loc": {
                 "start": {
-                  "line": 137,
+                  "line": 139,
                   "column": 8
                 },
                 "end": {
-                  "line": 137,
+                  "line": 139,
                   "column": 25
                 },
                 "identifierName": "XML3DModelsPlugin"
@@ -1353,15 +1353,15 @@
             },
             "exported": {
               "type": "Identifier",
-              "start": 6263,
-              "end": 6280,
+              "start": 6431,
+              "end": 6448,
               "loc": {
                 "start": {
-                  "line": 137,
+                  "line": 139,
                   "column": 8
                 },
                 "end": {
-                  "line": 137,
+                  "line": 139,
                   "column": 25
                 },
                 "identifierName": "XML3DModelsPlugin"
@@ -1374,29 +1374,29 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 6255,
-        "end": 6281,
+        "start": 6423,
+        "end": 6449,
         "loc": {
           "start": {
-            "line": 137,
+            "line": 139,
             "column": 0
           },
           "end": {
-            "line": 137,
+            "line": 139,
             "column": 26
           }
         },
         "declaration": {
           "type": "ClassDeclaration",
           "start": 2441,
-          "end": 6253,
+          "end": 6421,
           "loc": {
             "start": {
               "line": 67,
               "column": 0
             },
             "end": {
-              "line": 135,
+              "line": 137,
               "column": 1
             }
           },
@@ -1438,14 +1438,14 @@
           "body": {
             "type": "ClassBody",
             "start": 2486,
-            "end": 6253,
+            "end": 6421,
             "loc": {
               "start": {
                 "line": 67,
                 "column": 45
               },
               "end": {
-                "line": 135,
+                "line": 137,
                 "column": 1
               }
             },
@@ -2129,16 +2129,16 @@
                 "trailingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n     * Loads a 3DXML model from a file into this XML3DModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to a 3DXML file.\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.lambertMaterials=false]  When true, gives each [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html)\n     * the same [xeogl.LambertMaterial](http://xeogl.org/docs/classes/LambertMaterial.html) and a ````colorize````\n     * value set the to diffuse color extracted from the 3DXML material. This is typically used for large CAD models and\n     * will cause loading to ignore textures in the 3DXML.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the 3DXML.\n     * When false, ignores backfaces.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded 3DXML model.\n     ",
+                    "value": "*\n     * Loads a 3DXML model from a file into this XML3DModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to a 3DXML file.\n     *\n     * @param {String} [params.metadataSrc] Path to an optional metadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.lambertMaterials=false]  When true, gives each [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html)\n     * the same [xeogl.LambertMaterial](http://xeogl.org/docs/classes/LambertMaterial.html) and a ````colorize````\n     * value set the to diffuse color extracted from the 3DXML material. This is typically used for large CAD models and\n     * will cause loading to ignore textures in the 3DXML.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the 3DXML.\n     * When false, ignores backfaces.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded 3DXML model.\n     ",
                     "start": 3408,
-                    "end": 6131,
+                    "end": 6299,
                     "loc": {
                       "start": {
                         "line": 88,
                         "column": 4
                       },
                       "end": {
-                        "line": 130,
+                        "line": 132,
                         "column": 7
                       }
                     }
@@ -2147,15 +2147,15 @@
               },
               {
                 "type": "ClassMethod",
-                "start": 6136,
-                "end": 6251,
+                "start": 6304,
+                "end": 6419,
                 "loc": {
                   "start": {
-                    "line": 131,
+                    "line": 133,
                     "column": 4
                   },
                   "end": {
-                    "line": 134,
+                    "line": 136,
                     "column": 5
                   }
                 },
@@ -2163,15 +2163,15 @@
                 "computed": false,
                 "key": {
                   "type": "Identifier",
-                  "start": 6136,
-                  "end": 6140,
+                  "start": 6304,
+                  "end": 6308,
                   "loc": {
                     "start": {
-                      "line": 131,
+                      "line": 133,
                       "column": 4
                     },
                     "end": {
-                      "line": 131,
+                      "line": 133,
                       "column": 8
                     },
                     "identifierName": "load"
@@ -2187,15 +2187,15 @@
                 "params": [
                   {
                     "type": "Identifier",
-                    "start": 6141,
-                    "end": 6147,
+                    "start": 6309,
+                    "end": 6315,
                     "loc": {
                       "start": {
-                        "line": 131,
+                        "line": 133,
                         "column": 9
                       },
                       "end": {
-                        "line": 131,
+                        "line": 133,
                         "column": 15
                       },
                       "identifierName": "params"
@@ -2205,73 +2205,73 @@
                 ],
                 "body": {
                   "type": "BlockStatement",
-                  "start": 6149,
-                  "end": 6251,
+                  "start": 6317,
+                  "end": 6419,
                   "loc": {
                     "start": {
-                      "line": 131,
+                      "line": 133,
                       "column": 17
                     },
                     "end": {
-                      "line": 134,
+                      "line": 136,
                       "column": 5
                     }
                   },
                   "body": [
                     {
                       "type": "ExpressionStatement",
-                      "start": 6159,
-                      "end": 6210,
+                      "start": 6327,
+                      "end": 6378,
                       "loc": {
                         "start": {
-                          "line": 132,
+                          "line": 134,
                           "column": 8
                         },
                         "end": {
-                          "line": 132,
+                          "line": 134,
                           "column": 59
                         }
                       },
                       "expression": {
                         "type": "AssignmentExpression",
-                        "start": 6159,
-                        "end": 6209,
+                        "start": 6327,
+                        "end": 6377,
                         "loc": {
                           "start": {
-                            "line": 132,
+                            "line": 134,
                             "column": 8
                           },
                           "end": {
-                            "line": 132,
+                            "line": 134,
                             "column": 58
                           }
                         },
                         "operator": "=",
                         "left": {
                           "type": "MemberExpression",
-                          "start": 6159,
-                          "end": 6183,
+                          "start": 6327,
+                          "end": 6351,
                           "loc": {
                             "start": {
-                              "line": 132,
+                              "line": 134,
                               "column": 8
                             },
                             "end": {
-                              "line": 132,
+                              "line": 134,
                               "column": 32
                             }
                           },
                           "object": {
                             "type": "Identifier",
-                            "start": 6159,
-                            "end": 6165,
+                            "start": 6327,
+                            "end": 6333,
                             "loc": {
                               "start": {
-                                "line": 132,
+                                "line": 134,
                                 "column": 8
                               },
                               "end": {
-                                "line": 132,
+                                "line": 134,
                                 "column": 14
                               },
                               "identifierName": "params"
@@ -2280,15 +2280,15 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 6166,
-                            "end": 6183,
+                            "start": 6334,
+                            "end": 6351,
                             "loc": {
                               "start": {
-                                "line": 132,
+                                "line": 134,
                                 "column": 15
                               },
                               "end": {
-                                "line": 132,
+                                "line": 134,
                                 "column": 32
                               },
                               "identifierName": "workerScriptsPath"
@@ -2299,44 +2299,44 @@
                         },
                         "right": {
                           "type": "MemberExpression",
-                          "start": 6186,
-                          "end": 6209,
+                          "start": 6354,
+                          "end": 6377,
                           "loc": {
                             "start": {
-                              "line": 132,
+                              "line": 134,
                               "column": 35
                             },
                             "end": {
-                              "line": 132,
+                              "line": 134,
                               "column": 58
                             }
                           },
                           "object": {
                             "type": "ThisExpression",
-                            "start": 6186,
-                            "end": 6190,
+                            "start": 6354,
+                            "end": 6358,
                             "loc": {
                               "start": {
-                                "line": 132,
+                                "line": 134,
                                 "column": 35
                               },
                               "end": {
-                                "line": 132,
+                                "line": 134,
                                 "column": 39
                               }
                             }
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 6191,
-                            "end": 6209,
+                            "start": 6359,
+                            "end": 6377,
                             "loc": {
                               "start": {
-                                "line": 132,
+                                "line": 134,
                                 "column": 40
                               },
                               "end": {
-                                "line": 132,
+                                "line": 134,
                                 "column": 58
                               },
                               "identifierName": "_workerScriptsPath"
@@ -2349,72 +2349,72 @@
                     },
                     {
                       "type": "ReturnStatement",
-                      "start": 6219,
-                      "end": 6245,
+                      "start": 6387,
+                      "end": 6413,
                       "loc": {
                         "start": {
-                          "line": 133,
+                          "line": 135,
                           "column": 8
                         },
                         "end": {
-                          "line": 133,
+                          "line": 135,
                           "column": 34
                         }
                       },
                       "argument": {
                         "type": "CallExpression",
-                        "start": 6226,
-                        "end": 6244,
+                        "start": 6394,
+                        "end": 6412,
                         "loc": {
                           "start": {
-                            "line": 133,
+                            "line": 135,
                             "column": 15
                           },
                           "end": {
-                            "line": 133,
+                            "line": 135,
                             "column": 33
                           }
                         },
                         "callee": {
                           "type": "MemberExpression",
-                          "start": 6226,
-                          "end": 6236,
+                          "start": 6394,
+                          "end": 6404,
                           "loc": {
                             "start": {
-                              "line": 133,
+                              "line": 135,
                               "column": 15
                             },
                             "end": {
-                              "line": 133,
+                              "line": 135,
                               "column": 25
                             }
                           },
                           "object": {
                             "type": "Super",
-                            "start": 6226,
-                            "end": 6231,
+                            "start": 6394,
+                            "end": 6399,
                             "loc": {
                               "start": {
-                                "line": 133,
+                                "line": 135,
                                 "column": 15
                               },
                               "end": {
-                                "line": 133,
+                                "line": 135,
                                 "column": 20
                               }
                             }
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 6232,
-                            "end": 6236,
+                            "start": 6400,
+                            "end": 6404,
                             "loc": {
                               "start": {
-                                "line": 133,
+                                "line": 135,
                                 "column": 21
                               },
                               "end": {
-                                "line": 133,
+                                "line": 135,
                                 "column": 25
                               },
                               "identifierName": "load"
@@ -2426,15 +2426,15 @@
                         "arguments": [
                           {
                             "type": "Identifier",
-                            "start": 6237,
-                            "end": 6243,
+                            "start": 6405,
+                            "end": 6411,
                             "loc": {
                               "start": {
-                                "line": 133,
+                                "line": 135,
                                 "column": 26
                               },
                               "end": {
-                                "line": 133,
+                                "line": 135,
                                 "column": 32
                               },
                               "identifierName": "params"
@@ -2450,16 +2450,16 @@
                 "leadingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n     * Loads a 3DXML model from a file into this XML3DModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to a 3DXML file.\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.lambertMaterials=false]  When true, gives each [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html)\n     * the same [xeogl.LambertMaterial](http://xeogl.org/docs/classes/LambertMaterial.html) and a ````colorize````\n     * value set the to diffuse color extracted from the 3DXML material. This is typically used for large CAD models and\n     * will cause loading to ignore textures in the 3DXML.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the 3DXML.\n     * When false, ignores backfaces.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded 3DXML model.\n     ",
+                    "value": "*\n     * Loads a 3DXML model from a file into this XML3DModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to a 3DXML file.\n     *\n     * @param {String} [params.metadataSrc] Path to an optional metadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.lambertMaterials=false]  When true, gives each [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html)\n     * the same [xeogl.LambertMaterial](http://xeogl.org/docs/classes/LambertMaterial.html) and a ````colorize````\n     * value set the to diffuse color extracted from the 3DXML material. This is typically used for large CAD models and\n     * will cause loading to ignore textures in the 3DXML.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the 3DXML.\n     * When false, ignores backfaces.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded 3DXML model.\n     ",
                     "start": 3408,
-                    "end": 6131,
+                    "end": 6299,
                     "loc": {
                       "start": {
                         "line": 88,
                         "column": 4
                       },
                       "end": {
-                        "line": 130,
+                        "line": 132,
                         "column": 7
                       }
                     }
@@ -2531,16 +2531,16 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n     * Loads a 3DXML model from a file into this XML3DModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to a 3DXML file.\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.lambertMaterials=false]  When true, gives each [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html)\n     * the same [xeogl.LambertMaterial](http://xeogl.org/docs/classes/LambertMaterial.html) and a ````colorize````\n     * value set the to diffuse color extracted from the 3DXML material. This is typically used for large CAD models and\n     * will cause loading to ignore textures in the 3DXML.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the 3DXML.\n     * When false, ignores backfaces.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded 3DXML model.\n     ",
+      "value": "*\n     * Loads a 3DXML model from a file into this XML3DModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to a 3DXML file.\n     *\n     * @param {String} [params.metadataSrc] Path to an optional metadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.lambertMaterials=false]  When true, gives each [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html)\n     * the same [xeogl.LambertMaterial](http://xeogl.org/docs/classes/LambertMaterial.html) and a ````colorize````\n     * value set the to diffuse color extracted from the 3DXML material. This is typically used for large CAD models and\n     * will cause loading to ignore textures in the 3DXML.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the 3DXML.\n     * When false, ignores backfaces.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded 3DXML model.\n     ",
       "start": 3408,
-      "end": 6131,
+      "end": 6299,
       "loc": {
         "start": {
           "line": 88,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 132,
           "column": 7
         }
       }
@@ -4408,16 +4408,16 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n     * Loads a 3DXML model from a file into this XML3DModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to a 3DXML file.\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.lambertMaterials=false]  When true, gives each [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html)\n     * the same [xeogl.LambertMaterial](http://xeogl.org/docs/classes/LambertMaterial.html) and a ````colorize````\n     * value set the to diffuse color extracted from the 3DXML material. This is typically used for large CAD models and\n     * will cause loading to ignore textures in the 3DXML.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the 3DXML.\n     * When false, ignores backfaces.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded 3DXML model.\n     ",
+      "value": "*\n     * Loads a 3DXML model from a file into this XML3DModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to a 3DXML file.\n     *\n     * @param {String} [params.metadataSrc] Path to an optional metadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.lambertMaterials=false]  When true, gives each [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html)\n     * the same [xeogl.LambertMaterial](http://xeogl.org/docs/classes/LambertMaterial.html) and a ````colorize````\n     * value set the to diffuse color extracted from the 3DXML material. This is typically used for large CAD models and\n     * will cause loading to ignore textures in the 3DXML.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the 3DXML.\n     * When false, ignores backfaces.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded 3DXML model.\n     ",
       "start": 3408,
-      "end": 6131,
+      "end": 6299,
       "loc": {
         "start": {
           "line": 88,
           "column": 4
         },
         "end": {
-          "line": 130,
+          "line": 132,
           "column": 7
         }
       }
@@ -4435,15 +4435,15 @@
         "binop": null
       },
       "value": "load",
-      "start": 6136,
-      "end": 6140,
+      "start": 6304,
+      "end": 6308,
       "loc": {
         "start": {
-          "line": 131,
+          "line": 133,
           "column": 4
         },
         "end": {
-          "line": 131,
+          "line": 133,
           "column": 8
         }
       }
@@ -4460,15 +4460,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6140,
-      "end": 6141,
+      "start": 6308,
+      "end": 6309,
       "loc": {
         "start": {
-          "line": 131,
+          "line": 133,
           "column": 8
         },
         "end": {
-          "line": 131,
+          "line": 133,
           "column": 9
         }
       }
@@ -4486,15 +4486,15 @@
         "binop": null
       },
       "value": "params",
-      "start": 6141,
-      "end": 6147,
+      "start": 6309,
+      "end": 6315,
       "loc": {
         "start": {
-          "line": 131,
+          "line": 133,
           "column": 9
         },
         "end": {
-          "line": 131,
+          "line": 133,
           "column": 15
         }
       }
@@ -4511,15 +4511,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6147,
-      "end": 6148,
+      "start": 6315,
+      "end": 6316,
       "loc": {
         "start": {
-          "line": 131,
+          "line": 133,
           "column": 15
         },
         "end": {
-          "line": 131,
+          "line": 133,
           "column": 16
         }
       }
@@ -4536,15 +4536,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6149,
-      "end": 6150,
+      "start": 6317,
+      "end": 6318,
       "loc": {
         "start": {
-          "line": 131,
+          "line": 133,
           "column": 17
         },
         "end": {
-          "line": 131,
+          "line": 133,
           "column": 18
         }
       }
@@ -4562,15 +4562,15 @@
         "binop": null
       },
       "value": "params",
-      "start": 6159,
-      "end": 6165,
+      "start": 6327,
+      "end": 6333,
       "loc": {
         "start": {
-          "line": 132,
+          "line": 134,
           "column": 8
         },
         "end": {
-          "line": 132,
+          "line": 134,
           "column": 14
         }
       }
@@ -4588,15 +4588,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6165,
-      "end": 6166,
+      "start": 6333,
+      "end": 6334,
       "loc": {
         "start": {
-          "line": 132,
+          "line": 134,
           "column": 14
         },
         "end": {
-          "line": 132,
+          "line": 134,
           "column": 15
         }
       }
@@ -4614,15 +4614,15 @@
         "binop": null
       },
       "value": "workerScriptsPath",
-      "start": 6166,
-      "end": 6183,
+      "start": 6334,
+      "end": 6351,
       "loc": {
         "start": {
-          "line": 132,
+          "line": 134,
           "column": 15
         },
         "end": {
-          "line": 132,
+          "line": 134,
           "column": 32
         }
       }
@@ -4641,15 +4641,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 6184,
-      "end": 6185,
+      "start": 6352,
+      "end": 6353,
       "loc": {
         "start": {
-          "line": 132,
+          "line": 134,
           "column": 33
         },
         "end": {
-          "line": 132,
+          "line": 134,
           "column": 34
         }
       }
@@ -4669,15 +4669,15 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 6186,
-      "end": 6190,
+      "start": 6354,
+      "end": 6358,
       "loc": {
         "start": {
-          "line": 132,
+          "line": 134,
           "column": 35
         },
         "end": {
-          "line": 132,
+          "line": 134,
           "column": 39
         }
       }
@@ -4695,15 +4695,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6190,
-      "end": 6191,
+      "start": 6358,
+      "end": 6359,
       "loc": {
         "start": {
-          "line": 132,
+          "line": 134,
           "column": 39
         },
         "end": {
-          "line": 132,
+          "line": 134,
           "column": 40
         }
       }
@@ -4721,15 +4721,15 @@
         "binop": null
       },
       "value": "_workerScriptsPath",
-      "start": 6191,
-      "end": 6209,
+      "start": 6359,
+      "end": 6377,
       "loc": {
         "start": {
-          "line": 132,
+          "line": 134,
           "column": 40
         },
         "end": {
-          "line": 132,
+          "line": 134,
           "column": 58
         }
       }
@@ -4747,15 +4747,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6209,
-      "end": 6210,
+      "start": 6377,
+      "end": 6378,
       "loc": {
         "start": {
-          "line": 132,
+          "line": 134,
           "column": 58
         },
         "end": {
-          "line": 132,
+          "line": 134,
           "column": 59
         }
       }
@@ -4775,15 +4775,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 6219,
-      "end": 6225,
+      "start": 6387,
+      "end": 6393,
       "loc": {
         "start": {
-          "line": 133,
+          "line": 135,
           "column": 8
         },
         "end": {
-          "line": 133,
+          "line": 135,
           "column": 14
         }
       }
@@ -4803,15 +4803,15 @@
         "updateContext": null
       },
       "value": "super",
-      "start": 6226,
-      "end": 6231,
+      "start": 6394,
+      "end": 6399,
       "loc": {
         "start": {
-          "line": 133,
+          "line": 135,
           "column": 15
         },
         "end": {
-          "line": 133,
+          "line": 135,
           "column": 20
         }
       }
@@ -4829,15 +4829,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6231,
-      "end": 6232,
+      "start": 6399,
+      "end": 6400,
       "loc": {
         "start": {
-          "line": 133,
+          "line": 135,
           "column": 20
         },
         "end": {
-          "line": 133,
+          "line": 135,
           "column": 21
         }
       }
@@ -4855,15 +4855,15 @@
         "binop": null
       },
       "value": "load",
-      "start": 6232,
-      "end": 6236,
+      "start": 6400,
+      "end": 6404,
       "loc": {
         "start": {
-          "line": 133,
+          "line": 135,
           "column": 21
         },
         "end": {
-          "line": 133,
+          "line": 135,
           "column": 25
         }
       }
@@ -4880,15 +4880,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6236,
-      "end": 6237,
+      "start": 6404,
+      "end": 6405,
       "loc": {
         "start": {
-          "line": 133,
+          "line": 135,
           "column": 25
         },
         "end": {
-          "line": 133,
+          "line": 135,
           "column": 26
         }
       }
@@ -4906,15 +4906,15 @@
         "binop": null
       },
       "value": "params",
-      "start": 6237,
-      "end": 6243,
+      "start": 6405,
+      "end": 6411,
       "loc": {
         "start": {
-          "line": 133,
+          "line": 135,
           "column": 26
         },
         "end": {
-          "line": 133,
+          "line": 135,
           "column": 32
         }
       }
@@ -4931,15 +4931,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6243,
-      "end": 6244,
+      "start": 6411,
+      "end": 6412,
       "loc": {
         "start": {
-          "line": 133,
+          "line": 135,
           "column": 32
         },
         "end": {
-          "line": 133,
+          "line": 135,
           "column": 33
         }
       }
@@ -4957,15 +4957,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6244,
-      "end": 6245,
+      "start": 6412,
+      "end": 6413,
       "loc": {
         "start": {
-          "line": 133,
+          "line": 135,
           "column": 33
         },
         "end": {
-          "line": 133,
+          "line": 135,
           "column": 34
         }
       }
@@ -4982,15 +4982,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6250,
-      "end": 6251,
+      "start": 6418,
+      "end": 6419,
       "loc": {
         "start": {
-          "line": 134,
+          "line": 136,
           "column": 4
         },
         "end": {
-          "line": 134,
+          "line": 136,
           "column": 5
         }
       }
@@ -5007,15 +5007,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6252,
-      "end": 6253,
+      "start": 6420,
+      "end": 6421,
       "loc": {
         "start": {
-          "line": 135,
+          "line": 137,
           "column": 0
         },
         "end": {
-          "line": 135,
+          "line": 137,
           "column": 1
         }
       }
@@ -5035,15 +5035,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 6255,
-      "end": 6261,
+      "start": 6423,
+      "end": 6429,
       "loc": {
         "start": {
-          "line": 137,
+          "line": 139,
           "column": 0
         },
         "end": {
-          "line": 137,
+          "line": 139,
           "column": 6
         }
       }
@@ -5060,15 +5060,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6262,
-      "end": 6263,
+      "start": 6430,
+      "end": 6431,
       "loc": {
         "start": {
-          "line": 137,
+          "line": 139,
           "column": 7
         },
         "end": {
-          "line": 137,
+          "line": 139,
           "column": 8
         }
       }
@@ -5086,15 +5086,15 @@
         "binop": null
       },
       "value": "XML3DModelsPlugin",
-      "start": 6263,
-      "end": 6280,
+      "start": 6431,
+      "end": 6448,
       "loc": {
         "start": {
-          "line": 137,
+          "line": 139,
           "column": 8
         },
         "end": {
-          "line": 137,
+          "line": 139,
           "column": 25
         }
       }
@@ -5111,15 +5111,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6280,
-      "end": 6281,
+      "start": 6448,
+      "end": 6449,
       "loc": {
         "start": {
-          "line": 137,
+          "line": 139,
           "column": 25
         },
         "end": {
-          "line": 137,
+          "line": 139,
           "column": 26
         }
       }
@@ -5137,15 +5137,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6281,
-      "end": 6281,
+      "start": 6449,
+      "end": 6449,
       "loc": {
         "start": {
-          "line": 137,
+          "line": 139,
           "column": 26
         },
         "end": {
-          "line": 137,
+          "line": 139,
           "column": 26
         }
       }

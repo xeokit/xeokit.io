@@ -12,9 +12,9 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "xeokit-sdk/viewer/plugins/bimservermodelsplugin/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin",
-    "class/viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html",
-    "<span>BIMServerBigModelsPlugin</span> <span class=\"search-result-import-path\">xeokit-sdk/viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js</span>",
+    "xeokit-sdk/viewer/plugins/bimserverplugins/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin",
+    "class/viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html",
+    "<span>BIMServerBigModelsPlugin</span> <span class=\"search-result-import-path\">xeokit-sdk/viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js</span>",
     "class"
   ],
   [
@@ -60,9 +60,21 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "xeokit-sdk/viewer/objectmetadata.js~objectmetadata",
+    "class/viewer/ObjectMetadata.js~ObjectMetadata.html",
+    "<span>ObjectMetadata</span> <span class=\"search-result-import-path\">xeokit-sdk/viewer/ObjectMetadata.js</span>",
+    "class"
+  ],
+  [
     "xeokit-sdk/viewer/plugin.js~plugin",
     "class/viewer/Plugin.js~Plugin.html",
     "<span>Plugin</span> <span class=\"search-result-import-path\">xeokit-sdk/viewer/Plugin.js</span>",
+    "class"
+  ],
+  [
+    "xeokit-sdk/viewer/plugins/propertiespanelplugin/propertiespanelplugin.js~propertiespanelplugin",
+    "class/viewer/plugins/PropertiesPanelPlugin/PropertiesPanelPlugin.js~PropertiesPanelPlugin.html",
+    "<span>PropertiesPanelPlugin</span> <span class=\"search-result-import-path\">xeokit-sdk/viewer/plugins/PropertiesPanelPlugin/PropertiesPanelPlugin.js</span>",
     "class"
   ],
   [
@@ -78,9 +90,21 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "xeokit-sdk/viewer/plugins/structurepanelplugin/structurepanelplugin.js~structurepanelplugin",
+    "class/viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin.html",
+    "<span>StructurePanelPlugin</span> <span class=\"search-result-import-path\">xeokit-sdk/viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js</span>",
+    "class"
+  ],
+  [
     "xeokit-sdk/viewer/viewer.js~viewer",
     "class/viewer/Viewer.js~Viewer.html",
     "<span>Viewer</span> <span class=\"search-result-import-path\">xeokit-sdk/viewer/Viewer.js</span>",
+    "class"
+  ],
+  [
+    "xeokit-sdk/viewer/plugins/webvrplugin/webvrplugin.js~webvrplugin",
+    "class/viewer/plugins/WebVRPlugin/WebVRPlugin.js~WebVRPlugin.html",
+    "<span>WebVRPlugin</span> <span class=\"search-result-import-path\">xeokit-sdk/viewer/plugins/WebVRPlugin/WebVRPlugin.js</span>",
     "class"
   ],
   [
@@ -414,6 +438,66 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "viewer/objectmetadata.js",
+    "file/viewer/ObjectMetadata.js.html",
+    "viewer/ObjectMetadata.js",
+    "file"
+  ],
+  [
+    "viewer/objectmetadata.js~objectmetadata#children",
+    "class/viewer/ObjectMetadata.js~ObjectMetadata.html#instance-member-children",
+    "viewer/ObjectMetadata.js~ObjectMetadata#children",
+    "member"
+  ],
+  [
+    "viewer/objectmetadata.js~objectmetadata#constructor",
+    "class/viewer/ObjectMetadata.js~ObjectMetadata.html#instance-constructor-constructor",
+    "viewer/ObjectMetadata.js~ObjectMetadata#constructor",
+    "method"
+  ],
+  [
+    "viewer/objectmetadata.js~objectmetadata#gid",
+    "class/viewer/ObjectMetadata.js~ObjectMetadata.html#instance-member-gid",
+    "viewer/ObjectMetadata.js~ObjectMetadata#gid",
+    "member"
+  ],
+  [
+    "viewer/objectmetadata.js~objectmetadata#guid",
+    "class/viewer/ObjectMetadata.js~ObjectMetadata.html#instance-member-guid",
+    "viewer/ObjectMetadata.js~ObjectMetadata#guid",
+    "member"
+  ],
+  [
+    "viewer/objectmetadata.js~objectmetadata#id",
+    "class/viewer/ObjectMetadata.js~ObjectMetadata.html#instance-member-id",
+    "viewer/ObjectMetadata.js~ObjectMetadata#id",
+    "member"
+  ],
+  [
+    "viewer/objectmetadata.js~objectmetadata#name",
+    "class/viewer/ObjectMetadata.js~ObjectMetadata.html#instance-member-name",
+    "viewer/ObjectMetadata.js~ObjectMetadata#name",
+    "member"
+  ],
+  [
+    "viewer/objectmetadata.js~objectmetadata#parent",
+    "class/viewer/ObjectMetadata.js~ObjectMetadata.html#instance-member-parent",
+    "viewer/ObjectMetadata.js~ObjectMetadata#parent",
+    "member"
+  ],
+  [
+    "viewer/objectmetadata.js~objectmetadata#properties",
+    "class/viewer/ObjectMetadata.js~ObjectMetadata.html#instance-member-properties",
+    "viewer/ObjectMetadata.js~ObjectMetadata#properties",
+    "member"
+  ],
+  [
+    "viewer/objectmetadata.js~objectmetadata#type",
+    "class/viewer/ObjectMetadata.js~ObjectMetadata.html#instance-member-type",
+    "viewer/ObjectMetadata.js~ObjectMetadata#type",
+    "member"
+  ],
+  [
     "viewer/plugin.js",
     "file/viewer/Plugin.js.html",
     "viewer/Plugin.js",
@@ -504,9 +588,21 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "viewer/viewer.js~viewer#createmetadata",
+    "class/viewer/Viewer.js~Viewer.html#instance-method-createMetadata",
+    "viewer/Viewer.js~Viewer#createMetadata",
+    "method"
+  ],
+  [
     "viewer/viewer.js~viewer#destroy",
     "class/viewer/Viewer.js~Viewer.html#instance-method-destroy",
     "viewer/Viewer.js~Viewer#destroy",
+    "method"
+  ],
+  [
+    "viewer/viewer.js~viewer#destroymetadata",
+    "class/viewer/Viewer.js~Viewer.html#instance-method-destroyMetadata",
+    "viewer/Viewer.js~Viewer#destroyMetadata",
     "method"
   ],
   [
@@ -546,10 +642,16 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "viewer/viewer.js~viewer#meta",
-    "class/viewer/Viewer.js~Viewer.html#instance-member-meta",
-    "viewer/Viewer.js~Viewer#meta",
+    "viewer/viewer.js~viewer#metadata",
+    "class/viewer/Viewer.js~Viewer.html#instance-member-metadata",
+    "viewer/Viewer.js~Viewer#metadata",
     "member"
+  ],
+  [
+    "viewer/viewer.js~viewer#off",
+    "class/viewer/Viewer.js~Viewer.html#instance-method-off",
+    "viewer/Viewer.js~Viewer#off",
+    "method"
   ],
   [
     "viewer/viewer.js~viewer#on",
@@ -678,48 +780,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "viewer/plugins/bimservermodelsplugin/bimserverbigmodelsplugin.js",
-    "file/viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js.html",
-    "viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js",
-    "file"
-  ],
-  [
-    "viewer/plugins/bimservermodelsplugin/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin#bimserver_version",
-    "class/viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html#instance-member-BIMSERVER_VERSION",
-    "viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin#BIMSERVER_VERSION",
-    "member"
-  ],
-  [
-    "viewer/plugins/bimservermodelsplugin/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin#bimserverapi",
-    "class/viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html#instance-member-bimServerAPI",
-    "viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin#bimServerAPI",
-    "member"
-  ],
-  [
-    "viewer/plugins/bimservermodelsplugin/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin#constructor",
-    "class/viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html#instance-constructor-constructor",
-    "viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin#constructor",
-    "method"
-  ],
-  [
-    "viewer/plugins/bimservermodelsplugin/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin#destroy",
-    "class/viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html#instance-method-destroy",
-    "viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin#destroy",
-    "method"
-  ],
-  [
-    "viewer/plugins/bimservermodelsplugin/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin#hiddentypes",
-    "class/viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html#instance-member-hiddenTypes",
-    "viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin#hiddenTypes",
-    "member"
-  ],
-  [
-    "viewer/plugins/bimservermodelsplugin/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin#load",
-    "class/viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html#instance-method-load",
-    "viewer/plugins/BIMServerModelsPlugin/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin#load",
-    "method"
-  ],
-  [
     "viewer/plugins/bimservermodelsplugin/bimservermodelsplugin.js",
     "file/viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js.html",
     "viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js",
@@ -732,9 +792,9 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "viewer/plugins/bimservermodelsplugin/bimservermodelsplugin.js~bimservermodelsplugin#bimserverapi",
-    "class/viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js~BIMServerModelsPlugin.html#instance-member-bimServerAPI",
-    "viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js~BIMServerModelsPlugin#bimServerAPI",
+    "viewer/plugins/bimservermodelsplugin/bimservermodelsplugin.js~bimservermodelsplugin#bimserverclient",
+    "class/viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js~BIMServerModelsPlugin.html#instance-member-bimServerClient",
+    "viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js~BIMServerModelsPlugin#bimServerClient",
     "member"
   ],
   [
@@ -756,9 +816,21 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "viewer/plugins/bimservermodelsplugin/bimservermodelsplugin.js~bimservermodelsplugin#ifcmodels",
+    "class/viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js~BIMServerModelsPlugin.html#instance-member-ifcModels",
+    "viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js~BIMServerModelsPlugin#ifcModels",
+    "member"
+  ],
+  [
     "viewer/plugins/bimservermodelsplugin/bimservermodelsplugin.js~bimservermodelsplugin#load",
     "class/viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js~BIMServerModelsPlugin.html#instance-method-load",
     "viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js~BIMServerModelsPlugin#load",
+    "method"
+  ],
+  [
+    "viewer/plugins/bimservermodelsplugin/bimservermodelsplugin.js~bimservermodelsplugin#loadmetadata",
+    "class/viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js~BIMServerModelsPlugin.html#instance-method-loadMetadata",
+    "viewer/plugins/BIMServerModelsPlugin/BIMServerModelsPlugin.js~BIMServerModelsPlugin#loadMetadata",
     "method"
   ],
   [
@@ -771,12 +843,6 @@ window.esdocSearchIndex = [
     "viewer/plugins/bimservermodelsplugin/lib/bimservergeometryloader.js",
     "file/viewer/plugins/BIMServerModelsPlugin/lib/BIMServerGeometryLoader.js.html",
     "viewer/plugins/BIMServerModelsPlugin/lib/BIMServerGeometryLoader.js",
-    "file"
-  ],
-  [
-    "viewer/plugins/bimservermodelsplugin/lib/bimservermodel.js",
-    "file/viewer/plugins/BIMServerModelsPlugin/lib/BIMServerModel.js.html",
-    "viewer/plugins/BIMServerModelsPlugin/lib/BIMServerModel.js",
     "file"
   ],
   [
@@ -804,10 +870,46 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "viewer/plugins/bimservermodelsplugin/lib/utils.js",
-    "file/viewer/plugins/BIMServerModelsPlugin/lib/utils.js.html",
-    "viewer/plugins/BIMServerModelsPlugin/lib/utils.js",
+    "viewer/plugins/bimserverplugins/bimserverbigmodelsplugin.js",
+    "file/viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js.html",
+    "viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js",
     "file"
+  ],
+  [
+    "viewer/plugins/bimserverplugins/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin#bimserver_version",
+    "class/viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html#instance-member-BIMSERVER_VERSION",
+    "viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin#BIMSERVER_VERSION",
+    "member"
+  ],
+  [
+    "viewer/plugins/bimserverplugins/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin#bimserverclient",
+    "class/viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html#instance-member-bimServerClient",
+    "viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin#bimServerClient",
+    "member"
+  ],
+  [
+    "viewer/plugins/bimserverplugins/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin#constructor",
+    "class/viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html#instance-constructor-constructor",
+    "viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin#constructor",
+    "method"
+  ],
+  [
+    "viewer/plugins/bimserverplugins/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin#destroy",
+    "class/viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html#instance-method-destroy",
+    "viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin#destroy",
+    "method"
+  ],
+  [
+    "viewer/plugins/bimserverplugins/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin#hiddentypes",
+    "class/viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html#instance-member-hiddenTypes",
+    "viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin#hiddenTypes",
+    "member"
+  ],
+  [
+    "viewer/plugins/bimserverplugins/bimserverbigmodelsplugin.js~bimserverbigmodelsplugin#load",
+    "class/viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin.html#instance-method-load",
+    "viewer/plugins/BIMServerPlugins/BIMServerBigModelsPlugin.js~BIMServerBigModelsPlugin#load",
+    "method"
   ],
   [
     "viewer/plugins/clipsplugin/clipsplugin.js",
@@ -882,6 +984,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "viewer/plugins/gltfmodelsplugin/gltfmodelsplugin.js~gltfmodelsplugin#defaulthandlenode",
+    "class/viewer/plugins/GLTFModelsPlugin/GLTFModelsPlugin.js~GLTFModelsPlugin.html#instance-method-defaultHandleNode",
+    "viewer/plugins/GLTFModelsPlugin/GLTFModelsPlugin.js~GLTFModelsPlugin#defaultHandleNode",
+    "method"
+  ],
+  [
     "viewer/plugins/gltfmodelsplugin/gltfmodelsplugin.js~gltfmodelsplugin#load",
     "class/viewer/plugins/GLTFModelsPlugin/GLTFModelsPlugin.js~GLTFModelsPlugin.html#instance-method-load",
     "viewer/plugins/GLTFModelsPlugin/GLTFModelsPlugin.js~GLTFModelsPlugin#load",
@@ -939,6 +1047,36 @@ window.esdocSearchIndex = [
     "viewer/plugins/objmodelsplugin/objmodelsplugin.js~objmodelsplugin#load",
     "class/viewer/plugins/OBJModelsPlugin/OBJModelsPlugin.js~OBJModelsPlugin.html#instance-method-load",
     "viewer/plugins/OBJModelsPlugin/OBJModelsPlugin.js~OBJModelsPlugin#load",
+    "method"
+  ],
+  [
+    "viewer/plugins/propertiespanelplugin/propertiespanelplugin.js",
+    "file/viewer/plugins/PropertiesPanelPlugin/PropertiesPanelPlugin.js.html",
+    "viewer/plugins/PropertiesPanelPlugin/PropertiesPanelPlugin.js",
+    "file"
+  ],
+  [
+    "viewer/plugins/propertiespanelplugin/propertiespanelplugin.js~propertiespanelplugin#addmodel",
+    "class/viewer/plugins/PropertiesPanelPlugin/PropertiesPanelPlugin.js~PropertiesPanelPlugin.html#instance-method-addModel",
+    "viewer/plugins/PropertiesPanelPlugin/PropertiesPanelPlugin.js~PropertiesPanelPlugin#addModel",
+    "method"
+  ],
+  [
+    "viewer/plugins/propertiespanelplugin/propertiespanelplugin.js~propertiespanelplugin#constructor",
+    "class/viewer/plugins/PropertiesPanelPlugin/PropertiesPanelPlugin.js~PropertiesPanelPlugin.html#instance-constructor-constructor",
+    "viewer/plugins/PropertiesPanelPlugin/PropertiesPanelPlugin.js~PropertiesPanelPlugin#constructor",
+    "method"
+  ],
+  [
+    "viewer/plugins/propertiespanelplugin/propertiespanelplugin.js~propertiespanelplugin#domelement",
+    "class/viewer/plugins/PropertiesPanelPlugin/PropertiesPanelPlugin.js~PropertiesPanelPlugin.html#instance-member-domElement",
+    "viewer/plugins/PropertiesPanelPlugin/PropertiesPanelPlugin.js~PropertiesPanelPlugin#domElement",
+    "member"
+  ],
+  [
+    "viewer/plugins/propertiespanelplugin/propertiespanelplugin.js~propertiespanelplugin#setselected",
+    "class/viewer/plugins/PropertiesPanelPlugin/PropertiesPanelPlugin.js~PropertiesPanelPlugin.html#instance-method-setSelected",
+    "viewer/plugins/PropertiesPanelPlugin/PropertiesPanelPlugin.js~PropertiesPanelPlugin#setSelected",
     "method"
   ],
   [
@@ -1000,6 +1138,78 @@ window.esdocSearchIndex = [
     "class/viewer/plugins/SkyboxesPlugin/SkyboxesPlugin.js~SkyboxesPlugin.html#instance-member-skyboxes",
     "viewer/plugins/SkyboxesPlugin/SkyboxesPlugin.js~SkyboxesPlugin#skyboxes",
     "member"
+  ],
+  [
+    "viewer/plugins/structurepanelplugin/structurepanelplugin.js",
+    "file/viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js.html",
+    "viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js",
+    "file"
+  ],
+  [
+    "viewer/plugins/structurepanelplugin/structurepanelplugin.js~structurepanelplugin#deselect",
+    "class/viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin.html#instance-member-DESELECT",
+    "viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin#DESELECT",
+    "member"
+  ],
+  [
+    "viewer/plugins/structurepanelplugin/structurepanelplugin.js~structurepanelplugin#select",
+    "class/viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin.html#instance-member-SELECT",
+    "viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin#SELECT",
+    "member"
+  ],
+  [
+    "viewer/plugins/structurepanelplugin/structurepanelplugin.js~structurepanelplugin#select_exclusive",
+    "class/viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin.html#instance-member-SELECT_EXCLUSIVE",
+    "viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin#SELECT_EXCLUSIVE",
+    "member"
+  ],
+  [
+    "viewer/plugins/structurepanelplugin/structurepanelplugin.js~structurepanelplugin#toggle",
+    "class/viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin.html#instance-member-TOGGLE",
+    "viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin#TOGGLE",
+    "member"
+  ],
+  [
+    "viewer/plugins/structurepanelplugin/structurepanelplugin.js~structurepanelplugin#constructor",
+    "class/viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin.html#instance-constructor-constructor",
+    "viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin#constructor",
+    "method"
+  ],
+  [
+    "viewer/plugins/structurepanelplugin/structurepanelplugin.js~structurepanelplugin#destroy",
+    "class/viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin.html#instance-method-destroy",
+    "viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin#destroy",
+    "method"
+  ],
+  [
+    "viewer/plugins/structurepanelplugin/structurepanelplugin.js~structurepanelplugin#getselected",
+    "class/viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin.html#instance-method-getSelected",
+    "viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin#getSelected",
+    "method"
+  ],
+  [
+    "viewer/plugins/structurepanelplugin/structurepanelplugin.js~structurepanelplugin#selectionstate",
+    "class/viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin.html#instance-member-selectionState",
+    "viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin#selectionState",
+    "member"
+  ],
+  [
+    "viewer/plugins/structurepanelplugin/structurepanelplugin.js~structurepanelplugin#setselected",
+    "class/viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin.html#instance-method-setSelected",
+    "viewer/plugins/StructurePanelPlugin/StructurePanelPlugin.js~StructurePanelPlugin#setSelected",
+    "method"
+  ],
+  [
+    "viewer/plugins/webvrplugin/webvrplugin.js",
+    "file/viewer/plugins/WebVRPlugin/WebVRPlugin.js.html",
+    "viewer/plugins/WebVRPlugin/WebVRPlugin.js",
+    "file"
+  ],
+  [
+    "viewer/plugins/webvrplugin/webvrplugin.js~webvrplugin#constructor",
+    "class/viewer/plugins/WebVRPlugin/WebVRPlugin.js~WebVRPlugin.html#instance-constructor-constructor",
+    "viewer/plugins/WebVRPlugin/WebVRPlugin.js~WebVRPlugin#constructor",
+    "method"
   ],
   [
     "viewer/plugins/xml3dmodelsplugin/xml3dmodel.js",
@@ -1221,6 +1431,12 @@ window.esdocSearchIndex = [
     "viewer/plugins/xml3dmodelsplugin/zipjs/zlib-asm/codecs.js",
     "file/viewer/plugins/XML3DModelsPlugin/zipjs/zlib-asm/codecs.js.html",
     "viewer/plugins/XML3DModelsPlugin/zipjs/zlib-asm/codecs.js",
+    "file"
+  ],
+  [
+    "viewer/utils.js",
+    "file/viewer/utils.js.html",
+    "viewer/utils.js",
     "file"
   ]
 ]

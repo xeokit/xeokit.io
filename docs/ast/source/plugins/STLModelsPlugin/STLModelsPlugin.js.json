@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 6829,
+  "end": 6995,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 146,
+      "line": 148,
       "column": 24
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 6829,
+    "end": 6995,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 146,
+        "line": 148,
         "column": 24
       }
     },
@@ -221,14 +221,14 @@
       {
         "type": "Identifier",
         "start": 3412,
-        "end": 6803,
+        "end": 6969,
         "loc": {
           "start": {
             "line": 81,
             "column": 0
           },
           "end": {
-            "line": 144,
+            "line": 146,
             "column": 1
           }
         },
@@ -270,14 +270,14 @@
         "body": {
           "type": "ClassBody",
           "start": 3455,
-          "end": 6803,
+          "end": 6969,
           "loc": {
             "start": {
               "line": 81,
               "column": 43
             },
             "end": {
-              "line": 144,
+              "line": 146,
               "column": 1
             }
           },
@@ -515,16 +515,16 @@
               "trailingComments": [
                 {
                   "type": "CommentBlock",
-                  "value": "*\n     * Loads an STL model from a file into this STLModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to an STL file.\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the STL.\n     * When false, ignores backfaces.\n     *\n     * @param {Boolean} [params.smoothNormals=true] When true, automatically converts face-oriented normals to vertex\n     * normals for a smooth appearance.\n     *\n     * @param {Number} [params.smoothNormalsAngleThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Boolean} [params.splitMeshes=true] When true, creates a\n     * separate [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html) for each group of faces that share the same vertex\n     * colors. Only works with binary STL.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded STL model.\n     ",
+                  "value": "*\n     * Loads an STL model from a file into this STLModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} params.src Path to an STL file.\n     *\n     * @param {String} [params.metadataSrc] Path to an optional metadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the STL.\n     * When false, ignores backfaces.\n     *\n     * @param {Boolean} [params.smoothNormals=true] When true, automatically converts face-oriented normals to vertex\n     * normals for a smooth appearance.\n     *\n     * @param {Number} [params.smoothNormalsAngleThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Boolean} [params.splitMeshes=true] When true, creates a\n     * separate [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html) for each group of faces that share the same vertex\n     * colors. Only works with binary STL.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded STL model.\n     ",
                   "start": 3806,
-                  "end": 6741,
+                  "end": 6907,
                   "loc": {
                     "start": {
                       "line": 93,
                       "column": 4
                     },
                     "end": {
-                      "line": 140,
+                      "line": 142,
                       "column": 7
                     }
                   }
@@ -533,15 +533,15 @@
             },
             {
               "type": "ClassMethod",
-              "start": 6746,
-              "end": 6801,
+              "start": 6912,
+              "end": 6967,
               "loc": {
                 "start": {
-                  "line": 141,
+                  "line": 143,
                   "column": 4
                 },
                 "end": {
-                  "line": 143,
+                  "line": 145,
                   "column": 5
                 }
               },
@@ -549,15 +549,15 @@
               "computed": false,
               "key": {
                 "type": "Identifier",
-                "start": 6746,
-                "end": 6750,
+                "start": 6912,
+                "end": 6916,
                 "loc": {
                   "start": {
-                    "line": 141,
+                    "line": 143,
                     "column": 4
                   },
                   "end": {
-                    "line": 141,
+                    "line": 143,
                     "column": 8
                   },
                   "identifierName": "load"
@@ -573,15 +573,15 @@
               "params": [
                 {
                   "type": "Identifier",
-                  "start": 6751,
-                  "end": 6757,
+                  "start": 6917,
+                  "end": 6923,
                   "loc": {
                     "start": {
-                      "line": 141,
+                      "line": 143,
                       "column": 9
                     },
                     "end": {
-                      "line": 141,
+                      "line": 143,
                       "column": 15
                     },
                     "identifierName": "params"
@@ -591,87 +591,87 @@
               ],
               "body": {
                 "type": "BlockStatement",
-                "start": 6759,
-                "end": 6801,
+                "start": 6925,
+                "end": 6967,
                 "loc": {
                   "start": {
-                    "line": 141,
+                    "line": 143,
                     "column": 17
                   },
                   "end": {
-                    "line": 143,
+                    "line": 145,
                     "column": 5
                   }
                 },
                 "body": [
                   {
                     "type": "ReturnStatement",
-                    "start": 6769,
-                    "end": 6795,
+                    "start": 6935,
+                    "end": 6961,
                     "loc": {
                       "start": {
-                        "line": 142,
+                        "line": 144,
                         "column": 8
                       },
                       "end": {
-                        "line": 142,
+                        "line": 144,
                         "column": 34
                       }
                     },
                     "argument": {
                       "type": "CallExpression",
-                      "start": 6776,
-                      "end": 6794,
+                      "start": 6942,
+                      "end": 6960,
                       "loc": {
                         "start": {
-                          "line": 142,
+                          "line": 144,
                           "column": 15
                         },
                         "end": {
-                          "line": 142,
+                          "line": 144,
                           "column": 33
                         }
                       },
                       "callee": {
                         "type": "MemberExpression",
-                        "start": 6776,
-                        "end": 6786,
+                        "start": 6942,
+                        "end": 6952,
                         "loc": {
                           "start": {
-                            "line": 142,
+                            "line": 144,
                             "column": 15
                           },
                           "end": {
-                            "line": 142,
+                            "line": 144,
                             "column": 25
                           }
                         },
                         "object": {
                           "type": "Super",
-                          "start": 6776,
-                          "end": 6781,
+                          "start": 6942,
+                          "end": 6947,
                           "loc": {
                             "start": {
-                              "line": 142,
+                              "line": 144,
                               "column": 15
                             },
                             "end": {
-                              "line": 142,
+                              "line": 144,
                               "column": 20
                             }
                           }
                         },
                         "property": {
                           "type": "Identifier",
-                          "start": 6782,
-                          "end": 6786,
+                          "start": 6948,
+                          "end": 6952,
                           "loc": {
                             "start": {
-                              "line": 142,
+                              "line": 144,
                               "column": 21
                             },
                             "end": {
-                              "line": 142,
+                              "line": 144,
                               "column": 25
                             },
                             "identifierName": "load"
@@ -683,15 +683,15 @@
                       "arguments": [
                         {
                           "type": "Identifier",
-                          "start": 6787,
-                          "end": 6793,
+                          "start": 6953,
+                          "end": 6959,
                           "loc": {
                             "start": {
-                              "line": 142,
+                              "line": 144,
                               "column": 26
                             },
                             "end": {
-                              "line": 142,
+                              "line": 144,
                               "column": 32
                             },
                             "identifierName": "params"
@@ -707,16 +707,16 @@
               "leadingComments": [
                 {
                   "type": "CommentBlock",
-                  "value": "*\n     * Loads an STL model from a file into this STLModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to an STL file.\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the STL.\n     * When false, ignores backfaces.\n     *\n     * @param {Boolean} [params.smoothNormals=true] When true, automatically converts face-oriented normals to vertex\n     * normals for a smooth appearance.\n     *\n     * @param {Number} [params.smoothNormalsAngleThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Boolean} [params.splitMeshes=true] When true, creates a\n     * separate [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html) for each group of faces that share the same vertex\n     * colors. Only works with binary STL.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded STL model.\n     ",
+                  "value": "*\n     * Loads an STL model from a file into this STLModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} params.src Path to an STL file.\n     *\n     * @param {String} [params.metadataSrc] Path to an optional metadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the STL.\n     * When false, ignores backfaces.\n     *\n     * @param {Boolean} [params.smoothNormals=true] When true, automatically converts face-oriented normals to vertex\n     * normals for a smooth appearance.\n     *\n     * @param {Number} [params.smoothNormalsAngleThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Boolean} [params.splitMeshes=true] When true, creates a\n     * separate [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html) for each group of faces that share the same vertex\n     * colors. Only works with binary STL.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded STL model.\n     ",
                   "start": 3806,
-                  "end": 6741,
+                  "end": 6907,
                   "loc": {
                     "start": {
                       "line": 93,
                       "column": 4
                     },
                     "end": {
-                      "line": 140,
+                      "line": 142,
                       "column": 7
                     }
                   }
@@ -731,15 +731,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 6805,
-        "end": 6829,
+        "start": 6971,
+        "end": 6995,
         "loc": {
           "start": {
-            "line": 146,
+            "line": 148,
             "column": 0
           },
           "end": {
-            "line": 146,
+            "line": 148,
             "column": 24
           }
         },
@@ -747,29 +747,29 @@
         "specifiers": [
           {
             "type": "ExportSpecifier",
-            "start": 6813,
-            "end": 6828,
+            "start": 6979,
+            "end": 6994,
             "loc": {
               "start": {
-                "line": 146,
+                "line": 148,
                 "column": 8
               },
               "end": {
-                "line": 146,
+                "line": 148,
                 "column": 23
               }
             },
             "local": {
               "type": "Identifier",
-              "start": 6813,
-              "end": 6828,
+              "start": 6979,
+              "end": 6994,
               "loc": {
                 "start": {
-                  "line": 146,
+                  "line": 148,
                   "column": 8
                 },
                 "end": {
-                  "line": 146,
+                  "line": 148,
                   "column": 23
                 },
                 "identifierName": "STLModelsPlugin"
@@ -778,15 +778,15 @@
             },
             "exported": {
               "type": "Identifier",
-              "start": 6813,
-              "end": 6828,
+              "start": 6979,
+              "end": 6994,
               "loc": {
                 "start": {
-                  "line": 146,
+                  "line": 148,
                   "column": 8
                 },
                 "end": {
-                  "line": 146,
+                  "line": 148,
                   "column": 23
                 },
                 "identifierName": "STLModelsPlugin"
@@ -799,29 +799,29 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 6805,
-        "end": 6829,
+        "start": 6971,
+        "end": 6995,
         "loc": {
           "start": {
-            "line": 146,
+            "line": 148,
             "column": 0
           },
           "end": {
-            "line": 146,
+            "line": 148,
             "column": 24
           }
         },
         "declaration": {
           "type": "ClassDeclaration",
           "start": 3412,
-          "end": 6803,
+          "end": 6969,
           "loc": {
             "start": {
               "line": 81,
               "column": 0
             },
             "end": {
-              "line": 144,
+              "line": 146,
               "column": 1
             }
           },
@@ -863,14 +863,14 @@
           "body": {
             "type": "ClassBody",
             "start": 3455,
-            "end": 6803,
+            "end": 6969,
             "loc": {
               "start": {
                 "line": 81,
                 "column": 43
               },
               "end": {
-                "line": 144,
+                "line": 146,
                 "column": 1
               }
             },
@@ -1108,16 +1108,16 @@
                 "trailingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n     * Loads an STL model from a file into this STLModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to an STL file.\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the STL.\n     * When false, ignores backfaces.\n     *\n     * @param {Boolean} [params.smoothNormals=true] When true, automatically converts face-oriented normals to vertex\n     * normals for a smooth appearance.\n     *\n     * @param {Number} [params.smoothNormalsAngleThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Boolean} [params.splitMeshes=true] When true, creates a\n     * separate [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html) for each group of faces that share the same vertex\n     * colors. Only works with binary STL.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded STL model.\n     ",
+                    "value": "*\n     * Loads an STL model from a file into this STLModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} params.src Path to an STL file.\n     *\n     * @param {String} [params.metadataSrc] Path to an optional metadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the STL.\n     * When false, ignores backfaces.\n     *\n     * @param {Boolean} [params.smoothNormals=true] When true, automatically converts face-oriented normals to vertex\n     * normals for a smooth appearance.\n     *\n     * @param {Number} [params.smoothNormalsAngleThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Boolean} [params.splitMeshes=true] When true, creates a\n     * separate [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html) for each group of faces that share the same vertex\n     * colors. Only works with binary STL.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded STL model.\n     ",
                     "start": 3806,
-                    "end": 6741,
+                    "end": 6907,
                     "loc": {
                       "start": {
                         "line": 93,
                         "column": 4
                       },
                       "end": {
-                        "line": 140,
+                        "line": 142,
                         "column": 7
                       }
                     }
@@ -1126,15 +1126,15 @@
               },
               {
                 "type": "ClassMethod",
-                "start": 6746,
-                "end": 6801,
+                "start": 6912,
+                "end": 6967,
                 "loc": {
                   "start": {
-                    "line": 141,
+                    "line": 143,
                     "column": 4
                   },
                   "end": {
-                    "line": 143,
+                    "line": 145,
                     "column": 5
                   }
                 },
@@ -1142,15 +1142,15 @@
                 "computed": false,
                 "key": {
                   "type": "Identifier",
-                  "start": 6746,
-                  "end": 6750,
+                  "start": 6912,
+                  "end": 6916,
                   "loc": {
                     "start": {
-                      "line": 141,
+                      "line": 143,
                       "column": 4
                     },
                     "end": {
-                      "line": 141,
+                      "line": 143,
                       "column": 8
                     },
                     "identifierName": "load"
@@ -1166,15 +1166,15 @@
                 "params": [
                   {
                     "type": "Identifier",
-                    "start": 6751,
-                    "end": 6757,
+                    "start": 6917,
+                    "end": 6923,
                     "loc": {
                       "start": {
-                        "line": 141,
+                        "line": 143,
                         "column": 9
                       },
                       "end": {
-                        "line": 141,
+                        "line": 143,
                         "column": 15
                       },
                       "identifierName": "params"
@@ -1184,87 +1184,87 @@
                 ],
                 "body": {
                   "type": "BlockStatement",
-                  "start": 6759,
-                  "end": 6801,
+                  "start": 6925,
+                  "end": 6967,
                   "loc": {
                     "start": {
-                      "line": 141,
+                      "line": 143,
                       "column": 17
                     },
                     "end": {
-                      "line": 143,
+                      "line": 145,
                       "column": 5
                     }
                   },
                   "body": [
                     {
                       "type": "ReturnStatement",
-                      "start": 6769,
-                      "end": 6795,
+                      "start": 6935,
+                      "end": 6961,
                       "loc": {
                         "start": {
-                          "line": 142,
+                          "line": 144,
                           "column": 8
                         },
                         "end": {
-                          "line": 142,
+                          "line": 144,
                           "column": 34
                         }
                       },
                       "argument": {
                         "type": "CallExpression",
-                        "start": 6776,
-                        "end": 6794,
+                        "start": 6942,
+                        "end": 6960,
                         "loc": {
                           "start": {
-                            "line": 142,
+                            "line": 144,
                             "column": 15
                           },
                           "end": {
-                            "line": 142,
+                            "line": 144,
                             "column": 33
                           }
                         },
                         "callee": {
                           "type": "MemberExpression",
-                          "start": 6776,
-                          "end": 6786,
+                          "start": 6942,
+                          "end": 6952,
                           "loc": {
                             "start": {
-                              "line": 142,
+                              "line": 144,
                               "column": 15
                             },
                             "end": {
-                              "line": 142,
+                              "line": 144,
                               "column": 25
                             }
                           },
                           "object": {
                             "type": "Super",
-                            "start": 6776,
-                            "end": 6781,
+                            "start": 6942,
+                            "end": 6947,
                             "loc": {
                               "start": {
-                                "line": 142,
+                                "line": 144,
                                 "column": 15
                               },
                               "end": {
-                                "line": 142,
+                                "line": 144,
                                 "column": 20
                               }
                             }
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 6782,
-                            "end": 6786,
+                            "start": 6948,
+                            "end": 6952,
                             "loc": {
                               "start": {
-                                "line": 142,
+                                "line": 144,
                                 "column": 21
                               },
                               "end": {
-                                "line": 142,
+                                "line": 144,
                                 "column": 25
                               },
                               "identifierName": "load"
@@ -1276,15 +1276,15 @@
                         "arguments": [
                           {
                             "type": "Identifier",
-                            "start": 6787,
-                            "end": 6793,
+                            "start": 6953,
+                            "end": 6959,
                             "loc": {
                               "start": {
-                                "line": 142,
+                                "line": 144,
                                 "column": 26
                               },
                               "end": {
-                                "line": 142,
+                                "line": 144,
                                 "column": 32
                               },
                               "identifierName": "params"
@@ -1300,16 +1300,16 @@
                 "leadingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n     * Loads an STL model from a file into this STLModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to an STL file.\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the STL.\n     * When false, ignores backfaces.\n     *\n     * @param {Boolean} [params.smoothNormals=true] When true, automatically converts face-oriented normals to vertex\n     * normals for a smooth appearance.\n     *\n     * @param {Number} [params.smoothNormalsAngleThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Boolean} [params.splitMeshes=true] When true, creates a\n     * separate [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html) for each group of faces that share the same vertex\n     * colors. Only works with binary STL.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded STL model.\n     ",
+                    "value": "*\n     * Loads an STL model from a file into this STLModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} params.src Path to an STL file.\n     *\n     * @param {String} [params.metadataSrc] Path to an optional metadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the STL.\n     * When false, ignores backfaces.\n     *\n     * @param {Boolean} [params.smoothNormals=true] When true, automatically converts face-oriented normals to vertex\n     * normals for a smooth appearance.\n     *\n     * @param {Number} [params.smoothNormalsAngleThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Boolean} [params.splitMeshes=true] When true, creates a\n     * separate [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html) for each group of faces that share the same vertex\n     * colors. Only works with binary STL.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded STL model.\n     ",
                     "start": 3806,
-                    "end": 6741,
+                    "end": 6907,
                     "loc": {
                       "start": {
                         "line": 93,
                         "column": 4
                       },
                       "end": {
-                        "line": 140,
+                        "line": 142,
                         "column": 7
                       }
                     }
@@ -1381,16 +1381,16 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n     * Loads an STL model from a file into this STLModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to an STL file.\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the STL.\n     * When false, ignores backfaces.\n     *\n     * @param {Boolean} [params.smoothNormals=true] When true, automatically converts face-oriented normals to vertex\n     * normals for a smooth appearance.\n     *\n     * @param {Number} [params.smoothNormalsAngleThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Boolean} [params.splitMeshes=true] When true, creates a\n     * separate [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html) for each group of faces that share the same vertex\n     * colors. Only works with binary STL.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded STL model.\n     ",
+      "value": "*\n     * Loads an STL model from a file into this STLModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} params.src Path to an STL file.\n     *\n     * @param {String} [params.metadataSrc] Path to an optional metadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the STL.\n     * When false, ignores backfaces.\n     *\n     * @param {Boolean} [params.smoothNormals=true] When true, automatically converts face-oriented normals to vertex\n     * normals for a smooth appearance.\n     *\n     * @param {Number} [params.smoothNormalsAngleThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Boolean} [params.splitMeshes=true] When true, creates a\n     * separate [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html) for each group of faces that share the same vertex\n     * colors. Only works with binary STL.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded STL model.\n     ",
       "start": 3806,
-      "end": 6741,
+      "end": 6907,
       "loc": {
         "start": {
           "line": 93,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 142,
           "column": 7
         }
       }
@@ -2421,16 +2421,16 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n     * Loads an STL model from a file into this STLModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} [params.src] Path to an STL file.\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the STL.\n     * When false, ignores backfaces.\n     *\n     * @param {Boolean} [params.smoothNormals=true] When true, automatically converts face-oriented normals to vertex\n     * normals for a smooth appearance.\n     *\n     * @param {Number} [params.smoothNormalsAngleThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Boolean} [params.splitMeshes=true] When true, creates a\n     * separate [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html) for each group of faces that share the same vertex\n     * colors. Only works with binary STL.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded STL model.\n     ",
+      "value": "*\n     * Loads an STL model from a file into this STLModelsPlugin's {@link Viewer}.\n     *\n     * Creates a [xeogl.Model](http://xeogl.org/docs/classes/Model.html) within the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {*} params  Loading parameters.\n     *\n     * @param {String} params.id ID to assign to the [xeogl.Model](http://xeogl.org/docs/classes/Model.html),\n     * unique among all components in the Viewer's [xeogl.Scene](http://xeogl.org/docs/classes/Scene.html).\n     *\n     * @param {String} params.src Path to an STL file.\n     *\n     * @param {String} [params.metadataSrc] Path to an optional metadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     *\n     * @param {xeogl.Object} [params.parent] The parent [xeogl.Object](http://xeogl.org/docs/classes/Object.html),\n     * if we want to graft the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) into a xeogl object hierarchy.\n     *\n     * @param {Boolean} [params.edges=false] Whether or not xeogl renders the [xeogl.Model](http://xeogl.org/docs/classes/Model.html) with edges emphasized.\n     *\n     * @param {Float32Array} [params.position=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local 3D position.\n     *\n     * @param {Float32Array} [params.scale=[1,1,1]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s\n     * local scale.\n     *\n     * @param {Float32Array} [params.rotation=[0,0,0]] The [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local\n     * rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     *\n     * @param {Float32Array} [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]] The\n     * [xeogl.Model](http://xeogl.org/docs/classes/Model.html)'s local modelling transform matrix. Overrides\n     * the position, scale and rotation parameters.\n     *\n     * @param {Boolean} [params.backfaces=false] When true, allows visible backfaces, wherever specified in the STL.\n     * When false, ignores backfaces.\n     *\n     * @param {Boolean} [params.smoothNormals=true] When true, automatically converts face-oriented normals to vertex\n     * normals for a smooth appearance.\n     *\n     * @param {Number} [params.smoothNormalsAngleThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Number} [params.edgeThreshold=20] When ghosting, highlighting, selecting or edging, this is the threshold\n     * angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     *\n     * @param {Boolean} [params.splitMeshes=true] When true, creates a\n     * separate [xeogl.Mesh](http://xeogl.org/docs/classes/Mesh.html) for each group of faces that share the same vertex\n     * colors. Only works with binary STL.\n     *\n     * @returns {{xeogl.Model}} A [xeogl.Model](http://xeogl.org/docs/classes/Model.html) representing the loaded STL model.\n     ",
       "start": 3806,
-      "end": 6741,
+      "end": 6907,
       "loc": {
         "start": {
           "line": 93,
           "column": 4
         },
         "end": {
-          "line": 140,
+          "line": 142,
           "column": 7
         }
       }
@@ -2448,15 +2448,15 @@
         "binop": null
       },
       "value": "load",
-      "start": 6746,
-      "end": 6750,
+      "start": 6912,
+      "end": 6916,
       "loc": {
         "start": {
-          "line": 141,
+          "line": 143,
           "column": 4
         },
         "end": {
-          "line": 141,
+          "line": 143,
           "column": 8
         }
       }
@@ -2473,15 +2473,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6750,
-      "end": 6751,
+      "start": 6916,
+      "end": 6917,
       "loc": {
         "start": {
-          "line": 141,
+          "line": 143,
           "column": 8
         },
         "end": {
-          "line": 141,
+          "line": 143,
           "column": 9
         }
       }
@@ -2499,15 +2499,15 @@
         "binop": null
       },
       "value": "params",
-      "start": 6751,
-      "end": 6757,
+      "start": 6917,
+      "end": 6923,
       "loc": {
         "start": {
-          "line": 141,
+          "line": 143,
           "column": 9
         },
         "end": {
-          "line": 141,
+          "line": 143,
           "column": 15
         }
       }
@@ -2524,15 +2524,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6757,
-      "end": 6758,
+      "start": 6923,
+      "end": 6924,
       "loc": {
         "start": {
-          "line": 141,
+          "line": 143,
           "column": 15
         },
         "end": {
-          "line": 141,
+          "line": 143,
           "column": 16
         }
       }
@@ -2549,15 +2549,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6759,
-      "end": 6760,
+      "start": 6925,
+      "end": 6926,
       "loc": {
         "start": {
-          "line": 141,
+          "line": 143,
           "column": 17
         },
         "end": {
-          "line": 141,
+          "line": 143,
           "column": 18
         }
       }
@@ -2577,15 +2577,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 6769,
-      "end": 6775,
+      "start": 6935,
+      "end": 6941,
       "loc": {
         "start": {
-          "line": 142,
+          "line": 144,
           "column": 8
         },
         "end": {
-          "line": 142,
+          "line": 144,
           "column": 14
         }
       }
@@ -2605,15 +2605,15 @@
         "updateContext": null
       },
       "value": "super",
-      "start": 6776,
-      "end": 6781,
+      "start": 6942,
+      "end": 6947,
       "loc": {
         "start": {
-          "line": 142,
+          "line": 144,
           "column": 15
         },
         "end": {
-          "line": 142,
+          "line": 144,
           "column": 20
         }
       }
@@ -2631,15 +2631,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6781,
-      "end": 6782,
+      "start": 6947,
+      "end": 6948,
       "loc": {
         "start": {
-          "line": 142,
+          "line": 144,
           "column": 20
         },
         "end": {
-          "line": 142,
+          "line": 144,
           "column": 21
         }
       }
@@ -2657,15 +2657,15 @@
         "binop": null
       },
       "value": "load",
-      "start": 6782,
-      "end": 6786,
+      "start": 6948,
+      "end": 6952,
       "loc": {
         "start": {
-          "line": 142,
+          "line": 144,
           "column": 21
         },
         "end": {
-          "line": 142,
+          "line": 144,
           "column": 25
         }
       }
@@ -2682,15 +2682,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6786,
-      "end": 6787,
+      "start": 6952,
+      "end": 6953,
       "loc": {
         "start": {
-          "line": 142,
+          "line": 144,
           "column": 25
         },
         "end": {
-          "line": 142,
+          "line": 144,
           "column": 26
         }
       }
@@ -2708,15 +2708,15 @@
         "binop": null
       },
       "value": "params",
-      "start": 6787,
-      "end": 6793,
+      "start": 6953,
+      "end": 6959,
       "loc": {
         "start": {
-          "line": 142,
+          "line": 144,
           "column": 26
         },
         "end": {
-          "line": 142,
+          "line": 144,
           "column": 32
         }
       }
@@ -2733,15 +2733,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6793,
-      "end": 6794,
+      "start": 6959,
+      "end": 6960,
       "loc": {
         "start": {
-          "line": 142,
+          "line": 144,
           "column": 32
         },
         "end": {
-          "line": 142,
+          "line": 144,
           "column": 33
         }
       }
@@ -2759,15 +2759,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6794,
-      "end": 6795,
+      "start": 6960,
+      "end": 6961,
       "loc": {
         "start": {
-          "line": 142,
+          "line": 144,
           "column": 33
         },
         "end": {
-          "line": 142,
+          "line": 144,
           "column": 34
         }
       }
@@ -2784,15 +2784,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6800,
-      "end": 6801,
+      "start": 6966,
+      "end": 6967,
       "loc": {
         "start": {
-          "line": 143,
+          "line": 145,
           "column": 4
         },
         "end": {
-          "line": 143,
+          "line": 145,
           "column": 5
         }
       }
@@ -2809,15 +2809,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6802,
-      "end": 6803,
+      "start": 6968,
+      "end": 6969,
       "loc": {
         "start": {
-          "line": 144,
+          "line": 146,
           "column": 0
         },
         "end": {
-          "line": 144,
+          "line": 146,
           "column": 1
         }
       }
@@ -2837,15 +2837,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 6805,
-      "end": 6811,
+      "start": 6971,
+      "end": 6977,
       "loc": {
         "start": {
-          "line": 146,
+          "line": 148,
           "column": 0
         },
         "end": {
-          "line": 146,
+          "line": 148,
           "column": 6
         }
       }
@@ -2862,15 +2862,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6812,
-      "end": 6813,
+      "start": 6978,
+      "end": 6979,
       "loc": {
         "start": {
-          "line": 146,
+          "line": 148,
           "column": 7
         },
         "end": {
-          "line": 146,
+          "line": 148,
           "column": 8
         }
       }
@@ -2888,15 +2888,15 @@
         "binop": null
       },
       "value": "STLModelsPlugin",
-      "start": 6813,
-      "end": 6828,
+      "start": 6979,
+      "end": 6994,
       "loc": {
         "start": {
-          "line": 146,
+          "line": 148,
           "column": 8
         },
         "end": {
-          "line": 146,
+          "line": 148,
           "column": 23
         }
       }
@@ -2913,15 +2913,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6828,
-      "end": 6829,
+      "start": 6994,
+      "end": 6995,
       "loc": {
         "start": {
-          "line": 146,
+          "line": 148,
           "column": 23
         },
         "end": {
-          "line": 146,
+          "line": 148,
           "column": 24
         }
       }
@@ -2939,15 +2939,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6829,
-      "end": 6829,
+      "start": 6995,
+      "end": 6995,
       "loc": {
         "start": {
-          "line": 146,
+          "line": 148,
           "column": 24
         },
         "end": {
-          "line": 146,
+          "line": 148,
           "column": 24
         }
       }

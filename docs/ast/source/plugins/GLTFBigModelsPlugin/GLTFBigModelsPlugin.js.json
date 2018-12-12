@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 6194,
+  "end": 6283,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 117,
+      "line": 118,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 6194,
+    "end": 6283,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 117,
+        "line": 118,
         "column": 0
       }
     },
@@ -221,14 +221,14 @@
       {
         "type": "Identifier",
         "start": 1755,
-        "end": 6163,
+        "end": 6252,
         "loc": {
           "start": {
             "line": 58,
             "column": 0
           },
           "end": {
-            "line": 114,
+            "line": 115,
             "column": 1
           }
         },
@@ -270,14 +270,14 @@
         "body": {
           "type": "ClassBody",
           "start": 1802,
-          "end": 6163,
+          "end": 6252,
           "loc": {
             "start": {
               "line": 58,
               "column": 47
             },
             "end": {
-              "line": 114,
+              "line": 115,
               "column": 1
             }
           },
@@ -515,16 +515,16 @@
               "trailingComments": [
                 {
                   "type": "CommentBlock",
-                  "value": "*\n     Loads a large-scale glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file. You can set this to a new file path at any time, which will cause the\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
+                  "value": "*\n     Loads a large-scale glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file.\n     @param  [params.metadataSrc]{String} Path to an optional matadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
                   "start": 2165,
-                  "end": 5694,
+                  "end": 5783,
                   "loc": {
                     "start": {
                       "line": 70,
                       "column": 4
                     },
                     "end": {
-                      "line": 101,
+                      "line": 102,
                       "column": 7
                     }
                   }
@@ -533,15 +533,15 @@
             },
             {
               "type": "ClassMethod",
-              "start": 5699,
-              "end": 6161,
+              "start": 5788,
+              "end": 6250,
               "loc": {
                 "start": {
-                  "line": 102,
+                  "line": 103,
                   "column": 4
                 },
                 "end": {
-                  "line": 113,
+                  "line": 114,
                   "column": 5
                 }
               },
@@ -549,15 +549,15 @@
               "computed": false,
               "key": {
                 "type": "Identifier",
-                "start": 5699,
-                "end": 5703,
+                "start": 5788,
+                "end": 5792,
                 "loc": {
                   "start": {
-                    "line": 102,
+                    "line": 103,
                     "column": 4
                   },
                   "end": {
-                    "line": 102,
+                    "line": 103,
                     "column": 8
                   },
                   "identifierName": "load"
@@ -573,15 +573,15 @@
               "params": [
                 {
                   "type": "Identifier",
-                  "start": 5704,
-                  "end": 5710,
+                  "start": 5793,
+                  "end": 5799,
                   "loc": {
                     "start": {
-                      "line": 102,
+                      "line": 103,
                       "column": 9
                     },
                     "end": {
-                      "line": 102,
+                      "line": 103,
                       "column": 15
                     },
                     "identifierName": "params"
@@ -591,44 +591,44 @@
               ],
               "body": {
                 "type": "BlockStatement",
-                "start": 5712,
-                "end": 6161,
+                "start": 5801,
+                "end": 6250,
                 "loc": {
                   "start": {
-                    "line": 102,
+                    "line": 103,
                     "column": 17
                   },
                   "end": {
-                    "line": 113,
+                    "line": 114,
                     "column": 5
                   }
                 },
                 "body": [
                   {
                     "type": "IfStatement",
-                    "start": 5722,
-                    "end": 5822,
+                    "start": 5811,
+                    "end": 5911,
                     "loc": {
                       "start": {
-                        "line": 103,
+                        "line": 104,
                         "column": 8
                       },
                       "end": {
-                        "line": 106,
+                        "line": 107,
                         "column": 9
                       }
                     },
                     "test": {
                       "type": "UnaryExpression",
-                      "start": 5726,
-                      "end": 5736,
+                      "start": 5815,
+                      "end": 5825,
                       "loc": {
                         "start": {
-                          "line": 103,
+                          "line": 104,
                           "column": 12
                         },
                         "end": {
-                          "line": 103,
+                          "line": 104,
                           "column": 22
                         }
                       },
@@ -636,29 +636,29 @@
                       "prefix": true,
                       "argument": {
                         "type": "MemberExpression",
-                        "start": 5727,
-                        "end": 5736,
+                        "start": 5816,
+                        "end": 5825,
                         "loc": {
                           "start": {
-                            "line": 103,
+                            "line": 104,
                             "column": 13
                           },
                           "end": {
-                            "line": 103,
+                            "line": 104,
                             "column": 22
                           }
                         },
                         "object": {
                           "type": "Identifier",
-                          "start": 5727,
-                          "end": 5733,
+                          "start": 5816,
+                          "end": 5822,
                           "loc": {
                             "start": {
-                              "line": 103,
+                              "line": 104,
                               "column": 13
                             },
                             "end": {
-                              "line": 103,
+                              "line": 104,
                               "column": 19
                             },
                             "identifierName": "params"
@@ -667,15 +667,15 @@
                         },
                         "property": {
                           "type": "Identifier",
-                          "start": 5734,
-                          "end": 5736,
+                          "start": 5823,
+                          "end": 5825,
                           "loc": {
                             "start": {
-                              "line": 103,
+                              "line": 104,
                               "column": 20
                             },
                             "end": {
-                              "line": 103,
+                              "line": 104,
                               "column": 22
                             },
                             "identifierName": "id"
@@ -690,87 +690,87 @@
                     },
                     "consequent": {
                       "type": "BlockStatement",
-                      "start": 5738,
-                      "end": 5822,
+                      "start": 5827,
+                      "end": 5911,
                       "loc": {
                         "start": {
-                          "line": 103,
+                          "line": 104,
                           "column": 24
                         },
                         "end": {
-                          "line": 106,
+                          "line": 107,
                           "column": 9
                         }
                       },
                       "body": [
                         {
                           "type": "ExpressionStatement",
-                          "start": 5752,
-                          "end": 5792,
+                          "start": 5841,
+                          "end": 5881,
                           "loc": {
                             "start": {
-                              "line": 104,
+                              "line": 105,
                               "column": 12
                             },
                             "end": {
-                              "line": 104,
+                              "line": 105,
                               "column": 52
                             }
                           },
                           "expression": {
                             "type": "CallExpression",
-                            "start": 5752,
-                            "end": 5791,
+                            "start": 5841,
+                            "end": 5880,
                             "loc": {
                               "start": {
-                                "line": 104,
+                                "line": 105,
                                 "column": 12
                               },
                               "end": {
-                                "line": 104,
+                                "line": 105,
                                 "column": 51
                               }
                             },
                             "callee": {
                               "type": "MemberExpression",
-                              "start": 5752,
-                              "end": 5762,
+                              "start": 5841,
+                              "end": 5851,
                               "loc": {
                                 "start": {
-                                  "line": 104,
+                                  "line": 105,
                                   "column": 12
                                 },
                                 "end": {
-                                  "line": 104,
+                                  "line": 105,
                                   "column": 22
                                 }
                               },
                               "object": {
                                 "type": "ThisExpression",
-                                "start": 5752,
-                                "end": 5756,
+                                "start": 5841,
+                                "end": 5845,
                                 "loc": {
                                   "start": {
-                                    "line": 104,
+                                    "line": 105,
                                     "column": 12
                                   },
                                   "end": {
-                                    "line": 104,
+                                    "line": 105,
                                     "column": 16
                                   }
                                 }
                               },
                               "property": {
                                 "type": "Identifier",
-                                "start": 5757,
-                                "end": 5762,
+                                "start": 5846,
+                                "end": 5851,
                                 "loc": {
                                   "start": {
-                                    "line": 104,
+                                    "line": 105,
                                     "column": 17
                                   },
                                   "end": {
-                                    "line": 104,
+                                    "line": 105,
                                     "column": 22
                                   },
                                   "identifierName": "error"
@@ -782,15 +782,15 @@
                             "arguments": [
                               {
                                 "type": "StringLiteral",
-                                "start": 5763,
-                                "end": 5790,
+                                "start": 5852,
+                                "end": 5879,
                                 "loc": {
                                   "start": {
-                                    "line": 104,
+                                    "line": 105,
                                     "column": 23
                                   },
                                   "end": {
-                                    "line": 104,
+                                    "line": 105,
                                     "column": 50
                                   }
                                 },
@@ -805,15 +805,15 @@
                         },
                         {
                           "type": "ReturnStatement",
-                          "start": 5805,
-                          "end": 5812,
+                          "start": 5894,
+                          "end": 5901,
                           "loc": {
                             "start": {
-                              "line": 105,
+                              "line": 106,
                               "column": 12
                             },
                             "end": {
-                              "line": 105,
+                              "line": 106,
                               "column": 19
                             }
                           },
@@ -826,100 +826,100 @@
                   },
                   {
                     "type": "IfStatement",
-                    "start": 5831,
-                    "end": 5989,
+                    "start": 5920,
+                    "end": 6078,
                     "loc": {
                       "start": {
-                        "line": 107,
+                        "line": 108,
                         "column": 8
                       },
                       "end": {
-                        "line": 110,
+                        "line": 111,
                         "column": 9
                       }
                     },
                     "test": {
                       "type": "MemberExpression",
-                      "start": 5835,
-                      "end": 5874,
+                      "start": 5924,
+                      "end": 5963,
                       "loc": {
                         "start": {
-                          "line": 107,
+                          "line": 108,
                           "column": 12
                         },
                         "end": {
-                          "line": 107,
+                          "line": 108,
                           "column": 51
                         }
                       },
                       "object": {
                         "type": "MemberExpression",
-                        "start": 5835,
-                        "end": 5863,
+                        "start": 5924,
+                        "end": 5952,
                         "loc": {
                           "start": {
-                            "line": 107,
+                            "line": 108,
                             "column": 12
                           },
                           "end": {
-                            "line": 107,
+                            "line": 108,
                             "column": 40
                           }
                         },
                         "object": {
                           "type": "MemberExpression",
-                          "start": 5835,
-                          "end": 5852,
+                          "start": 5924,
+                          "end": 5941,
                           "loc": {
                             "start": {
-                              "line": 107,
+                              "line": 108,
                               "column": 12
                             },
                             "end": {
-                              "line": 107,
+                              "line": 108,
                               "column": 29
                             }
                           },
                           "object": {
                             "type": "MemberExpression",
-                            "start": 5835,
-                            "end": 5846,
+                            "start": 5924,
+                            "end": 5935,
                             "loc": {
                               "start": {
-                                "line": 107,
+                                "line": 108,
                                 "column": 12
                               },
                               "end": {
-                                "line": 107,
+                                "line": 108,
                                 "column": 23
                               }
                             },
                             "object": {
                               "type": "ThisExpression",
-                              "start": 5835,
-                              "end": 5839,
+                              "start": 5924,
+                              "end": 5928,
                               "loc": {
                                 "start": {
-                                  "line": 107,
+                                  "line": 108,
                                   "column": 12
                                 },
                                 "end": {
-                                  "line": 107,
+                                  "line": 108,
                                   "column": 16
                                 }
                               }
                             },
                             "property": {
                               "type": "Identifier",
-                              "start": 5840,
-                              "end": 5846,
+                              "start": 5929,
+                              "end": 5935,
                               "loc": {
                                 "start": {
-                                  "line": 107,
+                                  "line": 108,
                                   "column": 17
                                 },
                                 "end": {
-                                  "line": 107,
+                                  "line": 108,
                                   "column": 23
                                 },
                                 "identifierName": "viewer"
@@ -930,15 +930,15 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 5847,
-                            "end": 5852,
+                            "start": 5936,
+                            "end": 5941,
                             "loc": {
                               "start": {
-                                "line": 107,
+                                "line": 108,
                                 "column": 24
                               },
                               "end": {
-                                "line": 107,
+                                "line": 108,
                                 "column": 29
                               },
                               "identifierName": "scene"
@@ -949,15 +949,15 @@
                         },
                         "property": {
                           "type": "Identifier",
-                          "start": 5853,
-                          "end": 5863,
+                          "start": 5942,
+                          "end": 5952,
                           "loc": {
                             "start": {
-                              "line": 107,
+                              "line": 108,
                               "column": 30
                             },
                             "end": {
-                              "line": 107,
+                              "line": 108,
                               "column": 40
                             },
                             "identifierName": "components"
@@ -968,29 +968,29 @@
                       },
                       "property": {
                         "type": "MemberExpression",
-                        "start": 5864,
-                        "end": 5873,
+                        "start": 5953,
+                        "end": 5962,
                         "loc": {
                           "start": {
-                            "line": 107,
+                            "line": 108,
                             "column": 41
                           },
                           "end": {
-                            "line": 107,
+                            "line": 108,
                             "column": 50
                           }
                         },
                         "object": {
                           "type": "Identifier",
-                          "start": 5864,
-                          "end": 5870,
+                          "start": 5953,
+                          "end": 5959,
                           "loc": {
                             "start": {
-                              "line": 107,
+                              "line": 108,
                               "column": 41
                             },
                             "end": {
-                              "line": 107,
+                              "line": 108,
                               "column": 47
                             },
                             "identifierName": "params"
@@ -999,15 +999,15 @@
                         },
                         "property": {
                           "type": "Identifier",
-                          "start": 5871,
-                          "end": 5873,
+                          "start": 5960,
+                          "end": 5962,
                           "loc": {
                             "start": {
-                              "line": 107,
+                              "line": 108,
                               "column": 48
                             },
                             "end": {
-                              "line": 107,
+                              "line": 108,
                               "column": 50
                             },
                             "identifierName": "id"
@@ -1020,87 +1020,87 @@
                     },
                     "consequent": {
                       "type": "BlockStatement",
-                      "start": 5876,
-                      "end": 5989,
+                      "start": 5965,
+                      "end": 6078,
                       "loc": {
                         "start": {
-                          "line": 107,
+                          "line": 108,
                           "column": 53
                         },
                         "end": {
-                          "line": 110,
+                          "line": 111,
                           "column": 9
                         }
                       },
                       "body": [
                         {
                           "type": "ExpressionStatement",
-                          "start": 5890,
-                          "end": 5959,
+                          "start": 5979,
+                          "end": 6048,
                           "loc": {
                             "start": {
-                              "line": 108,
+                              "line": 109,
                               "column": 12
                             },
                             "end": {
-                              "line": 108,
+                              "line": 109,
                               "column": 81
                             }
                           },
                           "expression": {
                             "type": "CallExpression",
-                            "start": 5890,
-                            "end": 5958,
+                            "start": 5979,
+                            "end": 6047,
                             "loc": {
                               "start": {
-                                "line": 108,
+                                "line": 109,
                                 "column": 12
                               },
                               "end": {
-                                "line": 108,
+                                "line": 109,
                                 "column": 80
                               }
                             },
                             "callee": {
                               "type": "MemberExpression",
-                              "start": 5890,
-                              "end": 5900,
+                              "start": 5979,
+                              "end": 5989,
                               "loc": {
                                 "start": {
-                                  "line": 108,
+                                  "line": 109,
                                   "column": 12
                                 },
                                 "end": {
-                                  "line": 108,
+                                  "line": 109,
                                   "column": 22
                                 }
                               },
                               "object": {
                                 "type": "ThisExpression",
-                                "start": 5890,
-                                "end": 5894,
+                                "start": 5979,
+                                "end": 5983,
                                 "loc": {
                                   "start": {
-                                    "line": 108,
+                                    "line": 109,
                                     "column": 12
                                   },
                                   "end": {
-                                    "line": 108,
+                                    "line": 109,
                                     "column": 16
                                   }
                                 }
                               },
                               "property": {
                                 "type": "Identifier",
-                                "start": 5895,
-                                "end": 5900,
+                                "start": 5984,
+                                "end": 5989,
                                 "loc": {
                                   "start": {
-                                    "line": 108,
+                                    "line": 109,
                                     "column": 17
                                   },
                                   "end": {
-                                    "line": 108,
+                                    "line": 109,
                                     "column": 22
                                   },
                                   "identifierName": "error"
@@ -1112,29 +1112,29 @@
                             "arguments": [
                               {
                                 "type": "BinaryExpression",
-                                "start": 5901,
-                                "end": 5957,
+                                "start": 5990,
+                                "end": 6046,
                                 "loc": {
                                   "start": {
-                                    "line": 108,
+                                    "line": 109,
                                     "column": 23
                                   },
                                   "end": {
-                                    "line": 108,
+                                    "line": 109,
                                     "column": 79
                                   }
                                 },
                                 "left": {
                                   "type": "StringLiteral",
-                                  "start": 5901,
-                                  "end": 5952,
+                                  "start": 5990,
+                                  "end": 6041,
                                   "loc": {
                                     "start": {
-                                      "line": 108,
+                                      "line": 109,
                                       "column": 23
                                     },
                                     "end": {
-                                      "line": 108,
+                                      "line": 109,
                                       "column": 74
                                     }
                                   },
@@ -1147,15 +1147,15 @@
                                 "operator": "+",
                                 "right": {
                                   "type": "Identifier",
-                                  "start": 5955,
-                                  "end": 5957,
+                                  "start": 6044,
+                                  "end": 6046,
                                   "loc": {
                                     "start": {
-                                      "line": 108,
+                                      "line": 109,
                                       "column": 77
                                     },
                                     "end": {
-                                      "line": 108,
+                                      "line": 109,
                                       "column": 79
                                     },
                                     "identifierName": "id"
@@ -1168,15 +1168,15 @@
                         },
                         {
                           "type": "ReturnStatement",
-                          "start": 5972,
-                          "end": 5979,
+                          "start": 6061,
+                          "end": 6068,
                           "loc": {
                             "start": {
-                              "line": 109,
+                              "line": 110,
                               "column": 12
                             },
                             "end": {
-                              "line": 109,
+                              "line": 110,
                               "column": 19
                             }
                           },
@@ -1189,44 +1189,44 @@
                   },
                   {
                     "type": "VariableDeclaration",
-                    "start": 5998,
-                    "end": 6054,
+                    "start": 6087,
+                    "end": 6143,
                     "loc": {
                       "start": {
-                        "line": 111,
+                        "line": 112,
                         "column": 8
                       },
                       "end": {
-                        "line": 111,
+                        "line": 112,
                         "column": 64
                       }
                     },
                     "declarations": [
                       {
                         "type": "VariableDeclarator",
-                        "start": 6002,
-                        "end": 6053,
+                        "start": 6091,
+                        "end": 6142,
                         "loc": {
                           "start": {
-                            "line": 111,
+                            "line": 112,
                             "column": 12
                           },
                           "end": {
-                            "line": 111,
+                            "line": 112,
                             "column": 63
                           }
                         },
                         "id": {
                           "type": "Identifier",
-                          "start": 6002,
-                          "end": 6007,
+                          "start": 6091,
+                          "end": 6096,
                           "loc": {
                             "start": {
-                              "line": 111,
+                              "line": 112,
                               "column": 12
                             },
                             "end": {
-                              "line": 111,
+                              "line": 112,
                               "column": 17
                             },
                             "identifierName": "model"
@@ -1235,29 +1235,29 @@
                         },
                         "init": {
                           "type": "NewExpression",
-                          "start": 6010,
-                          "end": 6053,
+                          "start": 6099,
+                          "end": 6142,
                           "loc": {
                             "start": {
-                              "line": 111,
+                              "line": 112,
                               "column": 20
                             },
                             "end": {
-                              "line": 111,
+                              "line": 112,
                               "column": 63
                             }
                           },
                           "callee": {
                             "type": "Identifier",
-                            "start": 6014,
-                            "end": 6026,
+                            "start": 6103,
+                            "end": 6115,
                             "loc": {
                               "start": {
-                                "line": 111,
+                                "line": 112,
                                 "column": 24
                               },
                               "end": {
-                                "line": 111,
+                                "line": 112,
                                 "column": 36
                               },
                               "identifierName": "GLTFBigModel"
@@ -1267,58 +1267,58 @@
                           "arguments": [
                             {
                               "type": "MemberExpression",
-                              "start": 6027,
-                              "end": 6044,
+                              "start": 6116,
+                              "end": 6133,
                               "loc": {
                                 "start": {
-                                  "line": 111,
+                                  "line": 112,
                                   "column": 37
                                 },
                                 "end": {
-                                  "line": 111,
+                                  "line": 112,
                                   "column": 54
                                 }
                               },
                               "object": {
                                 "type": "MemberExpression",
-                                "start": 6027,
-                                "end": 6038,
+                                "start": 6116,
+                                "end": 6127,
                                 "loc": {
                                   "start": {
-                                    "line": 111,
+                                    "line": 112,
                                     "column": 37
                                   },
                                   "end": {
-                                    "line": 111,
+                                    "line": 112,
                                     "column": 48
                                   }
                                 },
                                 "object": {
                                   "type": "ThisExpression",
-                                  "start": 6027,
-                                  "end": 6031,
+                                  "start": 6116,
+                                  "end": 6120,
                                   "loc": {
                                     "start": {
-                                      "line": 111,
+                                      "line": 112,
                                       "column": 37
                                     },
                                     "end": {
-                                      "line": 111,
+                                      "line": 112,
                                       "column": 41
                                     }
                                   }
                                 },
                                 "property": {
                                   "type": "Identifier",
-                                  "start": 6032,
-                                  "end": 6038,
+                                  "start": 6121,
+                                  "end": 6127,
                                   "loc": {
                                     "start": {
-                                      "line": 111,
+                                      "line": 112,
                                       "column": 42
                                     },
                                     "end": {
-                                      "line": 111,
+                                      "line": 112,
                                       "column": 48
                                     },
                                     "identifierName": "viewer"
@@ -1329,15 +1329,15 @@
                               },
                               "property": {
                                 "type": "Identifier",
-                                "start": 6039,
-                                "end": 6044,
+                                "start": 6128,
+                                "end": 6133,
                                 "loc": {
                                   "start": {
-                                    "line": 111,
+                                    "line": 112,
                                     "column": 49
                                   },
                                   "end": {
-                                    "line": 111,
+                                    "line": 112,
                                     "column": 54
                                   },
                                   "identifierName": "scene"
@@ -1348,15 +1348,15 @@
                             },
                             {
                               "type": "Identifier",
-                              "start": 6046,
-                              "end": 6052,
+                              "start": 6135,
+                              "end": 6141,
                               "loc": {
                                 "start": {
-                                  "line": 111,
+                                  "line": 112,
                                   "column": 56
                                 },
                                 "end": {
-                                  "line": 111,
+                                  "line": 112,
                                   "column": 62
                                 },
                                 "identifierName": "params"
@@ -1371,29 +1371,29 @@
                   },
                   {
                     "type": "ReturnStatement",
-                    "start": 6063,
-                    "end": 6076,
+                    "start": 6152,
+                    "end": 6165,
                     "loc": {
                       "start": {
-                        "line": 112,
+                        "line": 113,
                         "column": 8
                       },
                       "end": {
-                        "line": 112,
+                        "line": 113,
                         "column": 21
                       }
                     },
                     "argument": {
                       "type": "Identifier",
-                      "start": 6070,
-                      "end": 6075,
+                      "start": 6159,
+                      "end": 6164,
                       "loc": {
                         "start": {
-                          "line": 112,
+                          "line": 113,
                           "column": 15
                         },
                         "end": {
-                          "line": 112,
+                          "line": 113,
                           "column": 20
                         },
                         "identifierName": "model"
@@ -1404,15 +1404,15 @@
                       {
                         "type": "CommentLine",
                         "value": " TODO: register loading params within this plugin for inclusion in bookmarks",
-                        "start": 6077,
-                        "end": 6155,
+                        "start": 6166,
+                        "end": 6244,
                         "loc": {
                           "start": {
-                            "line": 112,
+                            "line": 113,
                             "column": 22
                           },
                           "end": {
-                            "line": 112,
+                            "line": 113,
                             "column": 100
                           }
                         }
@@ -1425,16 +1425,16 @@
               "leadingComments": [
                 {
                   "type": "CommentBlock",
-                  "value": "*\n     Loads a large-scale glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file. You can set this to a new file path at any time, which will cause the\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
+                  "value": "*\n     Loads a large-scale glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file.\n     @param  [params.metadataSrc]{String} Path to an optional matadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
                   "start": 2165,
-                  "end": 5694,
+                  "end": 5783,
                   "loc": {
                     "start": {
                       "line": 70,
                       "column": 4
                     },
                     "end": {
-                      "line": 101,
+                      "line": 102,
                       "column": 7
                     }
                   }
@@ -1449,15 +1449,15 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 6165,
-        "end": 6193,
+        "start": 6254,
+        "end": 6282,
         "loc": {
           "start": {
-            "line": 116,
+            "line": 117,
             "column": 0
           },
           "end": {
-            "line": 116,
+            "line": 117,
             "column": 28
           }
         },
@@ -1465,29 +1465,29 @@
         "specifiers": [
           {
             "type": "ExportSpecifier",
-            "start": 6173,
-            "end": 6192,
+            "start": 6262,
+            "end": 6281,
             "loc": {
               "start": {
-                "line": 116,
+                "line": 117,
                 "column": 8
               },
               "end": {
-                "line": 116,
+                "line": 117,
                 "column": 27
               }
             },
             "local": {
               "type": "Identifier",
-              "start": 6173,
-              "end": 6192,
+              "start": 6262,
+              "end": 6281,
               "loc": {
                 "start": {
-                  "line": 116,
+                  "line": 117,
                   "column": 8
                 },
                 "end": {
-                  "line": 116,
+                  "line": 117,
                   "column": 27
                 },
                 "identifierName": "GLTFBigModelsPlugin"
@@ -1496,15 +1496,15 @@
             },
             "exported": {
               "type": "Identifier",
-              "start": 6173,
-              "end": 6192,
+              "start": 6262,
+              "end": 6281,
               "loc": {
                 "start": {
-                  "line": 116,
+                  "line": 117,
                   "column": 8
                 },
                 "end": {
-                  "line": 116,
+                  "line": 117,
                   "column": 27
                 },
                 "identifierName": "GLTFBigModelsPlugin"
@@ -1517,29 +1517,29 @@
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 6165,
-        "end": 6193,
+        "start": 6254,
+        "end": 6282,
         "loc": {
           "start": {
-            "line": 116,
+            "line": 117,
             "column": 0
           },
           "end": {
-            "line": 116,
+            "line": 117,
             "column": 28
           }
         },
         "declaration": {
           "type": "ClassDeclaration",
           "start": 1755,
-          "end": 6163,
+          "end": 6252,
           "loc": {
             "start": {
               "line": 58,
               "column": 0
             },
             "end": {
-              "line": 114,
+              "line": 115,
               "column": 1
             }
           },
@@ -1581,14 +1581,14 @@
           "body": {
             "type": "ClassBody",
             "start": 1802,
-            "end": 6163,
+            "end": 6252,
             "loc": {
               "start": {
                 "line": 58,
                 "column": 47
               },
               "end": {
-                "line": 114,
+                "line": 115,
                 "column": 1
               }
             },
@@ -1826,16 +1826,16 @@
                 "trailingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n     Loads a large-scale glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file. You can set this to a new file path at any time, which will cause the\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
+                    "value": "*\n     Loads a large-scale glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file.\n     @param  [params.metadataSrc]{String} Path to an optional matadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
                     "start": 2165,
-                    "end": 5694,
+                    "end": 5783,
                     "loc": {
                       "start": {
                         "line": 70,
                         "column": 4
                       },
                       "end": {
-                        "line": 101,
+                        "line": 102,
                         "column": 7
                       }
                     }
@@ -1844,15 +1844,15 @@
               },
               {
                 "type": "ClassMethod",
-                "start": 5699,
-                "end": 6161,
+                "start": 5788,
+                "end": 6250,
                 "loc": {
                   "start": {
-                    "line": 102,
+                    "line": 103,
                     "column": 4
                   },
                   "end": {
-                    "line": 113,
+                    "line": 114,
                     "column": 5
                   }
                 },
@@ -1860,15 +1860,15 @@
                 "computed": false,
                 "key": {
                   "type": "Identifier",
-                  "start": 5699,
-                  "end": 5703,
+                  "start": 5788,
+                  "end": 5792,
                   "loc": {
                     "start": {
-                      "line": 102,
+                      "line": 103,
                       "column": 4
                     },
                     "end": {
-                      "line": 102,
+                      "line": 103,
                       "column": 8
                     },
                     "identifierName": "load"
@@ -1884,15 +1884,15 @@
                 "params": [
                   {
                     "type": "Identifier",
-                    "start": 5704,
-                    "end": 5710,
+                    "start": 5793,
+                    "end": 5799,
                     "loc": {
                       "start": {
-                        "line": 102,
+                        "line": 103,
                         "column": 9
                       },
                       "end": {
-                        "line": 102,
+                        "line": 103,
                         "column": 15
                       },
                       "identifierName": "params"
@@ -1902,44 +1902,44 @@
                 ],
                 "body": {
                   "type": "BlockStatement",
-                  "start": 5712,
-                  "end": 6161,
+                  "start": 5801,
+                  "end": 6250,
                   "loc": {
                     "start": {
-                      "line": 102,
+                      "line": 103,
                       "column": 17
                     },
                     "end": {
-                      "line": 113,
+                      "line": 114,
                       "column": 5
                     }
                   },
                   "body": [
                     {
                       "type": "IfStatement",
-                      "start": 5722,
-                      "end": 5822,
+                      "start": 5811,
+                      "end": 5911,
                       "loc": {
                         "start": {
-                          "line": 103,
+                          "line": 104,
                           "column": 8
                         },
                         "end": {
-                          "line": 106,
+                          "line": 107,
                           "column": 9
                         }
                       },
                       "test": {
                         "type": "UnaryExpression",
-                        "start": 5726,
-                        "end": 5736,
+                        "start": 5815,
+                        "end": 5825,
                         "loc": {
                           "start": {
-                            "line": 103,
+                            "line": 104,
                             "column": 12
                           },
                           "end": {
-                            "line": 103,
+                            "line": 104,
                             "column": 22
                           }
                         },
@@ -1947,29 +1947,29 @@
                         "prefix": true,
                         "argument": {
                           "type": "MemberExpression",
-                          "start": 5727,
-                          "end": 5736,
+                          "start": 5816,
+                          "end": 5825,
                           "loc": {
                             "start": {
-                              "line": 103,
+                              "line": 104,
                               "column": 13
                             },
                             "end": {
-                              "line": 103,
+                              "line": 104,
                               "column": 22
                             }
                           },
                           "object": {
                             "type": "Identifier",
-                            "start": 5727,
-                            "end": 5733,
+                            "start": 5816,
+                            "end": 5822,
                             "loc": {
                               "start": {
-                                "line": 103,
+                                "line": 104,
                                 "column": 13
                               },
                               "end": {
-                                "line": 103,
+                                "line": 104,
                                 "column": 19
                               },
                               "identifierName": "params"
@@ -1978,15 +1978,15 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 5734,
-                            "end": 5736,
+                            "start": 5823,
+                            "end": 5825,
                             "loc": {
                               "start": {
-                                "line": 103,
+                                "line": 104,
                                 "column": 20
                               },
                               "end": {
-                                "line": 103,
+                                "line": 104,
                                 "column": 22
                               },
                               "identifierName": "id"
@@ -2001,87 +2001,87 @@
                       },
                       "consequent": {
                         "type": "BlockStatement",
-                        "start": 5738,
-                        "end": 5822,
+                        "start": 5827,
+                        "end": 5911,
                         "loc": {
                           "start": {
-                            "line": 103,
+                            "line": 104,
                             "column": 24
                           },
                           "end": {
-                            "line": 106,
+                            "line": 107,
                             "column": 9
                           }
                         },
                         "body": [
                           {
                             "type": "ExpressionStatement",
-                            "start": 5752,
-                            "end": 5792,
+                            "start": 5841,
+                            "end": 5881,
                             "loc": {
                               "start": {
-                                "line": 104,
+                                "line": 105,
                                 "column": 12
                               },
                               "end": {
-                                "line": 104,
+                                "line": 105,
                                 "column": 52
                               }
                             },
                             "expression": {
                               "type": "CallExpression",
-                              "start": 5752,
-                              "end": 5791,
+                              "start": 5841,
+                              "end": 5880,
                               "loc": {
                                 "start": {
-                                  "line": 104,
+                                  "line": 105,
                                   "column": 12
                                 },
                                 "end": {
-                                  "line": 104,
+                                  "line": 105,
                                   "column": 51
                                 }
                               },
                               "callee": {
                                 "type": "MemberExpression",
-                                "start": 5752,
-                                "end": 5762,
+                                "start": 5841,
+                                "end": 5851,
                                 "loc": {
                                   "start": {
-                                    "line": 104,
+                                    "line": 105,
                                     "column": 12
                                   },
                                   "end": {
-                                    "line": 104,
+                                    "line": 105,
                                     "column": 22
                                   }
                                 },
                                 "object": {
                                   "type": "ThisExpression",
-                                  "start": 5752,
-                                  "end": 5756,
+                                  "start": 5841,
+                                  "end": 5845,
                                   "loc": {
                                     "start": {
-                                      "line": 104,
+                                      "line": 105,
                                       "column": 12
                                     },
                                     "end": {
-                                      "line": 104,
+                                      "line": 105,
                                       "column": 16
                                     }
                                   }
                                 },
                                 "property": {
                                   "type": "Identifier",
-                                  "start": 5757,
-                                  "end": 5762,
+                                  "start": 5846,
+                                  "end": 5851,
                                   "loc": {
                                     "start": {
-                                      "line": 104,
+                                      "line": 105,
                                       "column": 17
                                     },
                                     "end": {
-                                      "line": 104,
+                                      "line": 105,
                                       "column": 22
                                     },
                                     "identifierName": "error"
@@ -2093,15 +2093,15 @@
                               "arguments": [
                                 {
                                   "type": "StringLiteral",
-                                  "start": 5763,
-                                  "end": 5790,
+                                  "start": 5852,
+                                  "end": 5879,
                                   "loc": {
                                     "start": {
-                                      "line": 104,
+                                      "line": 105,
                                       "column": 23
                                     },
                                     "end": {
-                                      "line": 104,
+                                      "line": 105,
                                       "column": 50
                                     }
                                   },
@@ -2116,15 +2116,15 @@
                           },
                           {
                             "type": "ReturnStatement",
-                            "start": 5805,
-                            "end": 5812,
+                            "start": 5894,
+                            "end": 5901,
                             "loc": {
                               "start": {
-                                "line": 105,
+                                "line": 106,
                                 "column": 12
                               },
                               "end": {
-                                "line": 105,
+                                "line": 106,
                                 "column": 19
                               }
                             },
@@ -2137,100 +2137,100 @@
                     },
                     {
                       "type": "IfStatement",
-                      "start": 5831,
-                      "end": 5989,
+                      "start": 5920,
+                      "end": 6078,
                       "loc": {
                         "start": {
-                          "line": 107,
+                          "line": 108,
                           "column": 8
                         },
                         "end": {
-                          "line": 110,
+                          "line": 111,
                           "column": 9
                         }
                       },
                       "test": {
                         "type": "MemberExpression",
-                        "start": 5835,
-                        "end": 5874,
+                        "start": 5924,
+                        "end": 5963,
                         "loc": {
                           "start": {
-                            "line": 107,
+                            "line": 108,
                             "column": 12
                           },
                           "end": {
-                            "line": 107,
+                            "line": 108,
                             "column": 51
                           }
                         },
                         "object": {
                           "type": "MemberExpression",
-                          "start": 5835,
-                          "end": 5863,
+                          "start": 5924,
+                          "end": 5952,
                           "loc": {
                             "start": {
-                              "line": 107,
+                              "line": 108,
                               "column": 12
                             },
                             "end": {
-                              "line": 107,
+                              "line": 108,
                               "column": 40
                             }
                           },
                           "object": {
                             "type": "MemberExpression",
-                            "start": 5835,
-                            "end": 5852,
+                            "start": 5924,
+                            "end": 5941,
                             "loc": {
                               "start": {
-                                "line": 107,
+                                "line": 108,
                                 "column": 12
                               },
                               "end": {
-                                "line": 107,
+                                "line": 108,
                                 "column": 29
                               }
                             },
                             "object": {
                               "type": "MemberExpression",
-                              "start": 5835,
-                              "end": 5846,
+                              "start": 5924,
+                              "end": 5935,
                               "loc": {
                                 "start": {
-                                  "line": 107,
+                                  "line": 108,
                                   "column": 12
                                 },
                                 "end": {
-                                  "line": 107,
+                                  "line": 108,
                                   "column": 23
                                 }
                               },
                               "object": {
                                 "type": "ThisExpression",
-                                "start": 5835,
-                                "end": 5839,
+                                "start": 5924,
+                                "end": 5928,
                                 "loc": {
                                   "start": {
-                                    "line": 107,
+                                    "line": 108,
                                     "column": 12
                                   },
                                   "end": {
-                                    "line": 107,
+                                    "line": 108,
                                     "column": 16
                                   }
                                 }
                               },
                               "property": {
                                 "type": "Identifier",
-                                "start": 5840,
-                                "end": 5846,
+                                "start": 5929,
+                                "end": 5935,
                                 "loc": {
                                   "start": {
-                                    "line": 107,
+                                    "line": 108,
                                     "column": 17
                                   },
                                   "end": {
-                                    "line": 107,
+                                    "line": 108,
                                     "column": 23
                                   },
                                   "identifierName": "viewer"
@@ -2241,15 +2241,15 @@
                             },
                             "property": {
                               "type": "Identifier",
-                              "start": 5847,
-                              "end": 5852,
+                              "start": 5936,
+                              "end": 5941,
                               "loc": {
                                 "start": {
-                                  "line": 107,
+                                  "line": 108,
                                   "column": 24
                                 },
                                 "end": {
-                                  "line": 107,
+                                  "line": 108,
                                   "column": 29
                                 },
                                 "identifierName": "scene"
@@ -2260,15 +2260,15 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 5853,
-                            "end": 5863,
+                            "start": 5942,
+                            "end": 5952,
                             "loc": {
                               "start": {
-                                "line": 107,
+                                "line": 108,
                                 "column": 30
                               },
                               "end": {
-                                "line": 107,
+                                "line": 108,
                                 "column": 40
                               },
                               "identifierName": "components"
@@ -2279,29 +2279,29 @@
                         },
                         "property": {
                           "type": "MemberExpression",
-                          "start": 5864,
-                          "end": 5873,
+                          "start": 5953,
+                          "end": 5962,
                           "loc": {
                             "start": {
-                              "line": 107,
+                              "line": 108,
                               "column": 41
                             },
                             "end": {
-                              "line": 107,
+                              "line": 108,
                               "column": 50
                             }
                           },
                           "object": {
                             "type": "Identifier",
-                            "start": 5864,
-                            "end": 5870,
+                            "start": 5953,
+                            "end": 5959,
                             "loc": {
                               "start": {
-                                "line": 107,
+                                "line": 108,
                                 "column": 41
                               },
                               "end": {
-                                "line": 107,
+                                "line": 108,
                                 "column": 47
                               },
                               "identifierName": "params"
@@ -2310,15 +2310,15 @@
                           },
                           "property": {
                             "type": "Identifier",
-                            "start": 5871,
-                            "end": 5873,
+                            "start": 5960,
+                            "end": 5962,
                             "loc": {
                               "start": {
-                                "line": 107,
+                                "line": 108,
                                 "column": 48
                               },
                               "end": {
-                                "line": 107,
+                                "line": 108,
                                 "column": 50
                               },
                               "identifierName": "id"
@@ -2331,87 +2331,87 @@
                       },
                       "consequent": {
                         "type": "BlockStatement",
-                        "start": 5876,
-                        "end": 5989,
+                        "start": 5965,
+                        "end": 6078,
                         "loc": {
                           "start": {
-                            "line": 107,
+                            "line": 108,
                             "column": 53
                           },
                           "end": {
-                            "line": 110,
+                            "line": 111,
                             "column": 9
                           }
                         },
                         "body": [
                           {
                             "type": "ExpressionStatement",
-                            "start": 5890,
-                            "end": 5959,
+                            "start": 5979,
+                            "end": 6048,
                             "loc": {
                               "start": {
-                                "line": 108,
+                                "line": 109,
                                 "column": 12
                               },
                               "end": {
-                                "line": 108,
+                                "line": 109,
                                 "column": 81
                               }
                             },
                             "expression": {
                               "type": "CallExpression",
-                              "start": 5890,
-                              "end": 5958,
+                              "start": 5979,
+                              "end": 6047,
                               "loc": {
                                 "start": {
-                                  "line": 108,
+                                  "line": 109,
                                   "column": 12
                                 },
                                 "end": {
-                                  "line": 108,
+                                  "line": 109,
                                   "column": 80
                                 }
                               },
                               "callee": {
                                 "type": "MemberExpression",
-                                "start": 5890,
-                                "end": 5900,
+                                "start": 5979,
+                                "end": 5989,
                                 "loc": {
                                   "start": {
-                                    "line": 108,
+                                    "line": 109,
                                     "column": 12
                                   },
                                   "end": {
-                                    "line": 108,
+                                    "line": 109,
                                     "column": 22
                                   }
                                 },
                                 "object": {
                                   "type": "ThisExpression",
-                                  "start": 5890,
-                                  "end": 5894,
+                                  "start": 5979,
+                                  "end": 5983,
                                   "loc": {
                                     "start": {
-                                      "line": 108,
+                                      "line": 109,
                                       "column": 12
                                     },
                                     "end": {
-                                      "line": 108,
+                                      "line": 109,
                                       "column": 16
                                     }
                                   }
                                 },
                                 "property": {
                                   "type": "Identifier",
-                                  "start": 5895,
-                                  "end": 5900,
+                                  "start": 5984,
+                                  "end": 5989,
                                   "loc": {
                                     "start": {
-                                      "line": 108,
+                                      "line": 109,
                                       "column": 17
                                     },
                                     "end": {
-                                      "line": 108,
+                                      "line": 109,
                                       "column": 22
                                     },
                                     "identifierName": "error"
@@ -2423,29 +2423,29 @@
                               "arguments": [
                                 {
                                   "type": "BinaryExpression",
-                                  "start": 5901,
-                                  "end": 5957,
+                                  "start": 5990,
+                                  "end": 6046,
                                   "loc": {
                                     "start": {
-                                      "line": 108,
+                                      "line": 109,
                                       "column": 23
                                     },
                                     "end": {
-                                      "line": 108,
+                                      "line": 109,
                                       "column": 79
                                     }
                                   },
                                   "left": {
                                     "type": "StringLiteral",
-                                    "start": 5901,
-                                    "end": 5952,
+                                    "start": 5990,
+                                    "end": 6041,
                                     "loc": {
                                       "start": {
-                                        "line": 108,
+                                        "line": 109,
                                         "column": 23
                                       },
                                       "end": {
-                                        "line": 108,
+                                        "line": 109,
                                         "column": 74
                                       }
                                     },
@@ -2458,15 +2458,15 @@
                                   "operator": "+",
                                   "right": {
                                     "type": "Identifier",
-                                    "start": 5955,
-                                    "end": 5957,
+                                    "start": 6044,
+                                    "end": 6046,
                                     "loc": {
                                       "start": {
-                                        "line": 108,
+                                        "line": 109,
                                         "column": 77
                                       },
                                       "end": {
-                                        "line": 108,
+                                        "line": 109,
                                         "column": 79
                                       },
                                       "identifierName": "id"
@@ -2479,15 +2479,15 @@
                           },
                           {
                             "type": "ReturnStatement",
-                            "start": 5972,
-                            "end": 5979,
+                            "start": 6061,
+                            "end": 6068,
                             "loc": {
                               "start": {
-                                "line": 109,
+                                "line": 110,
                                 "column": 12
                               },
                               "end": {
-                                "line": 109,
+                                "line": 110,
                                 "column": 19
                               }
                             },
@@ -2500,44 +2500,44 @@
                     },
                     {
                       "type": "VariableDeclaration",
-                      "start": 5998,
-                      "end": 6054,
+                      "start": 6087,
+                      "end": 6143,
                       "loc": {
                         "start": {
-                          "line": 111,
+                          "line": 112,
                           "column": 8
                         },
                         "end": {
-                          "line": 111,
+                          "line": 112,
                           "column": 64
                         }
                       },
                       "declarations": [
                         {
                           "type": "VariableDeclarator",
-                          "start": 6002,
-                          "end": 6053,
+                          "start": 6091,
+                          "end": 6142,
                           "loc": {
                             "start": {
-                              "line": 111,
+                              "line": 112,
                               "column": 12
                             },
                             "end": {
-                              "line": 111,
+                              "line": 112,
                               "column": 63
                             }
                           },
                           "id": {
                             "type": "Identifier",
-                            "start": 6002,
-                            "end": 6007,
+                            "start": 6091,
+                            "end": 6096,
                             "loc": {
                               "start": {
-                                "line": 111,
+                                "line": 112,
                                 "column": 12
                               },
                               "end": {
-                                "line": 111,
+                                "line": 112,
                                 "column": 17
                               },
                               "identifierName": "model"
@@ -2546,29 +2546,29 @@
                           },
                           "init": {
                             "type": "NewExpression",
-                            "start": 6010,
-                            "end": 6053,
+                            "start": 6099,
+                            "end": 6142,
                             "loc": {
                               "start": {
-                                "line": 111,
+                                "line": 112,
                                 "column": 20
                               },
                               "end": {
-                                "line": 111,
+                                "line": 112,
                                 "column": 63
                               }
                             },
                             "callee": {
                               "type": "Identifier",
-                              "start": 6014,
-                              "end": 6026,
+                              "start": 6103,
+                              "end": 6115,
                               "loc": {
                                 "start": {
-                                  "line": 111,
+                                  "line": 112,
                                   "column": 24
                                 },
                                 "end": {
-                                  "line": 111,
+                                  "line": 112,
                                   "column": 36
                                 },
                                 "identifierName": "GLTFBigModel"
@@ -2578,58 +2578,58 @@
                             "arguments": [
                               {
                                 "type": "MemberExpression",
-                                "start": 6027,
-                                "end": 6044,
+                                "start": 6116,
+                                "end": 6133,
                                 "loc": {
                                   "start": {
-                                    "line": 111,
+                                    "line": 112,
                                     "column": 37
                                   },
                                   "end": {
-                                    "line": 111,
+                                    "line": 112,
                                     "column": 54
                                   }
                                 },
                                 "object": {
                                   "type": "MemberExpression",
-                                  "start": 6027,
-                                  "end": 6038,
+                                  "start": 6116,
+                                  "end": 6127,
                                   "loc": {
                                     "start": {
-                                      "line": 111,
+                                      "line": 112,
                                       "column": 37
                                     },
                                     "end": {
-                                      "line": 111,
+                                      "line": 112,
                                       "column": 48
                                     }
                                   },
                                   "object": {
                                     "type": "ThisExpression",
-                                    "start": 6027,
-                                    "end": 6031,
+                                    "start": 6116,
+                                    "end": 6120,
                                     "loc": {
                                       "start": {
-                                        "line": 111,
+                                        "line": 112,
                                         "column": 37
                                       },
                                       "end": {
-                                        "line": 111,
+                                        "line": 112,
                                         "column": 41
                                       }
                                     }
                                   },
                                   "property": {
                                     "type": "Identifier",
-                                    "start": 6032,
-                                    "end": 6038,
+                                    "start": 6121,
+                                    "end": 6127,
                                     "loc": {
                                       "start": {
-                                        "line": 111,
+                                        "line": 112,
                                         "column": 42
                                       },
                                       "end": {
-                                        "line": 111,
+                                        "line": 112,
                                         "column": 48
                                       },
                                       "identifierName": "viewer"
@@ -2640,15 +2640,15 @@
                                 },
                                 "property": {
                                   "type": "Identifier",
-                                  "start": 6039,
-                                  "end": 6044,
+                                  "start": 6128,
+                                  "end": 6133,
                                   "loc": {
                                     "start": {
-                                      "line": 111,
+                                      "line": 112,
                                       "column": 49
                                     },
                                     "end": {
-                                      "line": 111,
+                                      "line": 112,
                                       "column": 54
                                     },
                                     "identifierName": "scene"
@@ -2659,15 +2659,15 @@
                               },
                               {
                                 "type": "Identifier",
-                                "start": 6046,
-                                "end": 6052,
+                                "start": 6135,
+                                "end": 6141,
                                 "loc": {
                                   "start": {
-                                    "line": 111,
+                                    "line": 112,
                                     "column": 56
                                   },
                                   "end": {
-                                    "line": 111,
+                                    "line": 112,
                                     "column": 62
                                   },
                                   "identifierName": "params"
@@ -2682,29 +2682,29 @@
                     },
                     {
                       "type": "ReturnStatement",
-                      "start": 6063,
-                      "end": 6076,
+                      "start": 6152,
+                      "end": 6165,
                       "loc": {
                         "start": {
-                          "line": 112,
+                          "line": 113,
                           "column": 8
                         },
                         "end": {
-                          "line": 112,
+                          "line": 113,
                           "column": 21
                         }
                       },
                       "argument": {
                         "type": "Identifier",
-                        "start": 6070,
-                        "end": 6075,
+                        "start": 6159,
+                        "end": 6164,
                         "loc": {
                           "start": {
-                            "line": 112,
+                            "line": 113,
                             "column": 15
                           },
                           "end": {
-                            "line": 112,
+                            "line": 113,
                             "column": 20
                           },
                           "identifierName": "model"
@@ -2715,15 +2715,15 @@
                         {
                           "type": "CommentLine",
                           "value": " TODO: register loading params within this plugin for inclusion in bookmarks",
-                          "start": 6077,
-                          "end": 6155,
+                          "start": 6166,
+                          "end": 6244,
                           "loc": {
                             "start": {
-                              "line": 112,
+                              "line": 113,
                               "column": 22
                             },
                             "end": {
-                              "line": 112,
+                              "line": 113,
                               "column": 100
                             }
                           }
@@ -2736,16 +2736,16 @@
                 "leadingComments": [
                   {
                     "type": "CommentBlock",
-                    "value": "*\n     Loads a large-scale glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file. You can set this to a new file path at any time, which will cause the\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
+                    "value": "*\n     Loads a large-scale glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file.\n     @param  [params.metadataSrc]{String} Path to an optional matadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
                     "start": 2165,
-                    "end": 5694,
+                    "end": 5783,
                     "loc": {
                       "start": {
                         "line": 70,
                         "column": 4
                       },
                       "end": {
-                        "line": 101,
+                        "line": 102,
                         "column": 7
                       }
                     }
@@ -2817,16 +2817,16 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n     Loads a large-scale glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file. You can set this to a new file path at any time, which will cause the\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
+      "value": "*\n     Loads a large-scale glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file.\n     @param  [params.metadataSrc]{String} Path to an optional matadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
       "start": 2165,
-      "end": 5694,
+      "end": 5783,
       "loc": {
         "start": {
           "line": 70,
           "column": 4
         },
         "end": {
-          "line": 101,
+          "line": 102,
           "column": 7
         }
       }
@@ -2834,15 +2834,15 @@
     {
       "type": "CommentLine",
       "value": " TODO: register loading params within this plugin for inclusion in bookmarks",
-      "start": 6077,
-      "end": 6155,
+      "start": 6166,
+      "end": 6244,
       "loc": {
         "start": {
-          "line": 112,
+          "line": 113,
           "column": 22
         },
         "end": {
-          "line": 112,
+          "line": 113,
           "column": 100
         }
       }
@@ -3873,16 +3873,16 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n     Loads a large-scale glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file. You can set this to a new file path at any time, which will cause the\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
+      "value": "*\n     Loads a large-scale glTF model from the file system into the viewer.\n\n     @param params {*} Configs\n     @param [params.id] {String} Optional ID, unique among all components in the parent {{#crossLink \"Scene\"}}Scene{{/crossLink}},\n     generated automatically when omitted.\n     @param [params.entityType] {String} Optional entity classification when using within a semantic data model. See the {{#crossLink \"Object\"}}{{/crossLink}} documentation for usage.\n     @param [params.meta] {String:Object} Optional map of user-defined metadata to attach to this GLTFModel.\n     @param [params.parent] The parent Object.\n     @param [params.visible=true] {Boolean}  Indicates if this GLTFModel is visible.\n     @param [params.culled=false] {Boolean}  Indicates if this GLTFModel is culled from view.\n     @param [params.pickable=true] {Boolean}  Indicates if this GLTFModel is pickable.\n     @param [params.clippable=true] {Boolean} Indicates if this GLTFModel is clippable.\n     @param [params.outlined=false] {Boolean} Whether an outline is rendered around this GLTFModel.\n     @param [params.ghosted=false] {Boolean} Whether this GLTFModel is rendered ghosted.\n     @param [params.highlighted=false] {Boolean} Whether this GLTFModel is rendered highlighted.\n     @param [params.selected=false] {Boolean} Whether this GLTFModel is rendered selected.\n     @param [params.edges=false] {Boolean} Whether this GLTFModel is rendered with edges emphasized.\n     @param [params.colorize=[1.0,1.0,1.0]] {Float32Array}  RGB colorize color, multiplies by the rendered fragment colors.\n     @param [params.opacity=1.0] {Number} Opacity factor, multiplies by the rendered fragment alpha.\n     @param [params.position=[0,0,0]] {Float32Array} The GLTFModel's local 3D position.\n     @param [params.scale=[1,1,1]] {Float32Array} The GLTFModel's local scale.\n     @param [params.rotation=[0,0,0]] {Float32Array} The GLTFModel's local rotation, as Euler angles given in degrees, for each of the X, Y and Z axis.\n     @param [params.matrix=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1] {Float32Array} GLTFThe Model's local modelling transform matrix. Overrides the position, scale and rotation parameters.\n     @param [params.src] {String} Path to a glTF file.\n     @param  [params.metadataSrc]{String} Path to an optional matadata file (see: [Model Metadata](https://github.com/xeolabs/xeokit.io/wiki/Model-Metadata)).\n     @param [params.lambertMaterials=false] {Boolean} When true, gives each {{#crossLink \"Mesh\"}}{{/crossLink}} the same {{#crossLink \"LambertMaterial\"}}{{/crossLink}} and a {{#crossLink \"Mesh/colorize:property\"}}{{/crossLink}} value set the to diffuse color extracted from the glTF material. This is typically used for CAD models with huge amounts of objects, and will ignore textures.\n     @param [params.quantizeGeometry=true] {Boolean} When true, quantizes geometry to reduce memory and GPU bus usage.\n     @param [params.combineGeometry=true] {Boolean} When true, combines geometry vertex buffers to improve rendering performance.\n     @param [params.backfaces=false] {Boolean} When true, allows visible backfaces, wherever specified in the glTF. When false, ignores backfaces.\n     @param [params.edgeThreshold=20] {Number} When ghosting, highlighting, selecting or edging, this is the threshold angle between normals of adjacent triangles, below which their shared wireframe edge is not drawn.\n     @param [params.handleNode] {Function} Optional callback to mask which {{#crossLink \"Object\"}}Objects{{/crossLink}} are loaded. Each Object will only be loaded when this callback returns ````true``` for its ID.\n     ",
       "start": 2165,
-      "end": 5694,
+      "end": 5783,
       "loc": {
         "start": {
           "line": 70,
           "column": 4
         },
         "end": {
-          "line": 101,
+          "line": 102,
           "column": 7
         }
       }
@@ -3900,15 +3900,15 @@
         "binop": null
       },
       "value": "load",
-      "start": 5699,
-      "end": 5703,
+      "start": 5788,
+      "end": 5792,
       "loc": {
         "start": {
-          "line": 102,
+          "line": 103,
           "column": 4
         },
         "end": {
-          "line": 102,
+          "line": 103,
           "column": 8
         }
       }
@@ -3925,15 +3925,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5703,
-      "end": 5704,
+      "start": 5792,
+      "end": 5793,
       "loc": {
         "start": {
-          "line": 102,
+          "line": 103,
           "column": 8
         },
         "end": {
-          "line": 102,
+          "line": 103,
           "column": 9
         }
       }
@@ -3951,15 +3951,15 @@
         "binop": null
       },
       "value": "params",
-      "start": 5704,
-      "end": 5710,
+      "start": 5793,
+      "end": 5799,
       "loc": {
         "start": {
-          "line": 102,
+          "line": 103,
           "column": 9
         },
         "end": {
-          "line": 102,
+          "line": 103,
           "column": 15
         }
       }
@@ -3976,15 +3976,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5710,
-      "end": 5711,
+      "start": 5799,
+      "end": 5800,
       "loc": {
         "start": {
-          "line": 102,
+          "line": 103,
           "column": 15
         },
         "end": {
-          "line": 102,
+          "line": 103,
           "column": 16
         }
       }
@@ -4001,15 +4001,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5712,
-      "end": 5713,
+      "start": 5801,
+      "end": 5802,
       "loc": {
         "start": {
-          "line": 102,
+          "line": 103,
           "column": 17
         },
         "end": {
-          "line": 102,
+          "line": 103,
           "column": 18
         }
       }
@@ -4029,15 +4029,15 @@
         "updateContext": null
       },
       "value": "if",
-      "start": 5722,
-      "end": 5724,
+      "start": 5811,
+      "end": 5813,
       "loc": {
         "start": {
-          "line": 103,
+          "line": 104,
           "column": 8
         },
         "end": {
-          "line": 103,
+          "line": 104,
           "column": 10
         }
       }
@@ -4054,15 +4054,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5725,
-      "end": 5726,
+      "start": 5814,
+      "end": 5815,
       "loc": {
         "start": {
-          "line": 103,
+          "line": 104,
           "column": 11
         },
         "end": {
-          "line": 103,
+          "line": 104,
           "column": 12
         }
       }
@@ -4081,15 +4081,15 @@
         "updateContext": null
       },
       "value": "!",
-      "start": 5726,
-      "end": 5727,
+      "start": 5815,
+      "end": 5816,
       "loc": {
         "start": {
-          "line": 103,
+          "line": 104,
           "column": 12
         },
         "end": {
-          "line": 103,
+          "line": 104,
           "column": 13
         }
       }
@@ -4107,15 +4107,15 @@
         "binop": null
       },
       "value": "params",
-      "start": 5727,
-      "end": 5733,
+      "start": 5816,
+      "end": 5822,
       "loc": {
         "start": {
-          "line": 103,
+          "line": 104,
           "column": 13
         },
         "end": {
-          "line": 103,
+          "line": 104,
           "column": 19
         }
       }
@@ -4133,15 +4133,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 5733,
-      "end": 5734,
+      "start": 5822,
+      "end": 5823,
       "loc": {
         "start": {
-          "line": 103,
+          "line": 104,
           "column": 19
         },
         "end": {
-          "line": 103,
+          "line": 104,
           "column": 20
         }
       }
@@ -4159,15 +4159,15 @@
         "binop": null
       },
       "value": "id",
-      "start": 5734,
-      "end": 5736,
+      "start": 5823,
+      "end": 5825,
       "loc": {
         "start": {
-          "line": 103,
+          "line": 104,
           "column": 20
         },
         "end": {
-          "line": 103,
+          "line": 104,
           "column": 22
         }
       }
@@ -4184,15 +4184,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5736,
-      "end": 5737,
+      "start": 5825,
+      "end": 5826,
       "loc": {
         "start": {
-          "line": 103,
+          "line": 104,
           "column": 22
         },
         "end": {
-          "line": 103,
+          "line": 104,
           "column": 23
         }
       }
@@ -4209,15 +4209,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5738,
-      "end": 5739,
+      "start": 5827,
+      "end": 5828,
       "loc": {
         "start": {
-          "line": 103,
+          "line": 104,
           "column": 24
         },
         "end": {
-          "line": 103,
+          "line": 104,
           "column": 25
         }
       }
@@ -4237,15 +4237,15 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 5752,
-      "end": 5756,
+      "start": 5841,
+      "end": 5845,
       "loc": {
         "start": {
-          "line": 104,
+          "line": 105,
           "column": 12
         },
         "end": {
-          "line": 104,
+          "line": 105,
           "column": 16
         }
       }
@@ -4263,15 +4263,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 5756,
-      "end": 5757,
+      "start": 5845,
+      "end": 5846,
       "loc": {
         "start": {
-          "line": 104,
+          "line": 105,
           "column": 16
         },
         "end": {
-          "line": 104,
+          "line": 105,
           "column": 17
         }
       }
@@ -4289,15 +4289,15 @@
         "binop": null
       },
       "value": "error",
-      "start": 5757,
-      "end": 5762,
+      "start": 5846,
+      "end": 5851,
       "loc": {
         "start": {
-          "line": 104,
+          "line": 105,
           "column": 17
         },
         "end": {
-          "line": 104,
+          "line": 105,
           "column": 22
         }
       }
@@ -4314,15 +4314,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5762,
-      "end": 5763,
+      "start": 5851,
+      "end": 5852,
       "loc": {
         "start": {
-          "line": 104,
+          "line": 105,
           "column": 22
         },
         "end": {
-          "line": 104,
+          "line": 105,
           "column": 23
         }
       }
@@ -4341,15 +4341,15 @@
         "updateContext": null
       },
       "value": "load() param expected: id",
-      "start": 5763,
-      "end": 5790,
+      "start": 5852,
+      "end": 5879,
       "loc": {
         "start": {
-          "line": 104,
+          "line": 105,
           "column": 23
         },
         "end": {
-          "line": 104,
+          "line": 105,
           "column": 50
         }
       }
@@ -4366,15 +4366,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5790,
-      "end": 5791,
+      "start": 5879,
+      "end": 5880,
       "loc": {
         "start": {
-          "line": 104,
+          "line": 105,
           "column": 50
         },
         "end": {
-          "line": 104,
+          "line": 105,
           "column": 51
         }
       }
@@ -4392,15 +4392,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 5791,
-      "end": 5792,
+      "start": 5880,
+      "end": 5881,
       "loc": {
         "start": {
-          "line": 104,
+          "line": 105,
           "column": 51
         },
         "end": {
-          "line": 104,
+          "line": 105,
           "column": 52
         }
       }
@@ -4420,15 +4420,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 5805,
-      "end": 5811,
+      "start": 5894,
+      "end": 5900,
       "loc": {
         "start": {
-          "line": 105,
+          "line": 106,
           "column": 12
         },
         "end": {
-          "line": 105,
+          "line": 106,
           "column": 18
         }
       }
@@ -4446,15 +4446,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 5811,
-      "end": 5812,
+      "start": 5900,
+      "end": 5901,
       "loc": {
         "start": {
-          "line": 105,
+          "line": 106,
           "column": 18
         },
         "end": {
-          "line": 105,
+          "line": 106,
           "column": 19
         }
       }
@@ -4471,15 +4471,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5821,
-      "end": 5822,
+      "start": 5910,
+      "end": 5911,
       "loc": {
         "start": {
-          "line": 106,
+          "line": 107,
           "column": 8
         },
         "end": {
-          "line": 106,
+          "line": 107,
           "column": 9
         }
       }
@@ -4499,15 +4499,15 @@
         "updateContext": null
       },
       "value": "if",
-      "start": 5831,
-      "end": 5833,
+      "start": 5920,
+      "end": 5922,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 8
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 10
         }
       }
@@ -4524,15 +4524,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5834,
-      "end": 5835,
+      "start": 5923,
+      "end": 5924,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 11
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 12
         }
       }
@@ -4552,15 +4552,15 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 5835,
-      "end": 5839,
+      "start": 5924,
+      "end": 5928,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 12
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 16
         }
       }
@@ -4578,15 +4578,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 5839,
-      "end": 5840,
+      "start": 5928,
+      "end": 5929,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 16
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 17
         }
       }
@@ -4604,15 +4604,15 @@
         "binop": null
       },
       "value": "viewer",
-      "start": 5840,
-      "end": 5846,
+      "start": 5929,
+      "end": 5935,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 17
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 23
         }
       }
@@ -4630,15 +4630,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 5846,
-      "end": 5847,
+      "start": 5935,
+      "end": 5936,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 23
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 24
         }
       }
@@ -4656,15 +4656,15 @@
         "binop": null
       },
       "value": "scene",
-      "start": 5847,
-      "end": 5852,
+      "start": 5936,
+      "end": 5941,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 24
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 29
         }
       }
@@ -4682,15 +4682,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 5852,
-      "end": 5853,
+      "start": 5941,
+      "end": 5942,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 29
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 30
         }
       }
@@ -4708,15 +4708,15 @@
         "binop": null
       },
       "value": "components",
-      "start": 5853,
-      "end": 5863,
+      "start": 5942,
+      "end": 5952,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 30
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 40
         }
       }
@@ -4734,15 +4734,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 5863,
-      "end": 5864,
+      "start": 5952,
+      "end": 5953,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 40
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 41
         }
       }
@@ -4760,15 +4760,15 @@
         "binop": null
       },
       "value": "params",
-      "start": 5864,
-      "end": 5870,
+      "start": 5953,
+      "end": 5959,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 41
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 47
         }
       }
@@ -4786,15 +4786,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 5870,
-      "end": 5871,
+      "start": 5959,
+      "end": 5960,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 47
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 48
         }
       }
@@ -4812,15 +4812,15 @@
         "binop": null
       },
       "value": "id",
-      "start": 5871,
-      "end": 5873,
+      "start": 5960,
+      "end": 5962,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 48
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 50
         }
       }
@@ -4838,15 +4838,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 5873,
-      "end": 5874,
+      "start": 5962,
+      "end": 5963,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 50
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 51
         }
       }
@@ -4863,15 +4863,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5874,
-      "end": 5875,
+      "start": 5963,
+      "end": 5964,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 51
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 52
         }
       }
@@ -4888,15 +4888,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5876,
-      "end": 5877,
+      "start": 5965,
+      "end": 5966,
       "loc": {
         "start": {
-          "line": 107,
+          "line": 108,
           "column": 53
         },
         "end": {
-          "line": 107,
+          "line": 108,
           "column": 54
         }
       }
@@ -4916,15 +4916,15 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 5890,
-      "end": 5894,
+      "start": 5979,
+      "end": 5983,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 109,
           "column": 12
         },
         "end": {
-          "line": 108,
+          "line": 109,
           "column": 16
         }
       }
@@ -4942,15 +4942,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 5894,
-      "end": 5895,
+      "start": 5983,
+      "end": 5984,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 109,
           "column": 16
         },
         "end": {
-          "line": 108,
+          "line": 109,
           "column": 17
         }
       }
@@ -4968,15 +4968,15 @@
         "binop": null
       },
       "value": "error",
-      "start": 5895,
-      "end": 5900,
+      "start": 5984,
+      "end": 5989,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 109,
           "column": 17
         },
         "end": {
-          "line": 108,
+          "line": 109,
           "column": 22
         }
       }
@@ -4993,15 +4993,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5900,
-      "end": 5901,
+      "start": 5989,
+      "end": 5990,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 109,
           "column": 22
         },
         "end": {
-          "line": 108,
+          "line": 109,
           "column": 23
         }
       }
@@ -5020,15 +5020,15 @@
         "updateContext": null
       },
       "value": "Component with this ID already exists in viewer: ",
-      "start": 5901,
-      "end": 5952,
+      "start": 5990,
+      "end": 6041,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 109,
           "column": 23
         },
         "end": {
-          "line": 108,
+          "line": 109,
           "column": 74
         }
       }
@@ -5047,15 +5047,15 @@
         "updateContext": null
       },
       "value": "+",
-      "start": 5953,
-      "end": 5954,
+      "start": 6042,
+      "end": 6043,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 109,
           "column": 75
         },
         "end": {
-          "line": 108,
+          "line": 109,
           "column": 76
         }
       }
@@ -5073,15 +5073,15 @@
         "binop": null
       },
       "value": "id",
-      "start": 5955,
-      "end": 5957,
+      "start": 6044,
+      "end": 6046,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 109,
           "column": 77
         },
         "end": {
-          "line": 108,
+          "line": 109,
           "column": 79
         }
       }
@@ -5098,15 +5098,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5957,
-      "end": 5958,
+      "start": 6046,
+      "end": 6047,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 109,
           "column": 79
         },
         "end": {
-          "line": 108,
+          "line": 109,
           "column": 80
         }
       }
@@ -5124,15 +5124,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 5958,
-      "end": 5959,
+      "start": 6047,
+      "end": 6048,
       "loc": {
         "start": {
-          "line": 108,
+          "line": 109,
           "column": 80
         },
         "end": {
-          "line": 108,
+          "line": 109,
           "column": 81
         }
       }
@@ -5152,15 +5152,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 5972,
-      "end": 5978,
+      "start": 6061,
+      "end": 6067,
       "loc": {
         "start": {
-          "line": 109,
+          "line": 110,
           "column": 12
         },
         "end": {
-          "line": 109,
+          "line": 110,
           "column": 18
         }
       }
@@ -5178,15 +5178,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 5978,
-      "end": 5979,
+      "start": 6067,
+      "end": 6068,
       "loc": {
         "start": {
-          "line": 109,
+          "line": 110,
           "column": 18
         },
         "end": {
-          "line": 109,
+          "line": 110,
           "column": 19
         }
       }
@@ -5203,15 +5203,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 5988,
-      "end": 5989,
+      "start": 6077,
+      "end": 6078,
       "loc": {
         "start": {
-          "line": 110,
+          "line": 111,
           "column": 8
         },
         "end": {
-          "line": 110,
+          "line": 111,
           "column": 9
         }
       }
@@ -5231,15 +5231,15 @@
         "updateContext": null
       },
       "value": "var",
-      "start": 5998,
-      "end": 6001,
+      "start": 6087,
+      "end": 6090,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 8
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 11
         }
       }
@@ -5257,15 +5257,15 @@
         "binop": null
       },
       "value": "model",
-      "start": 6002,
-      "end": 6007,
+      "start": 6091,
+      "end": 6096,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 12
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 17
         }
       }
@@ -5284,15 +5284,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 6008,
-      "end": 6009,
+      "start": 6097,
+      "end": 6098,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 18
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 19
         }
       }
@@ -5312,15 +5312,15 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 6010,
-      "end": 6013,
+      "start": 6099,
+      "end": 6102,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 20
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 23
         }
       }
@@ -5338,15 +5338,15 @@
         "binop": null
       },
       "value": "GLTFBigModel",
-      "start": 6014,
-      "end": 6026,
+      "start": 6103,
+      "end": 6115,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 24
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 36
         }
       }
@@ -5363,15 +5363,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6026,
-      "end": 6027,
+      "start": 6115,
+      "end": 6116,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 36
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 37
         }
       }
@@ -5391,15 +5391,15 @@
         "updateContext": null
       },
       "value": "this",
-      "start": 6027,
-      "end": 6031,
+      "start": 6116,
+      "end": 6120,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 37
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 41
         }
       }
@@ -5417,15 +5417,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6031,
-      "end": 6032,
+      "start": 6120,
+      "end": 6121,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 41
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 42
         }
       }
@@ -5443,15 +5443,15 @@
         "binop": null
       },
       "value": "viewer",
-      "start": 6032,
-      "end": 6038,
+      "start": 6121,
+      "end": 6127,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 42
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 48
         }
       }
@@ -5469,15 +5469,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6038,
-      "end": 6039,
+      "start": 6127,
+      "end": 6128,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 48
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 49
         }
       }
@@ -5495,15 +5495,15 @@
         "binop": null
       },
       "value": "scene",
-      "start": 6039,
-      "end": 6044,
+      "start": 6128,
+      "end": 6133,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 49
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 54
         }
       }
@@ -5521,15 +5521,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6044,
-      "end": 6045,
+      "start": 6133,
+      "end": 6134,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 54
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 55
         }
       }
@@ -5547,15 +5547,15 @@
         "binop": null
       },
       "value": "params",
-      "start": 6046,
-      "end": 6052,
+      "start": 6135,
+      "end": 6141,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 56
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 62
         }
       }
@@ -5572,15 +5572,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6052,
-      "end": 6053,
+      "start": 6141,
+      "end": 6142,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 62
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 63
         }
       }
@@ -5598,15 +5598,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6053,
-      "end": 6054,
+      "start": 6142,
+      "end": 6143,
       "loc": {
         "start": {
-          "line": 111,
+          "line": 112,
           "column": 63
         },
         "end": {
-          "line": 111,
+          "line": 112,
           "column": 64
         }
       }
@@ -5626,15 +5626,15 @@
         "updateContext": null
       },
       "value": "return",
-      "start": 6063,
-      "end": 6069,
+      "start": 6152,
+      "end": 6158,
       "loc": {
         "start": {
-          "line": 112,
+          "line": 113,
           "column": 8
         },
         "end": {
-          "line": 112,
+          "line": 113,
           "column": 14
         }
       }
@@ -5652,15 +5652,15 @@
         "binop": null
       },
       "value": "model",
-      "start": 6070,
-      "end": 6075,
+      "start": 6159,
+      "end": 6164,
       "loc": {
         "start": {
-          "line": 112,
+          "line": 113,
           "column": 15
         },
         "end": {
-          "line": 112,
+          "line": 113,
           "column": 20
         }
       }
@@ -5678,15 +5678,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6075,
-      "end": 6076,
+      "start": 6164,
+      "end": 6165,
       "loc": {
         "start": {
-          "line": 112,
+          "line": 113,
           "column": 20
         },
         "end": {
-          "line": 112,
+          "line": 113,
           "column": 21
         }
       }
@@ -5694,15 +5694,15 @@
     {
       "type": "CommentLine",
       "value": " TODO: register loading params within this plugin for inclusion in bookmarks",
-      "start": 6077,
-      "end": 6155,
+      "start": 6166,
+      "end": 6244,
       "loc": {
         "start": {
-          "line": 112,
+          "line": 113,
           "column": 22
         },
         "end": {
-          "line": 112,
+          "line": 113,
           "column": 100
         }
       }
@@ -5719,15 +5719,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6160,
-      "end": 6161,
+      "start": 6249,
+      "end": 6250,
       "loc": {
         "start": {
-          "line": 113,
+          "line": 114,
           "column": 4
         },
         "end": {
-          "line": 113,
+          "line": 114,
           "column": 5
         }
       }
@@ -5744,15 +5744,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6162,
-      "end": 6163,
+      "start": 6251,
+      "end": 6252,
       "loc": {
         "start": {
-          "line": 114,
+          "line": 115,
           "column": 0
         },
         "end": {
-          "line": 114,
+          "line": 115,
           "column": 1
         }
       }
@@ -5772,15 +5772,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 6165,
-      "end": 6171,
+      "start": 6254,
+      "end": 6260,
       "loc": {
         "start": {
-          "line": 116,
+          "line": 117,
           "column": 0
         },
         "end": {
-          "line": 116,
+          "line": 117,
           "column": 6
         }
       }
@@ -5797,15 +5797,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6172,
-      "end": 6173,
+      "start": 6261,
+      "end": 6262,
       "loc": {
         "start": {
-          "line": 116,
+          "line": 117,
           "column": 7
         },
         "end": {
-          "line": 116,
+          "line": 117,
           "column": 8
         }
       }
@@ -5823,15 +5823,15 @@
         "binop": null
       },
       "value": "GLTFBigModelsPlugin",
-      "start": 6173,
-      "end": 6192,
+      "start": 6262,
+      "end": 6281,
       "loc": {
         "start": {
-          "line": 116,
+          "line": 117,
           "column": 8
         },
         "end": {
-          "line": 116,
+          "line": 117,
           "column": 27
         }
       }
@@ -5848,15 +5848,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 6192,
-      "end": 6193,
+      "start": 6281,
+      "end": 6282,
       "loc": {
         "start": {
-          "line": 116,
+          "line": 117,
           "column": 27
         },
         "end": {
-          "line": 116,
+          "line": 117,
           "column": 28
         }
       }
@@ -5874,15 +5874,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 6194,
-      "end": 6194,
+      "start": 6283,
+      "end": 6283,
       "loc": {
         "start": {
-          "line": 117,
+          "line": 118,
           "column": 0
         },
         "end": {
-          "line": 117,
+          "line": 118,
           "column": 0
         }
       }

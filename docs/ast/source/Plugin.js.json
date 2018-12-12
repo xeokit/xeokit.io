@@ -589,7 +589,7 @@
                     "trailingComments": [
                       {
                         "type": "CommentBlock",
-                        "value": "*\n         * Subscriptions to events fired on this Plugin.\n         * @private\n         ",
+                        "value": "*\n         * Subscriptions to events fired at this Plugin.\n         * @private\n         ",
                         "start": 700,
                         "end": 792,
                         "loc": {
@@ -705,7 +705,7 @@
                     "leadingComments": [
                       {
                         "type": "CommentBlock",
-                        "value": "*\n         * Subscriptions to events fired on this Plugin.\n         * @private\n         ",
+                        "value": "*\n         * Subscriptions to events fired at this Plugin.\n         * @private\n         ",
                         "start": 700,
                         "end": 792,
                         "loc": {
@@ -4443,7 +4443,7 @@
                       "trailingComments": [
                         {
                           "type": "CommentBlock",
-                          "value": "*\n         * Subscriptions to events fired on this Plugin.\n         * @private\n         ",
+                          "value": "*\n         * Subscriptions to events fired at this Plugin.\n         * @private\n         ",
                           "start": 700,
                           "end": 792,
                           "loc": {
@@ -4559,7 +4559,7 @@
                       "leadingComments": [
                         {
                           "type": "CommentBlock",
-                          "value": "*\n         * Subscriptions to events fired on this Plugin.\n         * @private\n         ",
+                          "value": "*\n         * Subscriptions to events fired at this Plugin.\n         * @private\n         ",
                           "start": 700,
                           "end": 792,
                           "loc": {
@@ -7745,7 +7745,7 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n         * Subscriptions to events fired on this Plugin.\n         * @private\n         ",
+      "value": "*\n         * Subscriptions to events fired at this Plugin.\n         * @private\n         ",
       "start": 700,
       "end": 792,
       "loc": {
@@ -8958,7 +8958,7 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n         * Subscriptions to events fired on this Plugin.\n         * @private\n         ",
+      "value": "*\n         * Subscriptions to events fired at this Plugin.\n         * @private\n         ",
       "start": 700,
       "end": 792,
       "loc": {

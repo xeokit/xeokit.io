@@ -17,7 +17,7 @@ body {
 .business-header {
   height: 50vh;
   min-height: 300px;
-  background: url('../img/splash4.png') center center no-repeat scroll;
+  background: url('../img/splash.png') center center no-repeat scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;

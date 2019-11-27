@@ -17,14 +17,19 @@
     <!-- Custom styles for this template -->
     <link href="css/business-frontpage.css" rel="stylesheet">
 
+    <script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
+
 </head>
 
 <body>
 
+<!--------------------------------------------------------------------------------------------------------------------->
 <!-- Navigation -->
+<!--------------------------------------------------------------------------------------------------------------------->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">xeokit &nbsp;<span style="color: #0ab4ff; font-weight: bold;">beta</span></a>
+        <a class="navbar-brand" href="#"><span style="color: #ffffff; font-weight: bold;">xeokit&nbsp;SDK</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,14 +45,28 @@
                 <li class="nav-item">
                     <a class="nav-link" href="https://xeokit.github.io/xeokit-sdk/examples/">Examples</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://xeokit.github.io/xeokit-sdk/docs/">Docs</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLearn" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Developers
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLearn">
+                        <a class="dropdown-item" href="https://xeokit.github.io/xeokit-sdk/examples/">Examples</a>
+                        <a class="dropdown-item" href="https://xeokit.github.io/xeokit-sdk/docs/">Documentation</a>
+                        <a class="dropdown-item" href="https://github.com/xeokit/xeokit-sdk">Source Code</a>
+                        <a class="dropdown-item" href="https://github.com/xeokit/xeokit-sdk/wiki/">Tutorials</a>
+                        <a class="dropdown-item" href="https://github.com/xeokit/xeokit-sdk/issues">Issues</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/xeokit/xeokit-sdk/wiki/">Wiki</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/xeokit/xeokit-sdk">Source code</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDownload" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Download
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownDownload">
+                        <a class="dropdown-item" href="https://github.com/xeokit/xeokit-sdk/releases">GitHub</a>
+                        <a class="dropdown-item" href="https://www.npmjs.com/org/xeokit">NPM</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://xeokit.github.io/xeokit-licensing/">Pricing</a>
@@ -60,184 +79,310 @@
     </div>
 </nav>
 
-<!-- Header with Background Image -->
-<header class="business-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <!--<h1 class="display-3 text-center text-white mt-4">A 3D Viewer Development Kit<br>for Web-Based Engineering </h1>-->
+<!--------------------------------------------------------------------------------------------------------------------->
+<!-- Carousel -->
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('./img/splash4.png')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3><a href="https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_OTCConferenceCenter">OTC
+                        Conference Center</a></h3>
+                </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('./img/BimdataViewerCropped.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3><a href="https://bimdata.io">BIMData.io</a></h3>
+                </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+                <div class="carousel-caption d-none d-md-block">
+                    <p><a href="BIMData.io">PlanRadar</a></p>
+                </div>
             </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 </header>
 
-<!-- Page Content -->
-<div class="container">
 
-    <div class="row">
-        <div class="col-sm-8">
-            <h2 class="mt-4">xeokit - High-Detail BIM and Engineering Visualization for the Web</h2>
+<!--------------------------------------------------------------------------------------------------------------------->
+<!-- Abstract -->
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<section class="main-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10">
+                <h1 class="mt-4">High-Performance 3D Graphics Toolkit<br>for Web-based BIM and Engineering</h1>
             <p><b>xeokit</b> is a software development kit from <a href="http://xeolabs.com">xeolabs</a> for
-                viewing high-detail 3D models in the browser. The SDK provides a high-performance WebGL-based
+                interacting with high-detail 3D engineering models in the browser.</p>
+                <p>The SDK provides a high-performance, purpose-built WebGL-based
                 3D engine with a bundled library of plugins focused on BIM and engineering. The engine uses advanced rendering
-                techniques
-                to view and interact with high-detail models in most major browsers, on both desktop and mobile
-                platforms.</p>
-            <p><a class="btn btn-primary btn-lg" href="https://github.com/xeokit/xeokit-sdk/wiki/">Learn More
-                &raquo;</a>
-            </p>
+                techniques to view and interact with real-world engineering models in most major browsers, on both desktop and mobile platforms.</p>
+                <br>
+                <p><a class="btn btn-primary btn-lg" href="https://github.com/xeokit/xeokit-sdk/wiki/">Learn More
+                    &raquo;</a></p>
         </div>
-        <div class="col-sm-4">
-            <h2 class="mt-4">Get in Contact</h2>
-            <p>Get in touch for <a href="https://xeokit.github.io/xeokit-licensing/">licensing</a>, support, custom plugins and application development</p>
-            <address>
-                <strong>xeolabs</strong>
-                <br><a href="http://xeolabs.com">xeolabs.com</a>
-                <br><a href="mailto:lindsay.kay@xeolabs.com">lindsay.kay@xeolabs.com</a>
-                <br><a href="https://twitter.com/xeolabs">@xeolabs</a>
-            </address>
+            <!--            <div class="col-sm-4 contact">-->
+            <!--            <h2 class="mt-4">Get in Contact</h2>-->
+            <!--            <p>Get in touch for <a href="https://xeokit.github.io/xeokit-licensing/">licensing</a>, support, custom plugins and application development</p>-->
+            <!--            <address>-->
+            <!--                <strong>xeolabs</strong>-->
+            <!--                <br><a href="http://xeolabs.com">xeolabs.com</a>-->
+            <!--                <br><a href="mailto:lindsay.kay@xeolabs.com">lindsay.kay@xeolabs.com</a>-->
+            <!--                <br><a href="https://twitter.com/xeolabs">@xeolabs</a>-->
+            <!--            </address>-->
+            <!--        </div>-->
+    </div>
+    </div>
+</section>
+
+<!--------------------------------------------------------------------------------------------------------------------->
+<!-- Features -->
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<section class="main-section alabaster">
+    <div class="container">
+        <div class="row testimonial-row">
+            <h1>xeokit Features</h1>
+        </div>
+        <div class="row  testimonial-row">
+            <div class="col-lg-6 left-aligned">
+                <h3>Display your Models in a Browser</h3>
+                <p>Fast loading times and rendering performance, in all major browsers.</p>
+                <ul>
+                    <li>Interactively display highly-detailed, real-world models.</li>
+                    <li>Include metadata to classify and navigate objects.</li>
+                    <li>Display models from glTF, OBJ, STL, 3DXML and BIMServer.</li>
+                    <li>Works in all major browsers, including mobile.</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <a href="https://xeokit.github.io/xeokit-sdk/examples/#camera_CameraPathAnimation"><img class="img-fluid rounded freezeframe"
+                                src="img/gifs/cameraPath.gif"
+                                alt=""></a>
+            </div>
+        </div>
+        <div class="row testimonial-row">
+            <div class="col-lg-6 left-aligned">
+                <h3>Programming Toolkit</h3>
+                <p>An open source toolkit geared to engineering visualization on the Web.</p>
+                <ul>
+                    <li>Purpose-designed WebGL graphics engine.</li>
+                    <li>Dynamic scene graph.</li>
+                    <li>Move, select, highlight, section and xray objects.</li>
+                    <li>Physically-based materials.</li>
+                    <li>Clean, modular JavaScript ES6.</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <a href=""><img class="img-fluid rounded freezeframe"
+                                src="https://user-images.githubusercontent.com/83100/58403089-26589280-8062-11e9-8652-aed61a4e8c64.gif"
+                                alt=""></a>
+            </div>
+        </div>
+        <div class="row testimonial-row">
+            <div class="col-lg-6 left-aligned">
+                <h3>Plugins Library</h3>
+                <p>A growing library of plugins to acellerate the development of your application.</p>
+                <ul>
+                    <li><a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/SectionPlanesPlugin/SectionPlanesPlugin.js~SectionPlanesPlugin.html">Sectioning Tools</a></li>
+                    <li><a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/AnnotationsPlugin/AnnotationsPlugin.js~AnnotationsPlugin.html">Annotations</a></li>
+                    <li><a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/StoreyViewsPlugin/StoreyViewsPlugin.js~StoreyViewsPlugin.html">2D Storey Plan Views</a></li>
+                    <li><a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/DistanceMeasurementsPlugin/DistanceMeasurementsPlugin.js~DistanceMeasurementsPlugin.html">Measurement Tools</a></li>
+                    <li><a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/NavCubePlugin/NavCubePlugin.js~NavCubePlugin.html">Navigation Aids</a></li>
+                    <li><a href="https://github.com/xeokit/xeokit-sdk/wiki/BCF-Viewpoints">BCF Collaboration</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <a href=""><img class="img-fluid rounded freezeframe"
+                                src="https://user-images.githubusercontent.com/83100/57724962-406e9a00-768c-11e9-9f1f-3d178a3ec11f.gif"
+                                alt=""></a>
+            </div>
+        </div>
+        <div class="row testimonial-row">
+            <div class="col-lg-6 left-aligned">
+                <h3>Open Community</h3>
+                <p>Join an open community of 3D Web programming experts. Share our tools and get support.</p>
+                <ul>
+                    <li><a href="https://github.com/xeokit/xeokit-sdk">Open Source</a></li>
+                    <li><a href="https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_OTCConferenceCenter">Live Examples</a></li>
+                    <li><a href="https://xeokit.github.io/xeokit-sdk/docs/">Documentation</a></li>
+                    <li><a href="https://github.com/xeokit/xeokit-sdk/wiki">Tutorials</a></li>
+                    <li><a href="https://github.com/xeokit/xeokit-sdk/issues">Discussion</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <a href=""><img class="img-fluid rounded freezeframe"
+                                src="https://user-images.githubusercontent.com/83100/57724962-406e9a00-768c-11e9-9f1f-3d178a3ec11f.gif"
+                                alt=""></a>
+            </div>
         </div>
     </div>
 
-    <!-- /.row -->
+</section>
 
-    <div class="row">
-        <div class="col-sm-4 my-4">
-            <div class="card">
-                <a href="https://github.com/xeokit/xeokit-sdk/wiki/Viewing-BIM-Models-Offline"><img
-                        class="card-img-top" src="./img/docs/GLTFLoaderPlugin/conferenceCenter.png" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">View BIM Models from the File System</h4>
-                    <p class="card-text">Load IFC geometry and metadata from the file system. No need
-                        to store your models in the cloud.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="https://github.com/xeokit/xeokit-sdk/wiki/Viewing-BIM-Models-Offline"
-                       class="btn btn-primary">Learn
-                        More &raquo;</a>
-                </div>
-            </div>
+<!--------------------------------------------------------------------------------------------------------------------->
+<!-- Users -->
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<section class="main-section">
+    <div class="container">
+        <div class="row testimonial-row">
+            <h1>xeokit is trusted by..</h1>
         </div>
-
-        <div class="col-sm-4 my-4">
-            <div class="card">
-                <a href="https://github.com/xeokit/xeokit-sdk/wiki/Viewing-Models-from-BIMServer"><img
-                        class="card-img-top" src="./img/docs/BIMServerLoaderPlugin/schependomlaan.png" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">View BIM Models from BIMServer</h4>
-                    <p class="card-text">Stream BIM geometry and metadata from the leading open
-                        source IFC data server.</p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="https://github.com/xeokit/xeokit-sdk/wiki/Viewing-Models-from-BIMServer"
-                       class="btn btn-primary">Learn More &raquo;</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-4 my-4">
-
-            <div class="card">
-                <a href="https://github.com/xeokit/xeokit-sdk/wiki/Importing-Models"><img class="card-img-top"
-                                                                                          src="./img/gear-300x200.gif"
-                                                                                          alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">High-Performance Visualization</h4>
-                    <p class="card-text">View millions of 3D objects in the browser. Load them in seconds from xeokit's native binary format.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="https://github.com/xeokit/xeokit-sdk/wiki/Importing-Models" class="btn btn-primary">Learn
-                        More &raquo;</a>
-                </div>
-
+        <div class="row testimonial-row">
+            <div class="col-sm-12">
+                <img src="img/logo-strip.jpg" width="100%">
             </div>
         </div>
     </div>
+</section>
 
-    <!-- /.row -->
+<!--------------------------------------------------------------------------------------------------------------------->
+<!-- Testimonials -->
+<!--------------------------------------------------------------------------------------------------------------------->
 
-    <!-- /.row -->
-
-    <div class="row">
-        <div class="col-sm-4 my-4">
-            <div class="card">
-                <a href="https://github.com/xeokit/xeokit-sdk/wiki/Features"><img class="card-img-top"
-                                                                                  src="./img/gearbox.png" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">A Complete 3D Library</h4>
-                    <p class="card-text">A flexible and fully-documented 3D WebGL library at the core, specially
-                        designed for large-scale model viewing.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="https://github.com/xeokit/xeokit-sdk/wiki/Features" class="btn btn-primary">Learn
-                        More &raquo;</a>
-                </div>
+<section class="main-section alabaster">
+    <div class="container">
+        <div class="row testimonial-row">
+            <h1>What xeokit's users say</h1>
+        </div>
+        <div class="row testimonial-row">
+            <div class="col-sm-9">
+                <blockquote><p><b>xeokit is a success enabler for our customers.</b></p>
+                    <p>Incredibly fast load times and super
+                        high-performance rendering, even on mobile browsers. Built in a modular way that allowed us
+                        to
+                        easily customize its
+                        behaviour, while allowing us to create a differentiated navigation experience.</p>
+                    <p>Clean code with the ability to inspect its internals was key to our development experience.
+                        Teams focused on simple things can start using it with less than 10 lines of JS code, while
+                        more
+                        advanced users will find that xeokit can be
+                        adapted to meet their advanced use cases.</p>
+                    <cite><a href="">Toni Marti</a>, Software Artist at <a href="">uniZite AS</a></cite>
+                </blockquote>
+            </div>
+            <div class="col-sm-3">
+                <a href=""><img src="img/logos/unizite-logo.png" class="testimonial-logo-container"
+                                style="width: 150px;"></a>
             </div>
         </div>
-        <div class="col-sm-4 my-4">
-            <div class="card">
-                <a href="https://github.com/xeokit/xeokit-sdk/wiki/Material-Workflows"><img class="card-img-top"
-                                                                                            src="./img/pbr300x200.png"
-                                                                                            alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">Physically-Based Materials</h4>
-                    <p class="card-text">Physically-based metallic/roughness and specular/glossiness workflows for
-                        realism, Blinn/Phong and Lambertian for performance.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="https://github.com/xeokit/xeokit-sdk/wiki/Material-Workflows"
-                       class="btn btn-primary">Learn
-                        More &raquo;</a>
-                </div>
+        <div class="row testimonial-row">
+            <div class="col-sm-9">
+                <blockquote><b>xeokit's rich features and detailed documentation</b> allow us to create
+                    an interactive and
+                    customizable web visualization experience for large-scale BIM models. It also provides us with
+                    the
+                    possibilities to retrieve data from BIM model for further experiments and insights.
+                    <cite><a href="https://www.linkedin.com/in/chloe-c-s-955a22114/">Chloe Sun</a>, Design
+                        Technology
+                        Specialist
+                        at <a href="https://www.hok.com">HOK</a></cite>
+                </blockquote>
+            </div>
+            <div class="col-sm-3">
+                <a href=""><img src="img/logos/hok-logo.jpg" style="width: 100px;"
+                                class="testimonial-logo-container"></a>
             </div>
         </div>
-
-        <div class="col-sm-4 my-4">
-
-            <div class="card">
-                <a href="https://github.com/xeokit/xeokit-sdk/wiki/Importing-Models"><img class="card-img-top"
-                                                                                          src="./img/gear-300x200.gif"
-                                                                                          alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">Import Models from Multiple Formats</h4>
-                    <p class="card-text">Import multiple models into the same scene, from a variety of source
-                        formats, including glTF, 3DXML, OBJ, STL and 3DS.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="https://github.com/xeokit/xeokit-sdk/wiki/Importing-Models" class="btn btn-primary">Learn
-                        More &raquo;</a>
-                </div>
+        <div class="row testimonial-row">
+            <div class="col-sm-9">
+                <blockquote><b>Amazing, unmatched loading and rendering speed</b>, we are able to create
+                    interactive and
+                    customizable web visualization experience for large-scale BIM models. It also provides us with
+                    the
+                    possibilities to retrieve data from BIM model for further experiments and insights.
+                    <cite><a href="https://www.linkedin.com/in/hugo-duroux-46262166/">Hugo Duroux</a>, Technical
+                        Director at
+                        <a
+                                href="https://bimdata.io">BIMData.io</a></cite>
+                </blockquote>
+            </div>
+            <div class="col-sm-3">
+                <a href=""><img src="img/logos/bimdata-logo.png" style="width: 150px;"
+                                class="testimonial-logo-container"></a><br>
             </div>
         </div>
-<!--        <div class="col-sm-4 my-4">-->
-<!--            <div class="card">-->
-<!--                <a href="https://github.com/xeokit/xeokit-sdk/wiki/Viewer-Plugins"><img class="card-img-top"-->
-<!--                                                                                        src="./img/officePlan300x200.png"-->
-<!--                                                                                        alt=""></a>-->
-<!--                <div class="card-body">-->
-<!--                    <h4 class="card-title">Extensible with Plugins</h4>-->
-<!--                    <p class="card-text">A growing library of viewer plugins to accelerate application development.</p>-->
-<!--                </div>-->
-<!--                <div class="card-footer">-->
-<!--                    <a href="https://github.com/xeokit/xeokit-sdk/wiki/Viewer-Plugins"-->
-<!--                       class="btn btn-primary">Learn More &raquo;</a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
+        <div class="row testimonial-row">
+            <div class="col-sm-9">
+                <blockquote><b>Amazing, unmatched loading and rendering speed</b>, we are able to create
+                    interactive and
+                    customizable web visualization experience for large-scale BIM models. It also provides us with
+                    the
+                    possibilities to retrieve data from BIM model for further experiments and insights.
+                    <cite><a href="https://www.linkedin.com/in/hugo-duroux-46262166/">Hugo Duroux</a>, Technical
+                        Director at
+                        <a
+                                href="https://bimdata.io">PlanRadar.com</a></cite>
+                </blockquote>
+            </div>
+            <div class="col-sm-3">
+                <a href=""><img src="img/logos/plan-radar.jpg" style="width: 150px;"
+                                class="testimonial-logo-container"></a><br>
+            </div>
+        </div>
     </div>
+</section>
 
-    <!-- /.row -->
+<!--------------------------------------------------------------------------------------------------------------------->
+<!-- Contact -->
+<!--------------------------------------------------------------------------------------------------------------------->
 
-    <div class="row">
-        <div class="col-12"><br><br>
-            <h4 class="card-title">xeokit is used by:</h4>
-            <img src="img/logo-strip.jpg" width="100%" >
+<section class="main-section">
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2 m-auto">
+            <div class="contact-form">
+                <h1>Contact Us</h1>
+                <p class="hint-text">We'd love to hear from you, please drop us a line if you've any query.</p>
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="inputFirstName">First Name</label>
+                                <input type="text" class="form-control" id="inputFirstName" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="inputLastName">Last Name</label>
+                                <input type="text" class="form-control" id="inputLastName" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email Address</label>
+                        <input type="email" class="form-control" id="inputEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                </form>
+            </div>
         </div>
     </div>
-
-</div>
-<!-- /.container -->
+</section>
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
@@ -256,6 +401,8 @@
 </html>
 
 <script>
+
+    new Freezeframe();
     function runDemo() {
         const header = document.getElementById("header");
         const runDemo = document.getElementById("tap-to-interact-wrapper");
@@ -268,4 +415,5 @@
             runDemo.parentElement.removeChild(runDemo);
         }
     }
+
 </script>

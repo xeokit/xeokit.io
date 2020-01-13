@@ -1,0 +1,69 @@
+
+<meta charset="utf-8" emacsmode="-*- markdown -*-">
+**xeokit SDK - High-Detail BIM and Engineering Visualization for the Web**
+
+![OTC Conference Center, loaded in ~1.8s, rendering 60FPS in Ubuntu/Chrome with ](http://xeokit.io/img/splash4.png)
+
+# Abstract
+
+[xeokit](http://xeokit.io) is an open source software development kit from [xeolabs](http://xeolabs.com) for viewing high-detail 3D models in the browser. The SDK includes a purpose-built WebGL-based[^webgl] 3D engine with a bundled library of plugins focused on BIM[^bim] and AEC[^aec] visualization. The engine loads models quickly and uses advanced rendering techniques to interactively view large numbers of objects in most major browsers, on both desktop and mobile platforms.
+
+The SDK is provided under an Affero GPL V3 dual-license, which allows free use for non-commercial purposes, with the option to purchase a licence for commercial use.
+
+[^webgl]: WebGL is a JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins
+[^bim]: Building Information Modeling
+[^aec]: Architecture, engineering and construction
+
+Features Overview
+===============================================================================
+
+## Core SDK Features
+
+* **Load large models quickly** from one of the fastest-loading 3D geometry formats on the Web.
+* **Render high-detail interactively** in all major Web browsers, using one of the most performant purpose-built WebGL-based 3D renderers on the market.
+* **Load IFC metadata** alongside your models to classify objects and assist navigation. Load BIM models straight off the file system, no need to store models in the cloud.
+* **Rapidly build applications** using a growing library of plugins that fast-track application development for BIM and engineering.
+* **Physically-based rendering** capability for realistic previews.
+* **Scene graph** represntation
+* **Complete API documentation** covers everything in the SDK.
+* **Live examples** demonstrate all features and provide boilerplates to get you started.
+* **Clean readable code** developed with empathy for developers, following good software design principles, in modern JavaScript (ECMA6).
+* **Used and supported by industry leaders** who sustain development through licensing, sponsorship and code contributions.
+
+## Plugins
+
+* **Storey plan views**
+* **Sectioning**
+* **BCF viewpoints**
+* **Camera navigation gizmos**
+
+Technical Details
+===============================================================================
+
+Fast Loading
+-------------------------------------------------------------------------------
+
+**The SDK's fastest loading format is its native binary .XKT format**, which is a single BLOB containing a model, compressed using geometry quantization and DEFLATE compression.
+
+Open source CLI tools are available to convert IFC STEP and glTF files into .XKT format for efficient consumption by xeokit. CLI tools are also provided to extract JSON IFC metadata to load alongside the model geometry. These tools can be easily scripted to build automated IFC -> xeokit data pipelines.
+
+xeokit can also import models from glTF, OBJ, STL, 3DXML and BIMServer, and can load multiple models into the same scene from different sources.
+
+Model | IFC Size | .XKT Size | Objects | Loading Time | Demo
+-------|------|-----|------|-----|------
+[Duplex](http://openifcmodel.cs.auckland.ac.nz/Model/Details/274)                  | 1.2M | 1.2M  | 291   |  ~0.6s  | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#loading_XKT_Duplex)
+[Schependomlaan](https://github.com/openBIMstandards/DataSetSchependomlaan)          | 49.2M | 1.5M | 3504  |  ~0.8s  | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#loading_XKT_Schependomlaan)
+[OTC Conference Center](http://openifcmodel.cs.auckland.ac.nz/Model/Details/301)   | 68.6M | 4.8M  | 6462  |  ~1.8s  | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#loading_XKT_OTCConferenceCenter)
+[xeokit XKT format loading performance]
+
+Efficient Rendering
+-------------------------------------------------------------------------------
+
+
+Definitions
+-------------------------------------------------------------------------------
+
+
+[aec]: http://google.com
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>

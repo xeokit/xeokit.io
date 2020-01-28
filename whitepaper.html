@@ -2,7 +2,8 @@
 <meta charset="utf-8" emacsmode="-*- markdown -*-">
 **xeokit SDK - High-Detail BIM and Engineering Visualization for the Web**
 
-![OTC Conference Center, loaded in ~1.8s, rendering 60FPS in Ubuntu/Chrome with ](http://xeokit.io/img/splash4.png)
+![](https://github.com/xeokit/xeokit-viewer/raw/master/images/xeokit-viewer.png)
+*OTC Conference Center, loaded in ~1.8s, rendering at 60FPS in Ubuntu/Chrome on Intel® i7-4800MQ and nVIDIA Quadro K4100M. Run this example application [here](https://xeokit.github.io/xeokit-viewer/).*
 
 # Abstract
 
@@ -56,14 +57,58 @@ Model | IFC Size | .XKT Size | Objects | Loading Time | Demo
 [OTC Conference Center](http://openifcmodel.cs.auckland.ac.nz/Model/Details/301)   | 68.6M | 4.8M  | 6462  |  ~1.8s  | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#loading_XKT_OTCConferenceCenter)
 [xeokit XKT format loading performance]
 
-Efficient Rendering
--------------------------------------------------------------------------------
+Selling Points
+===============================================================================
+
+## Fully Open Source
+
+Unlike other solutions, such as AutoDesk Forge, everything in xeokit is open source. This includes xeokit's viewer, plugins, and pipeline tools. This reduces risk for users, and affords them the ability to inspect the code, fork the repository and make any necessary fixes and customizations.
+
+xeokit's development process is fully transparent. Users can follow and participate in development on GitHub[^github], and receive news of new developments on Twitter[^twitter].
+
+[^twitter] [#xeogl on Twitter](https://twitter.com/hashtag/xeokit?src=hashtag_click&f=live)<br>
+[^GitHub] [https://github.com/xeokit/xeokit-sdk](https://github.com/xeokit/xeokit-sdk)
+
+## Open Data Pipeline
+
+xeokit does not box users into a closed pipeline. The SDK allows to load models from the filesystem[^filepipe], or, using custom loading strategies, from your own data source, including BIMServer. AutoDesk Forge, by comparison, keeps user's models on their own servers, while incurring a high IFC-to-Web conversion cost per model.
+
+Some users have developed their own loading strategies, including one that progressively streams models into xeokit from their own model server.
+
+[^filepipe][Creating Files for Serverless BIM](https://github.com/xeokit/xeokit-sdk/wiki/Creating-Files-for-Offline-BIM)
+[^bimserver][BIMServerLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/BIMServerLoaderPlugin/BIMServerLoaderPlugin.js~BIMServerLoaderPlugin.html)
+
+## Unmatched Performance
+
+The xeokit SDK currently fills a gap in the market for performant viewing of large, real-world BIM models in the browser. Most other toolkits, such as Autodesk Forge, are built around general-purpose WebGL libraries, such as THREE.js, which are designed for maximum extensibility in order to support a wide range of visual effects capabilities, while xeokit is specifically designed from the ground up to render large models for BIM and engineering [^instancing], [^batching].
+
+[^instancing][Geometry Instancing](https://en.wikipedia.org/wiki/Geometry_instancing)<br>
+[^batching][Geometry Batching](https://www.khronos.org/assets/uploads/developers/library/2013-siggraph-opengl-bof/Batch-and-Cull-in-OpenGL-BOF_SIGGRAPH-2013.pdf)<br>
+
+## Based on Ten Years Research and Development
+
+The xeokit SDK is the product of ten years experience providing solutions Web-based visualization in BIM, CAD and medicine[^research]. As such, xeokit is a refined toolkit of reusable solutions that support many of the use cases for these sorts of applications. When you use xeokit, you'll be tapping into xeolabs ongoing research into high-performance Web visualization (for example, xeokit plans to support WebGPU).
+
+[^research] [http://xeolabs.com/portfolio/](http://xeolabs.com/portfolio/)
+
+## Sustainable
+
+xeokit is developed with the financial and technical support of industry leaders [^supporters] who are using the toolkit in production. Some of these supporters have contributed tools, capabilities and fixes, and have generally helped to assure the quality of the toolkit as they have used it in production. One example is [D-Studio](http://dstudio.be/), who have committed to ongoing support of xeokit, while [xeolabs](http://xeolabs) works with D-Studio to develop custom 4D BIM solutions on the SDK.
+
+[^supporters] Including [D-Studio](http://dstudio.be/), [OpenProject GmbH](https://www.openproject.org/), [uniZite AS](https://unizite.info/), [BIMData](http://bimdata.io) - see all users at [xeokit.io](http://http://xeokit.io/)
+
+## Code Quality
+
+xeokit code is clean and maintainable. Written in modular ES6, it allows to cherry-pick only what developers need their your applications, while allowing to customize and adding new proprietary modules and plugins as required. Code is built using best practices in software design [^bestpractices], with empathy for users. All code is fully documented [^apidocs], with live examples of most features [^examples].
+
+[^bestpractices] Including [SOLID](https://en.wikipedia.org/wiki/SOLID), [Open-Closed Principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) and [Riel's Hueristics](https://www.amazon.com/Object-Oriented-Design-Heuristics-paperback-Arthur/dp/0321774965)<br>
+[^apidocs] [API Docs](https://xeokit.github.io/xeokit-sdk/docs/)<br>
+[^examples] [Examples](https://xeokit.github.io/xeokit-sdk/examples/)<br>
 
 
 Definitions
--------------------------------------------------------------------------------
+===============================================================================
 
-
-[aec]: http://google.com
+WIP
 
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>

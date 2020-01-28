@@ -1,19 +1,21 @@
 
 <meta charset="utf-8" emacsmode="-*- markdown -*-">
-**xeokit SDK - High-Detail BIM and Engineering Visualization for the Web**
+**xeokit SDK Whitepaper - High-Detail BIM and Engineering Visualization for the Web**
 
 ![](https://github.com/xeokit/xeokit-viewer/raw/master/images/xeokit-viewer.png)
 *OTC Conference Center, loaded in ~1.8s, rendering at 60FPS in Ubuntu/Chrome on Intel® i7-4800MQ and nVIDIA Quadro K4100M. Run this example application [here](https://xeokit.github.io/xeokit-viewer/).*
 
 # Abstract
 
-[xeokit](http://xeokit.io) is an open source software development kit from [xeolabs](http://xeolabs.com) for viewing high-detail 3D models in the browser. The SDK includes a purpose-built WebGL-based[^webgl] 3D engine with a bundled library of plugins focused on BIM[^bim] and AEC[^aec] visualization. The engine loads models quickly and uses advanced rendering techniques to interactively view large numbers of objects in most major browsers, on both desktop and mobile platforms.
+[xeokit](http://xeokit.io) is an open source software development kit from [xeolabs](http://xeolabs.com) for viewing high-detail 3D models in the browser. The SDK includes a purpose-built WebGL-based[^webgl] 3D engine with a bundled library of plugins focused on BIM [^bim] and AEC [^aec] visualization. The engine loads models quickly and uses advanced rendering techniques to interactively view large numbers of objects in most major browsers, on both desktop and mobile platforms.
 
 The SDK is provided under an Affero GPL V3 dual-license, which allows free use for non-commercial purposes, with the option to purchase a licence for commercial use.
 
-[^webgl]: WebGL is a JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins<br>
-[^bim]: Building Information Modeling<br>
-[^aec]: Architecture, engineering and construction<br>
+[^webgl]: WebGL is a JavaScript API for rendering interactive 2D and 3D graphics within any compatible web browser without the use of plug-ins
+
+[^bim]: Building Information Modeling (BIM)
+
+[^aec]: Architecture, Engineering and Construction (AEC)
 
 Features Overview
 ===============================================================================
@@ -22,7 +24,7 @@ Features Overview
 
 * **Load large models quickly** from one of the fastest-loading 3D geometry formats on the Web.
 * **Render high-detail interactively** in all major Web browsers, using one of the most performant purpose-built WebGL-based 3D renderers on the market.
-* **Load IFC metadata** alongside your models to classify objects and assist navigation. Load BIM models straight off the file system, no need to store models in the cloud.
+* **Load IFC metadata** (IFC2x3 and IFC4) alongside your models to classify objects and assist navigation. Load BIM models straight off the file system, no need to store models in the cloud.
 * **Rapidly build applications** using a growing library of plugins that fast-track application development for BIM and engineering.
 * **Physically-based rendering** capability for realistic previews.
 * **Scene graph** represntation
@@ -63,44 +65,49 @@ Unlike other solutions, such as AutoDesk Forge, everything in xeokit is open sou
 
 xeokit's development process is fully transparent. Users can follow and participate in development on GitHub[^github], and receive news of new developments on Twitter[^twitter].
 
-[^twitter] [#xeogl on Twitter](https://twitter.com/hashtag/xeokit?src=hashtag_click&f=live)<br>
-[^GitHub] [https://github.com/xeokit/xeokit-sdk](https://github.com/xeokit/xeokit-sdk)
+[^twitter]: [#xeogl on Twitter](https://twitter.com/hashtag/xeokit?src=hashtag_click&f=live)
+
+[^GitHub]: [https://github.com/xeokit/xeokit-sdk](https://github.com/xeokit/xeokit-sdk)
 
 ## Open Data Pipeline
 
-xeokit does not box users into a closed pipeline. The SDK allows to load models from the filesystem[^filepipe], or, using custom loading strategies, from your own data source, including BIMServer. AutoDesk Forge, by comparison, keeps user's models on their own servers, while incurring a high IFC-to-Web conversion cost per model.
+xeokit does not box users into a closed pipeline. The SDK allows to load models from the filesystem [^filepipe], or, using custom loading strategies, from your own data source, including BIMServer [^bimserver]. AutoDesk Forge, by comparison, keeps user's models on their own servers, while incurring a high IFC-to-Web conversion cost per model.
 
 Some users have developed their own loading strategies, including one that progressively streams models into xeokit from their own model server.
 
-[^filepipe][Creating Files for Serverless BIM](https://github.com/xeokit/xeokit-sdk/wiki/Creating-Files-for-Offline-BIM)<br>
-[^bimserver][BIMServerLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/BIMServerLoaderPlugin/BIMServerLoaderPlugin.js~BIMServerLoaderPlugin.html)
+[^filepipe]: [Creating Files for Serverless BIM](https://github.com/xeokit/xeokit-sdk/wiki/Creating-Files-for-Offline-BIM)
+
+[^bimserver]: [BIMServerLoaderPlugin](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/BIMServerLoaderPlugin/BIMServerLoaderPlugin.js~BIMServerLoaderPlugin.html)
 
 ## Unmatched Performance
 
 The xeokit SDK currently fills a gap in the market for performant viewing of large, real-world BIM models in the browser. Most other toolkits, such as Autodesk Forge, are built around general-purpose WebGL libraries, such as THREE.js, which are designed for maximum extensibility in order to support a wide range of visual effects capabilities, while xeokit is specifically designed from the ground up to render large models for BIM and engineering [^instancing], [^batching].
 
-[^instancing][Geometry Instancing](https://en.wikipedia.org/wiki/Geometry_instancing)<br>
-[^batching][Geometry Batching](https://www.khronos.org/assets/uploads/developers/library/2013-siggraph-opengl-bof/Batch-and-Cull-in-OpenGL-BOF_SIGGRAPH-2013.pdf)<br>
+[^instancing]: [Geometry Instancing](https://en.wikipedia.org/wiki/Geometry_instancing)
+
+[^batching]: [Geometry Batching](https://www.khronos.org/assets/uploads/developers/library/2013-siggraph-opengl-bof/Batch-and-Cull-in-OpenGL-BOF_SIGGRAPH-2013.pdf)
 
 ## Based on Ten Years Research and Development
 
 The xeokit SDK is the product of ten years experience providing solutions Web-based visualization in BIM, CAD and medicine[^research]. As such, xeokit is a refined toolkit of reusable solutions that support many of the use cases for these sorts of applications. When you use xeokit, you'll be tapping into xeolabs ongoing research into high-performance Web visualization (for example, xeokit plans to support WebGPU).
 
-[^research] [http://xeolabs.com/portfolio/](http://xeolabs.com/portfolio/)
+[^research]: [http://xeolabs.com/portfolio/](http://xeolabs.com/portfolio/)
 
 ## Sustainable
 
 xeokit is developed with the financial and technical support of industry leaders [^supporters] who are using the toolkit in production. Some of these supporters have contributed tools, capabilities and fixes, and have generally helped to assure the quality of the toolkit as they have used it in production. One example is [D-Studio](http://dstudio.be/), who have committed to ongoing support of xeokit, while [xeolabs](http://xeolabs) works with D-Studio to develop custom 4D BIM solutions on the SDK.
 
-[^supporters] Including [D-Studio](http://dstudio.be/), [OpenProject GmbH](https://www.openproject.org/), [uniZite AS](https://unizite.info/), [BIMData](http://bimdata.io) - see all users at [xeokit.io](http://http://xeokit.io/)
+[^supporters]: Including [D-Studio](http://dstudio.be/), [OpenProject GmbH](https://www.openproject.org/), [uniZite AS](https://unizite.info/), [BIMData](http://bimdata.io) - see all users at [xeokit.io](http://http://xeokit.io/)
 
 ## Code Quality
 
 xeokit code is clean and maintainable. Written in modular ES6, it allows to cherry-pick only what developers need their your applications, while allowing to customize and adding new proprietary modules and plugins as required. Code is built using best practices in software design [^bestpractices], with empathy for users. All code is fully documented [^apidocs], with live examples of most features [^examples].
 
-[^bestpractices] Including [SOLID](https://en.wikipedia.org/wiki/SOLID), [Open-Closed Principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) and [Riel's Hueristics](https://www.amazon.com/Object-Oriented-Design-Heuristics-paperback-Arthur/dp/0321774965)<br>
-[^apidocs] [API Docs](https://xeokit.github.io/xeokit-sdk/docs/)<br>
-[^examples] [Examples](https://xeokit.github.io/xeokit-sdk/examples/)<br>
+[^bestpractices]: Including [SOLID](https://en.wikipedia.org/wiki/SOLID), [Open-Closed Principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) and [Riel's Hueristics](https://www.amazon.com/Object-Oriented-Design-Heuristics-paperback-Arthur/dp/0321774965)
+
+[^apidocs]: [API Docs](https://xeokit.github.io/xeokit-sdk/docs/)
+
+[^examples]: [Examples](https://xeokit.github.io/xeokit-sdk/examples/)
 
 
 Definitions

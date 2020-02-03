@@ -1,11 +1,10 @@
-
 <meta charset="utf-8" emacsmode="-*- markdown -*-">
-**xeokit SDK Whitepaper - High-Detail BIM and Engineering Visualization for the Web**
+**xeokit SDK Whitepaper - High-Detail BIM and Engineering Visualization in the Browser**
 
-![](https://github.com/xeokit/xeokit-viewer/raw/master/images/xeokit-viewer.png)
+![](./xeokit-viewer.png)
 *OTC Conference Center, loaded in ~1.8s, rendering at 60FPS in Ubuntu/Chrome on Intel® i7-4800MQ and nVIDIA Quadro K4100M. Run this example application [here](https://xeokit.github.io/xeokit-viewer/).*
 
-# Abstract
+# Introduction
 
 [xeokit](http://xeokit.io) is an open source software development kit from [xeolabs](http://xeolabs.com) for viewing high-detail 3D models in the browser. The SDK includes a purpose-built WebGL-based[^webgl] 3D engine with a bundled library of plugins focused on BIM [^bim] and AEC [^aec] visualization. The engine loads models quickly and uses advanced rendering techniques to interactively view large numbers of objects in most major browsers, on both desktop and mobile platforms.
 
@@ -22,30 +21,48 @@ Features Overview
 
 ## Core SDK Features
 
-* **Load large models quickly** from one of the fastest-loading 3D geometry formats on the Web.
-* **Render high-detail interactively** in all major Web browsers, using one of the most performant purpose-built WebGL-based 3D renderers on the market.
-* **Load IFC metadata** (IFC2x3 and IFC4) alongside your models to classify objects and assist navigation. Load BIM models straight off the file system, no need to store models in the cloud.
-* **Rapidly build applications** using a growing library of plugins that fast-track application development for BIM and engineering.
-* **Physically-based rendering** capability for realistic previews.
-* **Scene graph** represntation
+* **Load large models quickly** from one of the fastest-loading geometry formats on the Web.
+* **Render high-detail interactively** in all major Web browsers, using one of the highest-performing purpose-built WebGL-based 3D renderers on the market.
+* **Load IFC metadata** (IFC2x3 and IFC4) with your models to classify objects and assist navigation. Load models from your own data store, or straight off the file system. No need to store models in the cloud.
+* **Completely open source** - customize the code and integrate with your own data pipeline - don't get locked in to high IFC-to-Web conversion costs with closed systems.
+* **Rapidly build applications** using a growing library of plugins that fast-track the development of your application.
+* **Physically-based rendering** for realistic previews.
+* **Dynamic scene graph** representation.
 * **Complete API documentation** covers everything in the SDK.
 * **Live examples** demonstrate all features and provide boilerplates to get you started.
-* **Clean readable code** developed with empathy for developers, following good software design principles, in modern JavaScript (ECMA6).
-* **Used and supported by industry leaders** who sustain development through licensing, sponsorship and code contributions.
+* **Clean, readable code** following good software design principles, in modern JavaScript (ECMA6).
+* **Used and supported by industry leaders** who sustain development through licensing, sponsorship and contributions.
 
 ## Plugins
 
-WIP - see [Viewer Plugins](https://github.com/xeokit/xeokit-sdk/wiki/Viewer-Plugins) on the Wiki for now.
+The xeokit SDK comes with a growing library of bundled viewer plugins to accelerate the development of your application:
+
+| Plugin | Description | Demo | API Docs | User Guide |
+|:--------------------------- | :------------- | :-------- | :-------- | :------- |
+|AngleMeasurementsPlugin       | Interactively measures angles | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#measurements_angle_createWithMouse) | [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/AngleMeasurementsPlugin/AngleMeasurementsPlugin.js~AngleMeasurementsPlugin.html) | |
+|AnnotationsPlugin       | Pins 3D labels on your models | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#annotations_hoverShowLabels) | [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/AnnotationsPlugin/AnnotationsPlugin.js~AnnotationsPlugin.html) | |
+| AxisGizmoPlugin       | Shows the coordinate system axis | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#gizmos_AxisGizmoPlugin) | [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/AxisGizmoPlugin/AxisGizmoPlugin.js~AxisGizmoPlugin.html) | |
+| BCFViewPointsPlugin   | Saves and loads BCF viewpoints | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#BCF_LoadViewpoint) | [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/BCFViewpointsPlugin/BCFViewpointsPlugin.js~BCFViewpointsPlugin.html) | [Guide](https://github.com/xeokit/xeokit-sdk/wiki/BCF-Viewpoints) |
+| BIMServerLoaderPlugin | Loads models from BIMServer | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#BIMServer_Schependomlaan) | [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/BIMServerLoaderPlugin/BIMServerLoaderPlugin.js~BIMServerLoaderPlugin.html) | [Guide](https://github.com/xeokit/xeokit-sdk/wiki/Viewing-Models-from-BIMServer) |
+| DistanceMeasurementsPlugin       | Interactively measures distances | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#measurements_distance_createWithMouse) | [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/DistanceMeasurementsPlugin/DistanceMeasurementsPlugin.js~DistanceMeasurementsPlugin.html) | |
+| GLTFLoaderPlugin      | Loads models from glTF, with accompanying IFC metadata| [Demo](https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_glTF_OTCConferenceCenter) | [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/GLTFLoaderPlugin/GLTFLoaderPlugin.js~GLTFLoaderPlugin.html) | [Guide](https://github.com/xeokit/xeokit-sdk/wiki/Importing-Models) |
+| XKTLoaderPlugin      | Loads models from a compact binary format, with accompanying IFC metadata| [Demo](https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_OTCConferenceCenter) | [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/XKTLoaderPlugin/XKTLoaderPlugin.js~XKTLoaderPlugin.html) |  |
+| OBJLoaderPlugin       | Loads models from OBJ | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#loading_OBJ_SportsCar) | [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/OBJLoaderPlugin/OBJLoaderPlugin.js~OBJLoaderPlugin.html) | [Guide](https://github.com/xeokit/xeokit-sdk/wiki/Importing-Models) |
+| NavCubePlugin   | Camera navigation cube | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#gizmos_NavCubePlugin) | [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/NavCubePlugin/NavCubePlugin.js~NavCubePlugin.html) |  |
+| StoreyViewsPlugin       | Creates plan views of IFC building models | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#storeyViews_StoreyViewsPlugin_recipe2) | [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/StoreyViewsPlugin/StoreyViewsPlugin.js~StoreyViewsPlugin.html) |  |
+| SectionPlanesPlugin   | Cross-section planes | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#gizmos_SectionPlanesPlugin) | [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/SectionPlanesPlugin/SectionPlanesPlugin.js~SectionPlanesPlugin.html) | [Guide](https://github.com/xeokit/xeokit-sdk/wiki/Section-Planes) |
+| STLLoaderPlugin       | Loads models from STL | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#loading_STL_SpurGear) |  [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/STLLoaderPlugin/STLLoaderPlugin.js~STLLoaderPlugin.html) | [Guide](https://github.com/xeokit/xeokit-sdk/wiki/Importing-Models) |
+| TreeViewPlugin       | Creates an HTML tree view of IFC model elements | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#TreeViewPlugin_Containment) | [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/TreeViewPlugin/TreeViewPlugin.js~TreeViewPlugin.html) |  |
+| XML3DLoaderPlugin     | Loads models from 3DXML | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#loading_3DXML_Widget) |  [Docs](https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/XML3DLoaderPlugin/XML3DLoaderPlugin.js~XML3DLoaderPlugin.html) | [Guide](https://github.com/xeokit/xeokit-sdk/wiki/Importing-Models) |
 
 Technical Details
 ===============================================================================
 
-Fast Loading
--------------------------------------------------------------------------------
+## Fast Loading
 
-**The SDK's fastest loading format is its native binary .XKT format**, which is a single BLOB containing a model, compressed using geometry quantization and DEFLATE compression.
+**The xeokit SDK's fastest loading format is its native binary .XKT format**, which is a single BLOB containing a model, compressed using geometry quantization and DEFLATE compression.
 
-Open source CLI tools are available to convert IFC STEP and glTF files into .XKT format for efficient consumption by xeokit. CLI tools are also provided to extract JSON IFC metadata to load alongside the model geometry. These tools can be easily scripted to build automated IFC -> xeokit data pipelines.
+Open source CLI tools are available to convert IFC STEP, glTF and DAE files into .XKT format for efficient loading by xeokit. CLI tools are also available to extract JSON IFC metadata, to load alongside the model geometry. These tools can be easily scripted to build automated IFC -> xeokit data pipelines.
 
 xeokit can also import models from glTF, OBJ, STL, 3DXML and BIMServer, and can load multiple models into the same scene from different sources.
 
@@ -56,24 +73,23 @@ Model | IFC Size | .XKT Size | Objects | Loading Time | Demo
 [OTC Conference Center](http://openifcmodel.cs.auckland.ac.nz/Model/Details/301)   | 68.6M | 4.8M  | 6462  |  ~1.8s  | [Demo](https://xeokit.github.io/xeokit-sdk/examples/#loading_XKT_OTCConferenceCenter)
 [xeokit XKT format loading performance]
 
-Selling Points
-===============================================================================
-
 ## Fully Open Source
 
-Unlike other solutions, such as AutoDesk Forge, everything in xeokit is open source. This includes xeokit's viewer, plugins, and pipeline tools. This reduces risk for users, and affords them the ability to inspect the code, fork the repository and make any necessary fixes and customizations.
+Unlike most other solutions, everything in xeokit is open source. This includes xeokit's viewer, plugins, and pipeline tools. Being open source reduces risk for users, and affords them the ability to inspect the code, fork the repository and make any necessary fixes and customizations.
 
 xeokit's development process is fully transparent. Users can follow and participate in development on GitHub[^github], and receive news of new developments on Twitter[^twitter].
 
-[^twitter]: [#xeogl on Twitter](https://twitter.com/hashtag/xeokit?src=hashtag_click&f=live)
-
 [^GitHub]: [https://github.com/xeokit/xeokit-sdk](https://github.com/xeokit/xeokit-sdk)
+
+[^twitter]: [#xeogl on Twitter](https://twitter.com/hashtag/xeokit?src=hashtag_click&f=live)
 
 ## Open Data Pipeline
 
-xeokit does not box users into a closed pipeline. The SDK allows to load models from the filesystem [^filepipe], or, using custom loading strategies, from your own data source, including BIMServer [^bimserver]. AutoDesk Forge, by comparison, keeps user's models on their own servers, while incurring a high IFC-to-Web conversion cost per model.
+xeokit does not box users into a closed pipeline. The SDK allows to load models from the filesystem [^filepipe], or, using custom loading strategies, from your own data source, including BIMServer [^bimserver]. Many other solutions keep user's models on their own servers, while incurring a high IFC-to-Web conversion cost per model.
 
-Some users have developed their own loading strategies, including one that progressively streams models into xeokit from their own model server.
+Some users have developed their own strategies for efficiently loading models into xeokit, such as progressively streaming models from their own model server.
+
+TODO: BIMSpot's docker image
 
 [^filepipe]: [Creating Files for Serverless BIM](https://github.com/xeokit/xeokit-sdk/wiki/Creating-Files-for-Offline-BIM)
 
@@ -81,7 +97,7 @@ Some users have developed their own loading strategies, including one that progr
 
 ## Unmatched Performance
 
-The xeokit SDK currently fills a gap in the market for performant viewing of large, real-world BIM models in the browser. Most other toolkits, such as Autodesk Forge, are built around general-purpose WebGL libraries, such as THREE.js, which are designed for maximum extensibility in order to support a wide range of visual effects capabilities, while xeokit is specifically designed from the ground up to render large models for BIM and engineering [^instancing], [^batching].
+xeokit fills a gap in the market for high-performance viewing of large, real-world BIM models in the browser. Most other toolkits are built around general-purpose WebGL libraries that are designed for maximum extensibility, in order to support a wide range of visual effects, while xeokit is built from the ground up to render huge numbers of objects [^instancing], [^batching].
 
 [^instancing]: [Geometry Instancing](https://en.wikipedia.org/wiki/Geometry_instancing)
 
@@ -89,19 +105,23 @@ The xeokit SDK currently fills a gap in the market for performant viewing of lar
 
 ## Based on Ten Years Research and Development
 
-The xeokit SDK is the product of ten years experience providing solutions Web-based visualization in BIM, CAD and medicine[^research]. As such, xeokit is a refined toolkit of reusable solutions that support many of the use cases for these sorts of applications. When you use xeokit, you'll be tapping into xeolabs ongoing research into high-performance Web visualization (for example, xeokit plans to support WebGPU).
+xeokit is the product of xeolabs' ten years experience providing browser-based visualization solutions in STEM [^research]. As such, xeokit is a refined toolkit of reusable solutions for these kinds of application.
+
+When you use xeokit, you'll tap into xeolabs' ongoing research and development into high-performance browser-based visualization. You'll be able to automatically leverage the latest 3D capabilities (eg. accelerated rendering with WebGPU [^webgpu]) as they appear in browsers.
 
 [^research]: [http://xeolabs.com/portfolio/](http://xeolabs.com/portfolio/)
 
+[^webgpu]: [https://en.wikipedia.org/wiki/WebGPU]
+
 ## Sustainable
 
-xeokit is developed with the financial and technical support of industry leaders [^supporters] who are using the toolkit in production. Some of these supporters have contributed tools, capabilities and fixes, and have generally helped to assure the quality of the toolkit as they have used it in production. One example is [D-Studio](http://dstudio.be/), who have committed to ongoing support of xeokit, while [xeolabs](http://xeolabs) works with D-Studio to develop custom 4D BIM solutions on the SDK.
+xeokit is developed with the financial and technical support of industry leaders who are using the toolkit in production [^supporters]. Some of these supporters have contributed tools, capabilities and fixes, and have generally helped to assure the quality of the toolkit as they use it in production. One example is [D-Studio](http://dstudio.be/), who have committed to ongoing support of xeokit, while [xeolabs](http://xeolabs) works with D-Studio to develop custom 4D BIM solutions on the SDK.
 
 [^supporters]: Including [D-Studio](http://dstudio.be/), [OpenProject GmbH](https://www.openproject.org/), [uniZite AS](https://unizite.info/), [BIMData](http://bimdata.io) - see all users at [xeokit.io](http://http://xeokit.io/)
 
-## Code Quality
+## Quality Code
 
-xeokit code is clean and maintainable. Written in modular ES6, it allows to cherry-pick only what developers need their your applications, while allowing to customize and adding new proprietary modules and plugins as required. Code is built using best practices in software design [^bestpractices], with empathy for users. All code is fully documented [^apidocs], with live examples of most features [^examples].
+xeokit code is clean and maintainable. Written in modular ES6, it allows to cherry-pick only what developers need in their your applications, while allowing to customize and adding new proprietary modules and plugins as required. Code is built using best practices in software design [^bestpractices], with empathy for users. All code is fully documented [^apidocs], with live examples of most features [^examples].
 
 [^bestpractices]: Including [SOLID](https://en.wikipedia.org/wiki/SOLID), [Open-Closed Principle](https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle) and [Riel's Hueristics](https://www.amazon.com/Object-Oriented-Design-Heuristics-paperback-Arthur/dp/0321774965)
 
@@ -109,10 +129,9 @@ xeokit code is clean and maintainable. Written in modular ES6, it allows to cher
 
 [^examples]: [Examples](https://xeokit.github.io/xeokit-sdk/examples/)
 
-
-Definitions
+Pricing
 ===============================================================================
 
-WIP
+The xeokit SDK is free for non-commercial use, under the terms of the [Affero GPL V3](https://github.com/xeokit/xeokit-sdk/blob/master/LICENSE.txt) open source license. See [Pricing](https://xeokit.github.io/xeokit-licensing/) for commercial options.
 
 <!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>

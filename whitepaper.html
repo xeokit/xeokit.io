@@ -5,9 +5,11 @@
 ![](./xeokit-viewer.png)
 *OTC Conference Center, loaded in ~1.8s, rendering at 60FPS in Ubuntu/Chrome on Intel® i7-4800MQ and nVIDIA Quadro K4100M. Run this example application [here](https://xeokit.github.io/xeokit-viewer/).*
 
-# Introduction
+# What is xeokit?
 
-[xeokit](http://xeokit.io) is an open source software development kit from [xeolabs](http://xeolabs.com) for viewing high-detail 3D models in the browser. The SDK includes a purpose-built WebGL-based[^webgl] 3D engine with a bundled library of plugins focused on BIM [^bim] and AEC [^aec] visualization. The engine loads models quickly and uses advanced rendering techniques to interactively view large numbers of objects in most major browsers, on both desktop and mobile platforms.
+[xeokit](http://xeokit.io) is an open source software development kit (SDK) from [xeolabs](http://xeolabs.com) for viewing high-detail 3D BIM [^bim] and CAD models in the browser.
+
+The SDK contains a purpose-built WebGL-based[^webgl] 3D engine with a bundled library of plugins focused on BIM and engineering visualization. The engine loads large models quickly, and uses advanced rendering techniques to interactively view them in most major browsers, on both desktop and mobile platforms.
 
 The SDK is provided under an Affero GPL V3 dual-license, which allows free use for non-commercial purposes, with the option to purchase a licence for commercial use. See [Pricing](https://xeokit.github.io/xeokit-licensing/) for commercial options.
 
@@ -17,36 +19,39 @@ The SDK is provided under an Affero GPL V3 dual-license, which allows free use f
 
 [^aec]: Architecture, Engineering and Construction (AEC)
 
-Why Use xeokit?
+Why use xeokit?
 ===============================================================================
 
-* **xeokit cares about IFC** and the SDK will always make best use of it. The SDK is designed following real-world use cases from IFC users.
-* **Fast loading** of huge models using one of the fastest-loading geometry formats on the Web.
-* **Fast rendering** in all major Web browsers, using a WebGL-based renderer purpose-built for BIM.
-* **Completely open source** - you get all the source code. Customize, extend it however you want. Integrate the SDK with your own custom data pipeline.
-* **Freedom to host anywhere** - host your data, pipeline tools and viewer on your own servers. Don't get caught out by overloaded cloud services, or locked in to high or unpredictable model conversion and hosting costs.
+* **Built for BIM visualization** - shaped by users' real-world IFC use cases.
+* **Used by industry leaders** - sustained by licensing, sponsorship and contributions.
+* **Fast loading** of huge models, using one of the fastest-loading geometry formats on the Web.
+* **Fast rendering** in all major Web browsers, using a WebGL renderer purpose-built for BIM.
+* **Completely open source** - you get all the source code. Customize and extend it however you want. Integrate it with your own data pipeline.
+* **Freedom to host anywhere** - keep your data, pipeline tools and viewer on your own servers. Don't get caught out by overloaded cloud services, or locked in to high or unpredictable model conversion and hosting costs. No hassles with data protection laws.
 * **Transparent development** - no surprises. Everything is openly managed at GitHub.
 * **Open community** - join an open community of 3D Web programming experts. Share our tools and get support. Get your requirements on the roadmap.
-* **Sustained by industry leaders** through licensing, sponsorship and contributions.
-* **Flexible, risk-free licenses** - from Perpetual Single Website to SaaS/OEM Subscription.
+* **Flexible, risk-free licenses** - from Perpetual Single Website to SaaS/OEM Subscription. Service Level Agreements and consultancy available. Right to use perpetually, in case xeolabs discontinues development.
+* **Connect with xeolab's ongoing research and development** in high-performance browser-based 3D visualization for BIM and engineering. Ten years so far.
 
 Technical Features
 ===============================================================================
 
-* **Load IFC metadata** (IFC2x3 and IFC4) with your models to classify objects and assist navigation.
-* **Load multiple models, from a variety of formats**, including XKT, glTF, OBJ, STL, 3DXML and BIMServer.
-* **Load models from your own data store**, or straight off the file system. No need to store models in the cloud.
+* **Runs on WebGL V1**, in all major browsers, without the use of plugins.
+* **Loads multiple models, from a variety of formats**, including IFC, glTF, OBJ, STL, 3DXML, XKT and BIMServer.
+* **Loads models from your own data store**, or straight off your file system. No need to store your models in the cloud.
+* **Loads IFC metadata** (IFC2x3 and IFC4) with your models, to classify and navigate objects.
+* **Open source CLI tools** for converting your IFC models. Available as a Docker image.
+* **Includes a bundled BIM viewer** to get you started. Clone or download the repo, drop in your models and have them on the Web in minutes.
+* **A library of plugins for BIM** to fast-track your platform development.
 * **Physically-based rendering** for realistic previews.
 * **Dynamic scene graph** for animations.
-* **Ambient shadows** using SAO to bring out details.
-* **Emphasize objects** with dynamic X-ray, highlight, selection and colorize effects.
-* **Reveal objects** with arbitrary, editable sectioning planes.
-* **Navigate objects** with a fast multi-hierarchy tree view.
+* **Emphasize objects** with ambient shadows, X-ray, highlight, selection and colorize effects.
+* **Reveal objects** with interactive sectioning planes.
+* **Navigate many objects** with a fast multi-hierarchy tree view.
 * **Interactively measure** distances and angles.
-* **Annotate models** with 3D labels.
+* **Annotate models** with pinnable 3D labels.
 * **Share viewpoints** by loading and saving BCF.
 * **Camera path animations** for architectural walk-throughs.
-* **Rapidly build applications** using a growing library of plugins for BIM and CAD.
 * **Clean, readable code** following good software design principles, in modern, modular JavaScript.
 * **Live examples** for all features, providing code boilerplates to get you started.
 * **Complete API documentation** for everything in the SDK.
@@ -54,33 +59,34 @@ Technical Features
 
 ## Fast Loading
 
-**The xeokit SDK's fastest loading format is its native binary .XKT format**, which is a single BLOB containing a model, compressed using geometry quantization and DEFLATE compression.
+**The xeokit SDK's fastest loading format is its native, binary XKT format**, which consists of a single BLOB containing a model, compressed using geometry quantization and DEFLATE compression.
 
-Open source CLI tools are available to convert IFC STEP, glTF and DAE files into .XKT format for efficient loading by xeokit. CLI tools are also available to extract JSON IFC metadata, to load alongside the model geometry. These tools can be easily scripted to build automated IFC -> xeokit data pipelines.
+Open source CLI tools are available to convert IFC STEP, glTF and DAE files into XKT format for efficient loading by xeokit. CLI tools are also available to extract JSON IFC metadata, to load alongside the model geometry. These tools can be easily scripted to build automated IFC -> xeokit data pipelines, and are available as a Docker image for easy installation.
 
 xeokit can also import models from glTF, OBJ, STL, 3DXML and BIMServer, and can load multiple models into the same scene from different sources.
 
-Demo | IFC Size | .XKT Size | Objects | Loading Time | Model Details
--------|------|-----|------|-----|------
-[Duplex](https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_Duplex) | 1.2M | 1.2M  | 291   |  ~0.6s  | [Details](http://openifcmodel.cs.auckland.ac.nz/Model/Details/274)
-[Schependomlaan](https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_Schependomlaan)| 49.2M | 1.5M | 3504  |  ~0.8s  | [Details](https://github.com/openBIMstandards/DataSetSchependomlaan)
-[OTC Conference Center](https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_OTCConferenceCenter)| 68.6M | 4.8M  | 6462  |  ~1.0s  | [Details](http://openifcmodel.cs.auckland.ac.nz/Model/Details/304)
-[West Riverside Hospital](https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_WestRiverSideHospital)<br>(7 models)| 162.7M | 31.94M  | 50895  |  ~5.0s  | [Details](http://openifcmodel.cs.auckland.ac.nz/Model/Details/308)
-[Holter Tower](https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_HolterTower)| 68.6M | 4.8M  | 60284  |  ~1.8s  | [Details](http://openifcmodel.cs.auckland.ac.nz/Model/Details/316)
+The table below shows the compression and transmission performance of xeokit's native XKT format. Click the links in the left column to try the demos in your browser.
+
+Demo  | IFC Size | XKT Size | Compress. Ratio | Objects | Load Time | Model Info
+-------|----|------|-----|------|-----|----|----
+[Duplex](https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_Duplex) | 0.52M  | 0.12M  | 4:1 | 291 |  ~0.6s  | [Info](http://openifcmodel.cs.auckland.ac.nz/Model/Details/274)
+[Schependomlaan](https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_Schependomlaan) | 49.2M  | 1.5M | 32:1 | 3504  |  ~0.8s  | [Info](https://github.com/openBIMstandards/DataSetSchependomlaan)
+[OTC Conference Center](https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_OTCConferenceCenter) | 71.7M |  5.0M | 14:1 | 6462  |  ~1.0s  | [Info](http://openifcmodel.cs.auckland.ac.nz/Model/Details/304)
+[West Riverside Hospital](https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_WestRiverSideHospital)<br>(7 models) | 162.7M | 31.94M  |5:1 | 50895  |  ~5.0s  | [Info](http://openifcmodel.cs.auckland.ac.nz/Model/Details/308)
+[Holter Tower](https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_HolterTower) | 68.6M | 4.8M  | 14:1 | 60284  |  ~1.8s  | [Info](http://openifcmodel.cs.auckland.ac.nz/Model/Details/316)
 [xeokit XKT format loading performance]
 
 ## Fast Rendering
 
-xeokit fills a gap in the market for high-performance rendering of large, real-world BIM models in the browser. Most other toolkits are built around general-purpose WebGL libraries that are designed for maximum extensibility, in order to support a wide range of visual effects, while xeokit is built from the ground up to render huge numbers of objects [^instancing], [^batching].
+xeokit fills a gap in the market for high-performance rendering of large, real-world BIM models in the browser. While most other toolkits are built around general-purpose WebGL libraries, xeokit is engineered from the ground up specifically to render huge numbers of objects for BIM and CAD [^instancing], [^batching].
 
 [^instancing]: [Geometry Instancing](https://en.wikipedia.org/wiki/Geometry_instancing)
 
 [^batching]: [Geometry Batching](https://www.khronos.org/assets/uploads/developers/library/2013-siggraph-opengl-bof/Batch-and-Cull-in-OpenGL-BOF_SIGGRAPH-2013.pdf)
 
-
 ## Plugins
 
-The xeokit SDK comes with a growing library of bundled viewer plugins to accelerate the development of your application:
+The xeokit SDK comes with a growing library of bundled viewer plugins to accelerate the development of your application. The plugins are developed following the requirements of licensees using xeokit in production.
 
 | Plugin | Description | Demo | Docs | Tutorial |
 |:--------------------------- | :------------- | :-------- | :-------- | :------- |
@@ -108,17 +114,32 @@ Various open source projects and tools are available to support application deve
 |:--------------------------- | :------------- | :-------- |
 | [xeokit-sdk](https://github.com/xeokit/xeokit-sdk) | The JavaScript xeokit SDK | [xeolabs](http://xeolabs.com) |
 | [xeokit-viewer](https://github.com/xeokit/xeokit-viewer) | A Web-based 3D/2D BIM model viewer, built on the xeokit SDK | [xeolabs](http://xeolabs.com) and [OpenProject GmbH](https://www.openproject.org/) |
-| [xeokit-gltf-to-xkt](https://github.com/xeokit/xeokit-gltf-to-xkt) | Node.js-based pipeline tool to convert glTF to xeokit .XKT format | [xeolabs](http://xeolabs.com) and [uniZite AB](https://unizite.info/)|
+| [xeokit-gltf-to-xkt](https://github.com/xeokit/xeokit-gltf-to-xkt) | Node.js-based pipeline tool to convert glTF to xeokit XKT format | [xeolabs](http://xeolabs.com) and [uniZite AB](https://unizite.info/)|
 | [xeokit-react](https://github.com/bimspot/xeokit-react) | Prototype integration of the xeokit viewer into a React application | [BIMSpot](https://bimspot.io) |
 | [xeokit-metadata](https://github.com/xeokit/xeokit-metadata) | A multi-platform command line tool for extracting the structural hierarchy of the building elements within an IFC into the metadata format of the xeokit-sdk | [BIMSpot](https://bimspot.io) |
 
+## Bundled BIM Viewer
 
+xeokit comes with a [bundled viewer](https://xeokit.github.io/xeokit-viewer/) that loads BIM models from the file system. It's never been easier to get your IFC models onto the Web, without using cloud storage. Just clone the viewer repository on GitHib (or download it to your server), use the free open source pipeline tools to convert your models, drop them in the viewer's data directory, and you're good to go. Users have used the viewer, with minimal effort, to put together contract-winning demos. xeolabs offers consultation services to help you get started with the viewer.
+
+ * **Loads multiple models** from the file system.
+ * **Tree view**  to explore layers, storeys and containment hierarchy.
+ * **Save and load BCF viewpoints**
+ * **Slice objects** with interactive section planes
+ * **3D and 2D modes** - easily transition between 3D and 2D plan views
+ * **Emphasis effects** - isolate, X-ray, highlight, select objects
+ * **Ambient shadows** using scalable ambient obscurance (SAO)
+ * **Control programmatically** - load models, select objects, control camera etc.
+ * **Embeddable** - embed in your website and programmatically interact from the container page
+ * **Pluggable loading strategy** to adapt to your own BIM data store.
+ * **Zero external dependencies** - other than xeokit
+ * **Used in production** within the Open Project BIM project management software
 
 ## Fully Open Source
 
 Unlike most other solutions, everything in xeokit is open source. This includes xeokit's viewer, plugins, and pipeline tools. Being open source reduces risk for users, and affords them the ability to inspect the code, fork the repository and make any necessary fixes and customizations.
 
-xeokit's development process is fully transparent. Users can follow and participate in development on GitHub[^github], and receive news of new developments on Twitter[^twitter].
+xeokit's development process is fully transparent. Users can follow and participate in development on GitHub[^github], and receive news of developments on Twitter[^twitter].
 
 [^GitHub]: [https://github.com/xeokit/xeokit-sdk](https://github.com/xeokit/xeokit-sdk)
 
@@ -126,9 +147,9 @@ xeokit's development process is fully transparent. Users can follow and particip
 
 ## Open Data Pipeline
 
-xeokit does not box users into a closed pipeline. The SDK allows to load models from the filesystem [^filepipe], or, using custom loading strategies, from your own data source, including BIMServer [^bimserver]. Many other solutions keep user's models on their own servers, while incurring a high IFC-to-Web conversion cost per model.
+xeokit does not box users into a closed pipeline. The SDK allows to load models from the filesystem [^filepipe] or, using custom loading strategies, from your own data source, including BIMServer [^bimserver]. Many other solutions keep user's models on their own servers, while incurring unpredictable costs and service availability.
 
-Some users have developed their own strategies for efficiently loading models into xeokit, such as progressively streaming models from their own model server.
+Some users have developed their own strategies for efficiently loading models into xeokit, such as progressively streaming them from their own data store. Consultation and develoopment services are available, in case you need to adapt xeokit with your own loading strategy.
 
 TODO: BIMSpot's docker image
 
@@ -138,7 +159,7 @@ TODO: BIMSpot's docker image
 
 ## Based on Ten Years Research and Development
 
-xeokit is the product of xeolabs' ten years experience providing browser-based visualization solutions in STEM [^research]. As such, xeokit is a refined toolkit of reusable solutions for these kinds of application.
+xeokit is the product of [xeolabs](http://xeolabs.com)' ten years experience providing browser-based visualization solutions in STEM [^research]. As such, xeokit is a refined toolkit of reusable solutions for these kinds of application.
 
 When you use xeokit, you'll tap into xeolabs' ongoing stream of research and development into high-performance browser-based visualization. You'll be able to automatically leverage the latest 3D capabilities (eg. accelerated rendering with WebGPU [^webgpu]) as they appear in browsers.
 

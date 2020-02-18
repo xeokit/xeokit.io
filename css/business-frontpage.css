@@ -30,6 +30,13 @@ body {
 
 }
 
+.logowall img {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
 blockquote {
   font-family: Georgia, serif;
   font-size: 18px;
@@ -366,8 +373,15 @@ span.clients-name {
   padding-bottom: 8px;
 }
 
+.testimonial-row li {
+  padding-bottom: 7px;
+}
+
 .testimonial-row p {
-  padding-bottom: 2px;
+  padding-bottom: 8px;
+}
+
+.testimonial-row b {
 }
 
 .brands {

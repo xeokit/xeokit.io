@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../_includes/head.html')
+</head>
+
+<body>
+
+@@include('../_includes/navigation.html')
+
+@@include('../_includes/blogheader.html')
+
+<div class="container" id="posts">
+    <div class="row">
+
+        <!-- Don't allow line wraps in string parameters with these includes -->
+
+        <!-- OpenProject -->
+
+        @@include('../_includes/blogCard.html', {
+            "link": "./blog_openProject_10_4.html",
+            "date": "February 20, 2020",
+            "title":"xeokit in OpenProject 10.4",
+            "text": "The xeokit SDK is now used within OpenProject 10.4 BIM to visualize IFC",
+            "image": "./img/openProject/openproject-10-4-bim-release-900x438.jpg"
+        })
+
+<!--        &lt;!&ndash; SAO &ndash;&gt;-->
+
+<!--        @@include('../_includes/blogCard.html', {-->
+<!--            "link": "./blog_ambientShadows.html",-->
+<!--            "date": "February 20, 2020",-->
+<!--            "title":"Ambient Shadows in xeokit",-->
+<!--            "text": "The xeokit SDK is now used within OpenProject 10.4 BIM to visualize IFC",-->
+<!--            "image": "./img/docs/SAO/saoEnabledDefaults.png"-->
+<!--        })-->
+
+<!--        &lt;!&ndash; BIM Viewer &ndash;&gt;-->
+
+<!--        @@include('../_includes/blogCard.html', {-->
+<!--        "link": "./blog_bimViewer.html",-->
+<!--        "date": "February 20, 2020",-->
+<!--        "title":"The xeokit SDK's Bundled BIM Viewer",-->
+<!--        "text": "A look at xeokit's bundled BIM viewer, developed in collaboration with OpenProject.",-->
+<!--        "image": "./img/docs/SAO/saoEnabledDefaults.png"-->
+<!--        })-->
+
+<!--        &lt;!&ndash; Tree Views &ndash;&gt;-->
+
+<!--        @@include('../_includes/blogCard.html', {-->
+<!--            "link": "./blog_treeViews.html",-->
+<!--            "date": "February 20, 2020",-->
+<!--            "title":"Navigating Models with Tree Views in xeokit",-->
+<!--            "text": "The xeokit SDK is now used within OpenProject 10.4 BIM to visualize IFC",-->
+<!--            "image": "./img/docs/TreeViewPlugin/TreeViewPlugin.png"-->
+<!--        })-->
+
+<!--        &lt;!&ndash; SIGGRAPH &ndash;&gt;-->
+
+<!--        @@include('../_includes/blogCard.html', {-->
+<!--            "link": "./blog_siggraph_2019.html",-->
+<!--            "date": "July 31, 2019",-->
+<!--            "title":"xeokit at SIGGRAPH 2019",-->
+<!--            "text": "Ken Russell of the Khronos Group gave a short demonstration of xeokit at the SIGGRAPH 2019 WebGL BOF in Los Angeles!",-->
+<!--            "image": "./img/siggraph/siggraph-xeokit1.png"-->
+<!--        })-->
+
+<!--        &lt;!&ndash; Large models &ndash;&gt;-->
+
+<!--        @@include('../_includes/blogCard.html', {-->
+<!--            "link": "./blog_fastLoading.html",-->
+<!--            "date": "February 20, 2020",-->
+<!--            "title":"How Does xeokit Load Large Models so Quickly?",-->
+<!--            "text": "A closer look at the binary geometry format that allows xeokit to load large models in seconds.",-->
+<!--            "image": "./img/BimdataViewer.jpg"-->
+<!--        })-->
+
+<!--        &lt;!&ndash; Fast Rendering &ndash;&gt;-->
+
+<!--        @@include('../_includes/blogCard.html', {-->
+<!--            "link": "./blog_smoothRendering.html",-->
+<!--            "date": "February 20, 2020",-->
+<!--            "title":"How Does xeokit Render Large Models so Smoothly?",-->
+<!--            "text": "How xeokit stays interactive with large models in most browsers.",-->
+<!--            "image": "./img/BimdataViewer.jpg"-->
+<!--        })-->
+
+
+<!--        &lt;!&ndash; Disabling SAO & Edges While Moving the Camera &ndash;&gt;-->
+
+<!--        @@include('../_includes/blogCard.html', {-->
+<!--            "link": "./blog_saoEdgesDisableOnCameraMove.html",-->
+<!--            "date": "February 20, 2020",-->
+<!--            "title":"Performance Tip: Disabling Ambient Shadows and Edges While Moving the Camera",-->
+<!--            "text": "How to preserve interactivity when viewing large models with ambient shadows and enhanced edges.",-->
+<!--            "image": "./img/BimdataViewer.jpg"-->
+<!--        })-->
+
+    </div>
+</div>
+
+<!-- /.container -->
+
+@@include('../_includes/footer.html')
+
+</body>
+
+</html>

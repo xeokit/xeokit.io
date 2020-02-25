@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('../_includes/head.html')
+</head>
+<body>
+@@include('../_includes/navigation-wide.html')
+<div class="row no-gutters">
+    <iframe id="embeddedViewer" class="embedded-viewer" src=""></iframe>
+</div>
+@@include('../_includes/footer.html')
+</body>
+<script>
+    window.onload = function () {
+        const iframeElement = document.getElementById("embeddedViewer");
+        if (!iframeElement) {
+            throw "IFRAME not found";
+        }
+        const searchStr = window.location.search || "?projectId=Schependomlaan_selectedStorey&tab=storeys";
+        iframeElement.src = "https://xeokit.github.io/xeokit-viewer/app/index.html" + searchStr;
+    };
+</script>
+</html>

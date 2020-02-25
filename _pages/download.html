@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../_includes/head.html')
+</head>
+
+<body>
+
+@@include('../_includes/navigation.html')
+
+<header class="bg-primary py-5 mb-5  blog-header">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <h1 class="display-4 text-white mt-5 mb-2">Download xeokit</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4>What's included</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>Licenses include everything in the <a href="https://github.com/xeokit">xeokit Gitub repositories</a>,
+                including:</p>
+
+            <table class="table table-bordered">
+                <tbody>
+                <tr>
+                    <td><a href="https://github.com/xeokit"><span class="nowrap">xeokit-sdk</span></a>
+                    </td>
+                    <td>Core SDK and plugins.<br><br>
+                        <p>Clone the repository:</p>
+                        <code>git clone https://github.com/xeokit/xeokit-sdk.git</code><br><br>
+                        <p>Install npm package:</p>
+                        <code>npm i @xeokit/xeokit-sdk</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/xeokit/xeokit-gltf-to-xkt"><span class="nowrap">xeokit-gltf-to-xkt</span></a>
+                    </td>
+                    <td>Multi-platform CLI tool for converting glTF to xeokit's compressed native binary .XKT
+                        format. One of the fastest-loading geometry formats for BIM.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/xeokit/xeokit-metadata"><span
+                            class="nowrap">xeokit-metadata</span></a></td>
+                    <td>Multi-platform CLI tool for extracting the structural hierarchy of the building
+                        elements within an IFC into the metadata format of the xeokit-sdk.
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/xeokit/xeokit-viewer"><span class="nowrap">xeokit-viewer</span></a>
+                    </td>
+                    <td>A 3D BIM model viewer for the browser, built on the xeokit SDK. The fastest way to get your IFC models on the Web. Fork the viewer on GitHub and host via GitHub Pages, or download to your own server. Drop in your model files, and you're good to go.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</div>
+
+@@include('../_includes/footer.html')
+
+</body>
+
+</html>

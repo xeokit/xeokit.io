@@ -480,3 +480,7 @@ span.clients-name {
   height: 800px;
   border:0;
 }
+
+.bg-black {
+  background: black;
+}

@@ -482,5 +482,5 @@ span.clients-name {
 }
 
 .bg-black {
-  background-color: black;
+  background-color: black !important;
 }

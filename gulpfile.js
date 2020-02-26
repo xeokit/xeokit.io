@@ -19,7 +19,7 @@ gulp.task('build-pages', function() {
                 markdown: markdown.parse
             }
         }))
-        .pipe(gulp.dest('./site'));
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('build-blog', function() {
@@ -38,5 +38,5 @@ gulp.task('build-blog', function() {
                 markdown: markdown.parse
             }
         }))
-        .pipe(gulp.dest('./site'));
+        .pipe(gulp.dest('./'));
 });

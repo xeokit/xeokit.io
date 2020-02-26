@@ -487,3 +487,11 @@ span.clients-name {
 .bg-black {
   background-color: black !important;
 }
+
+.fg_dark {
+  color: #212529;
+}
+
+.fg_dark:hover {
+  color: rgba(77, 88, 96, 0.55);
+}

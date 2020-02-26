@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,11 +19,8 @@
 <!-- Bootstrap core JavaScript -->
 <script src="./vendor/jquery/jquery.min.js"></script>
 <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 </head>
-
 <body>
-
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
 <!--    <div class="container">-->
@@ -78,78 +74,9 @@
         </div>
 <!--    </div>-->
 </nav>
-<header class="bg-primary py-5 mb-5  blog-header bg-black">
-    <div class="container h-100">
-        <div class="row h-100 align-items-center">
-            <div class="col-lg-12">
-                <h1 class="display-4 text-white mt-5 mb-2">Blog</h1>
-                <p class="lead mb-5 text-white">xeokit news, ideas and product updates</p>
-            </div>
-        </div>
-    </div>
-</header>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>How Does xeokit Load Large Models so Quickly?</h1>
-            <p class="lead">by <a href="http://xeolabs.com">xeolabs</a>
-            </p>
-            <hr>
-            <p>Posted on Febuary 1, 2020</p>
-            <hr>
-            <img class="img-responsive rounded no-padding" src="./img/BimdataViewerCropped.jpg" alt="">
-
-            <blockquote><p><b>xeokit's unmatched loading and rendering speed</b> enables us to create interactive and
-                customizable Web visualization experiences for large BIM models, even when loading many large models
-                simultaneously.</p>
-                <cite><a href="https://www.linkedin.com/in/hugo-duroux-46262166/" target="_external">Hugo Duroux</a>, Technical
-                    Director at <a href="https://bimdata.io" target="_external">BIMData.io</a></cite>
-            </blockquote>
-
-            <hr>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-
-            <!-- Post Content -->
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut,
-                error
-                quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum
-                minus inventore?</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste
-                ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus,
-                voluptatibus.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius
-                illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim,
-                iure!</p>
-
-<!--            <blockquote class="blockquote">-->
-<!--                <p class="mb-0">xeokit's unmatched loading and rendering speed enables us to create interactive and customizable Web visualization experiences for large BIM models, even when loading many large models simultaneously.</p>-->
-<!--                <footer class="blockquote-footer">Someone famous in-->
-<!--                    <cite title="Source Title">Source Title</cite>-->
-<!--                </footer>-->
-<!--            </blockquote>-->
-
-
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat
-                totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam
-                tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae?
-                Qui,
-                necessitatibus, est!</p>
-            <hr>
-        </div>
-    </div>
+<div class="row no-gutters">
+    <iframe id="embeddedViewer" class="embedded-viewer" src=""></iframe>
 </div>
-
 <footer class="py-5 bg-dark xeokit-footer">
     <div class="container pt-5">
         <div class="row">
@@ -231,7 +158,15 @@
     </div>
 </footer>
 
-
 </body>
-
+<script>
+    window.onload = function () {
+        const iframeElement = document.getElementById("embeddedViewer");
+        if (!iframeElement) {
+            throw "IFRAME not found";
+        }
+        const searchStr = window.location.search || "?projectId=Schependomlaan_selectedStorey&tab=storeys";
+        iframeElement.src = "https://xeokit.github.io/xeokit-viewer/app/index.html" + searchStr;
+    };
+</script>
 </html>

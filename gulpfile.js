@@ -24,6 +24,8 @@ gulp.task('build-pages', function() {
 
 gulp.task('build-blog', function() {
     return gulp.src([
+        '_blog/blog_dstudio.html',
+        '_blog/blog_singular.html',
         '_blog/blog_ambientShadows.html',
         '_blog/blog_bimViewer.html',
         '_blog/blog_fastLoading.html',

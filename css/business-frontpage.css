@@ -98,6 +98,10 @@ blockquote cite:before {
     transform: translate(-50%, -70%);
 }
 
+.used-by  {
+    width: 100%;
+    height: auto;
+}
 .img-wrapper {
     position: relative;
 }
@@ -448,7 +452,7 @@ span.clients-name {
 }
 
 .home-header {
-    height: 70vh;
+    height: 100vh;
     min-height: 400px;
     max-height: 500px;
     background: url('../img/planView2.jpg') center center no-repeat scroll;

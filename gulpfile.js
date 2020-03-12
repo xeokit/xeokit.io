@@ -24,15 +24,15 @@ gulp.task('build-pages', function() {
 
 gulp.task('build-blog', function() {
     return gulp.src([
-        '_blog/blog_dstudio.html',
-        '_blog/blog_singular.html',
+        '_blog/blog_xeokit_partners_with_dstudio.html',
+        '_blog/blog_xeokit_partners_with_singular.html',
         '_blog/blog_ambientShadows.html',
         '_blog/blog_bimViewer.html',
         '_blog/blog_fastLoading.html',
-        '_blog/blog_openProject_10_4.html',
+        '_blog/blog_xeokit_partners_with_openproject.html',
         '_blog/blog_smoothRendering.html',
         '_blog/blog_saoEdgesDisableOnCameraMove.html',
-        '_blog/blog_siggraph_2019.html',
+        '_blog/blog_xeokit_at_siggraph.html',
         '_blog/blog_treeViews.html'
     ])
         .pipe(fileinclude({

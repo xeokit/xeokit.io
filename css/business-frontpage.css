@@ -517,3 +517,62 @@ span.clients-name {
 .fg_dark:hover {
     color: rgba(77, 88, 96, 0.55);
 }
+
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* to center flex-items */
+.flex-item {
+    margin: 20px;
+
+    margin-top: auto;
+    margin-right: 0;
+    margin-bottom: auto;
+    margin-left: 0;
+    width: auto;
+    max-width: 200px;
+    padding: 10px;
+}
+
+.usedby {
+    padding-top: 10px  !important;
+    padding-bottom: 10px  !important;
+}
+
+.navbar-home {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: .5rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    text-decoration: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-home:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1.0);
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    /*margin-right: 1rem;*/
+    margin-left: .5rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}

@@ -24,6 +24,7 @@ gulp.task('build-pages', function() {
 
 gulp.task('build-blog', function() {
     return gulp.src([
+        '_blog/blog_xeokit_partners_with_bimspot.html',
         '_blog/blog_xeokit_partners_with_dstudio.html',
         '_blog/blog_xeokit_partners_with_singular.html',
         '_blog/blog_ambientShadows.html',
@@ -33,7 +34,8 @@ gulp.task('build-blog', function() {
         '_blog/blog_smoothRendering.html',
         '_blog/blog_saoEdgesDisableOnCameraMove.html',
         '_blog/blog_xeokit_at_siggraph.html',
-        '_blog/blog_treeViews.html'
+        '_blog/blog_treeViews.html',
+        '_blog/blog_xeokit_release_1.0.0.html',
     ])
         .pipe(fileinclude({
             filters: {

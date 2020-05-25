@@ -184,17 +184,11 @@
         <div class="col-md-12">
             <h2>Improved Camera Controls</h2>
 
-            <p>The <a
-                    href="https://xeokit.github.io/xeokit-sdk/docs/class/src/viewer/scene/CameraControl/CameraControl.js~CameraControl.html">CameraControl</a>
-                component has been completely rewritten in xeokit V1.1, to improve interactivity when dollying (moving forwards and backwards),
-                orbiting and
-                panning. This component controls the Camera with
-                keyboard,
-                mouse and touch input, and fires events when we hover, click or tap objects.</p>
-            <p>CameraControl now automatically adjusts dollying speed according the distance to the
-                nearest object. When the nearest object is far away, we move rapidly, then as the object gets nearer, we
-                begin to slow down. This ensures that we don't dolly too fast when moving around inside buildings, while
-                still allowing us to zoom around quickly when moving between buildings.</p>
+            <p>xeokit V1.1 includes several improvements to xeokit's <a
+                    href="https://xeokit.github.io/xeokit-sdk/docs/class/src/viewer/scene/CameraControl/CameraControl.js~CameraControl.html">CameraControl</a> component.</p>
+
+            <p>One useful CameraControl improvement is camera speed that automatically scales to the distance to the object
+                in front. This technique allows us to move quckly across open spaces and slowly across confined spaces.</p>
 
             <ul>
                 <li><a href="https://xeokit.github.io/xeokit-sdk/examples/#CameraControl_orbit_Duplex">Run orbit

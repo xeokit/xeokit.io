@@ -3,7 +3,7 @@ const markdown = require('markdown');
 var runSequence = require('gulp4-run-sequence');
 const gulp = require('gulp');
 
-gulp.task('fileinclude', function (callback) {
+gulp.task('build', function (callback) {
     runSequence('build-pages','build-blog', callback);
 });
 
@@ -24,6 +24,8 @@ gulp.task('build-pages', function() {
 
 gulp.task('build-blog', function() {
     return gulp.src([
+        // '_blog/blog_xeokit_powering_bimdata.html',
+        // '_blog/blog_xeokit_powering_planradar.html',
         '_blog/blog_xeokit_partners_with_bimspot.html',
         '_blog/blog_xeokit_partners_with_dstudio.html',
         '_blog/blog_xeokit_partners_with_singular.html',
@@ -35,7 +37,7 @@ gulp.task('build-blog', function() {
         '_blog/blog_saoEdgesDisableOnCameraMove.html',
         '_blog/blog_xeokit_at_siggraph.html',
         '_blog/blog_treeViews.html',
-        '_blog/blog_xeokit_release_1.0.0.html',
+        '_blog/blog_xeokit_release_1.1.html',
     ])
         .pipe(fileinclude({
             filters: {

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../_includes/head.html')
+
+</head>
+
+<body>
+
+@@include('../_includes/navigation.html')
+
+
+<div class="container">
+    <div class="row  mt-5 mb-5">
+        <div class="col-md-12">
+            <h1><a href="./blog.html">Blog</a> / xeokit V1.1 Released</h1>
+            <hr>
+            <p>May 25, 2020</p>
+            <hr>
+            <p class="lead"><a href="./index.html">xeokit</a> continues to push the limits of open source browser-based graphics for high-detail BIM and
+                engineering.</p>
+            <p class="lead">The <b>xeokit V1.1</b> release contains a bundled BIM viewer, a fast HTML tree view, context
+                menu
+                widget, ambient
+                shadows, improved camera interaction, metadata support for 3DXML models, support for BIMServer 1.5.2,
+                plus many fixes and tweaks
+                requested by users.</p>
+            <ul>
+                <li><a href="https://github.com/xeokit/xeokit-sdk/wiki/xeokit-v1.1-Release-Notes">V1.1 Release Notes</a></li>
+                <li><a href="https://www.npmjs.com/org/xeokit">npm Modules</a></li>
+                <li><a href="https://github.com/xeokit">Source Code</a></li>
+                <li><a href="https://xeokit.github.io/xeokit-sdk/docs/">API Docs</a></li>
+            </ul>
+            <img src="./img/xeokit-viewer.png" class="img-fluid rounded mx-auto d-block" alt="...">
+
+        </div>
+    </div>
+
+    <hr>
+    <div class="row  mt-2 mb-5">
+        <div class="col-md-12">
+
+
+            <h2>A Bundled BIM Viewer</h2>
+
+            <p>xeokit V1.1 includes <a href="https://xeokit.github.io/xeokit-bim-viewer/">xeokit-bim-viewer</a>,
+                an
+                open source 2D/3D BIM viewer built on xeokit, that runs in the browser and can load models from your
+                file
+                system.</p>
+
+            <p>This viewer is developed with support from <a href="https://www.digital-building-industries.com/">Digital
+                building
+                Industries AG</a> and
+                <a href="https://www.openproject.org/">OpenProject GmbH</a>.</p>
+
+            <p>The viewer is integrated within <a href="https://www.openproject.org/openproject-bim-10-4/">OpenProject
+                BIM 10.4</a>, and can also be used as a stand-alone JavaScript
+                application. In combination with open source CLI model conversion tools, it represents a low-cost,
+                high-performance way to get your IFC models on the Web, that allows you the freedom to convert and host
+                your models on your own server or GitHub repository.</p>
+
+            <p>The viewer even has its own <a href="https://xeokit.github.io/xeokit-bim-viewer/docs/">JavaScript
+                programming API</a>, through which you can programmatically load models, control UI state etc., to help
+                integrate it into your website.</p>
+
+            <ul>
+                <li><a href="https://xeokit.github.io/xeokit-bim-viewer">Go to xeokit-bim-viewer</a></li>
+                <li>
+                    <a href="https://xeokit.github.io/xeokit-bim-viewer/app/index.html?projectId=OTCConferenceCenter&tab=storeys">Run
+                        a demo</a></li>
+                <li><a href="https://xeokit.github.io/xeokit-bim-viewer/docs/">Read API docs</a></li>
+            </ul>
+            <br>
+
+            <div class="embed-responsive embed-responsive-16by9"
+                 style="border-radius: 10px; border: 1px solid black;">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qOTdYnWz_YA"
+                        allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+
+    <div class="row  mt-2 mb-5">
+        <div class="col-md-12">
+            <h2><a name="treeview">A Fast Tree View Plugin</a></h2>
+
+            <p>xeokit V1.1 adds a <a
+                    href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/TreeViewPlugin/TreeViewPlugin.js~TreeViewPlugin.html">TreeViewPlugin</a>,
+                a fast HTML tree view component that can navigate
+                the objects
+                in huge models. TreeViewPlugin has various hierarchy modes, scales up to large numbers of objects, and
+                is fully customizable using CSS.</p>
+
+            <p>This plugin was developed with support from <a href="https://www.digital-building-industries.com/">Digital
+                building
+                Industries AG</a> and
+                <a href="https://www.openproject.org/">OpenProject GmbH</a>.</p>
+
+            <ul>
+                <li><a href="https://xeokit.github.io/xeokit-sdk/examples/#ContextMenu_Canvas_TreeViewPlugin_Custom">Run
+                    a demo</a></li>
+                <li>
+                    <a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/TreeViewPlugin/TreeViewPlugin.js~TreeViewPlugin.html">Read
+                        API Docs</a></li>
+            </ul>
+
+            <a href="https://xeokit.github.io/xeokit-sdk/examples/#ContextMenu_Canvas_TreeViewPlugin_Custom"
+               style="border: 1px solid black;"><img class="rounded mx-auto d-block float-left"
+                                                     src="http://xeokit.io/img/docs/TreeViewPlugin/TreeViewPlugin.png"></a>
+
+        </div>
+    </div>
+    <hr>
+
+    <div class="row  mt-2 mb-5">
+        <div class="col-md-12">
+            <h2>A Customizable Context Menu</h2>
+
+            <p>xeokit V1.1 adds a <a
+                    href="https://xeokit.github.io/xeokit-sdk/docs/class/src/extras/ContextMenu/ContextMenu.js~ContextMenu.html">ContextMenu</a>
+                component that you can customize with your own options and CSS.</p>
+
+            <p>This component was developed with support from <a href="https://www.digital-building-industries.com/">Digital
+                building
+                Industries AG</a> and
+                <a href="https://www.openproject.org/">OpenProject GmbH</a>.</p>
+
+            <ul>
+                <li><a href="https://xeokit.github.io/xeokit-sdk/examples/#ContextMenu_Canvas_TreeViewPlugin_Custom">Run
+                    a demo</a></li>
+                <li>
+                    <a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/extras/ContextMenu/ContextMenu.js~ContextMenu.html">Read
+                        API Docs</a></li>
+            </ul>
+
+            <a href="https://xeokit.github.io/xeokit-sdk/examples/#ContextMenu_Canvas_TreeViewPlugin_Custom"
+               style="border: 1px solid black;">
+                <img class="rounded mx-auto d-block  float-left"
+                     src="http://xeokit.io/img/docs/ContextMenu/ContextMenu.gif"></a>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row  mt-2 mb-5">
+        <div class="col-md-12">
+            <h2>Scalable Ambient Obscurrance (SAO)</h2>
+
+            <p>xeokit V1.1 adds Scalable Ambient Obscurance (SAO), which approximates <a
+                    href="https://en.wikipedia.org/wiki/Ambient_occlusion" target="_external">Ambient
+                Occlusion</a> in realtime. It darkens creases, cavities
+                and
+                surfaces that are close to each other, which tend to be occluded from ambient light and appear
+                darker.</p>
+
+            <p>SAO was developed with support from <a href="http://dstudio.be/" target="_external">D-Studio</a>.</p>
+
+            <p>The animated GIF below shows the effect as we repeatedly enable and disable SAO. When SAO is enabled, we
+                can
+                see darkening
+                in regions such as the corners, and the crevices between stairs. This increases the amount of detail we
+                can
+                see when ambient
+                light is high, or when objects have uniform colors across their surfaces. Run the example to experiment
+                with
+                the various
+                SAO configurations.</p>
+
+            <ul>
+                <li><a href="https://xeokit.github.io/xeokit-sdk/examples/#postEffects_SAO_OTCConferenceCenter">Run a
+                    demo</a></li>
+                <li><a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/viewer/scene/postfx/SAO.js~SAO.html">Read
+                    API Docs</a></li>
+            </ul>
+
+            <p><a href="https://xeokit.github.io/xeokit-sdk/examples/#postEffects_SAO_OTCConferenceCenter"><img
+                    class="rounded mx-auto d-block  float-left"
+                    src="http://xeokit.io/img/docs/SAO/saoEnabledDisabled.gif"></a></p>
+
+        </div>
+    </div>
+    <hr>
+
+    <div class="row  mt-2 mb-5">
+        <div class="col-md-12">
+            <h2>Improved Camera Controls</h2>
+
+            <p>The <a
+                    href="https://xeokit.github.io/xeokit-sdk/docs/class/src/viewer/scene/CameraControl/CameraControl.js~CameraControl.html">CameraControl</a>
+                component has been completely rewritten in xeokit V1.1, to improve interactivity when dollying (moving forwards and backwards),
+                orbiting and
+                panning. This component controls the Camera with
+                keyboard,
+                mouse and touch input, and fires events when we hover, click or tap objects.</p>
+            <p>CameraControl now automatically adjusts dollying speed according the distance to the
+                nearest object. When the nearest object is far away, we move rapidly, then as the object gets nearer, we
+                begin to slow down. This ensures that we don't dolly too fast when moving around inside buildings, while
+                still allowing us to zoom around quickly when moving between buildings.</p>
+
+            <ul>
+                <li><a href="https://xeokit.github.io/xeokit-sdk/examples/#CameraControl_orbit_Duplex">Run orbit
+                    demo</a></li>
+                <li><a href="https://xeokit.github.io/xeokit-sdk/examples/#CameraControl_firstPerson_Duplex">Run first
+                    person demo</a></li>
+                <li><a href="https://xeokit.github.io/xeokit-sdk/examples/#CameraControl_planView_Schependomlaan">Run plan view
+                    demo</a></li>
+                <li>
+                    <a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/viewer/scene/CameraControl/CameraControl.js~CameraControl.html">Read
+                        API Docs</a></li>
+            </ul>
+
+            <a href="https://xeokit.github.io/xeokit-sdk/examples/#CameraControl_firstPerson_HolterTower"
+            ><img class="rounded mx-auto d-block  float-left"
+                  src="./img/docs/CameraControl/CameraControlDolly.gif"></a>
+
+
+        </div>
+    </div>
+    <hr>
+
+    <div class="row  mt-2 mb-5">
+        <div class="col-md-12">
+            <h2>Load Metadata with 3DXML Models</h2>
+
+            <p>The <a
+                    href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/XML3DLoaderPlugin/XML3DLoaderPlugin.js~XML3DLoaderPlugin.html">XML3DLoaderPlugin</a>
+                can now load structural metadata from 3DXML CAD models exported from SolidWorks. We can use that
+                metadata with <a
+                        href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/TreeViewPlugin/TreeViewPlugin.js~TreeViewPlugin.html">TreeViewPlugin</a>
+                to generate an HTML tree view to navigate the objects within the model.</p>
+
+            <ul>
+                <li><a href="https://xeokit.github.io/xeokit-sdk/examples/#loading_3DXML_TreeView">Run a demo</a></li>
+                <li>
+                    <a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/XML3DLoaderPlugin/XML3DLoaderPlugin.js~XML3DLoaderPlugin.html">Read
+                        API Docs</a></li>
+            </ul>
+
+            <a href="https://xeokit.github.io/xeokit-sdk/examples/#loading_3DXML_TreeView"
+            ><img
+                    class="rounded mx-auto d-block float-left" style="border: 1px solid black;"
+                    src="https://xeokit.io/img/docs/XML3DLoaderPlugin/XML3DPluginTreeView.png"></a>
+
+        </div>
+    </div>
+    <hr>
+    <div class="row  mt-2 mb-5">
+        <div class="col-md-12">
+            <h2>XKT Precision Improvements</h2>
+
+            <p>xeokit V1.1 includes a new version of its .XKT geometry format (V3), which fixes an accuracy
+                issue with IFC models positioned far from the World-space origin. The <a
+                        href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/XKTLoaderPlugin/XKTLoaderPlugin.js~XKTLoaderPlugin.html">XKTLoaderPlugin</a>
+                and the <a href="https://github.com/xeokit/xeokit-gltf-to-xkt">xeokit-gltf-to-xkt</a> conversion tool
+                have both
+                been updated with this fix.</p>
+
+            <a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/XKTLoaderPlugin/XKTLoaderPlugin.js~XKTLoaderPlugin.html"
+               style="border: 1px solid black;"><img class="rounded mx-auto d-block float-left"
+                                                     src="http://xeokit.io/img/docs/XKTLoaderPlugin/XKTLoaderPlugin.png"></a>
+
+        </div>
+    </div>
+    <hr>
+    <div class="row  mt-2 mb-5">
+        <div class="col-md-12">
+
+            <h2>More Tips for Converting IFC Models for xeokit</h2>
+
+            <p>The <a href="https://github.com/xeokit/xeokit-sdk/wiki/Creating-Files-for-Offline-BIM">Creating
+                Files for Offline BIM</a> tutorial now
+                includes more techniques for avoiding precision loss when converting IFC files for loading into xeokit.
+            </p>
+
+            <a href="https://github.com/xeokit/xeokit-sdk/wiki/Creating-Files-for-Offline-BIM"><img
+                    class="rounded mx-auto d-block float-left"
+                    src="./img/quantizationError.jpg"></a>
+        </div>
+    </div>
+    <hr>
+    <div class="row  mt-2 mb-5">
+        <div class="col-md-12">
+
+            <h2>Compatibility with BIMServer 1.5.2</h2>
+
+            <p>The <a
+                    href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/BIMServerLoaderPlugin/BIMServerLoaderPlugin.js~BIMServerLoaderPlugin.html">BIMServerLoaderPlugin</a>
+                now loads models from <a href="https://github.com/opensourceBIM/BIMserver">BIMServer 1.5.2</a>, thanks
+                to <a
+                        href="https://github.com/nissimpradhan">Nissim Pradhan</a>, who is using xeokit within his
+                research
+                at <a href="https://www.fraunhofer.it/">Fraunhofer Italia.</a></p>
+
+            <ul>
+                <li>
+                    <a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/BIMServerLoaderPlugin/BIMServerLoaderPlugin.js~BIMServerLoaderPlugin.html">Read
+                        API Docs</a></li>
+            </ul>
+
+            <a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/BIMServerLoaderPlugin/BIMServerLoaderPlugin.js~BIMServerLoaderPlugin.html"><img
+                    class="img-fluid rounded mx-auto d-block float-left"
+                    src="./img/docs/BIMServerLoaderPlugin/bimserver-schependomlaan.png"></a>
+
+
+        </div>
+    </div>
+
+    <hr>
+    <div class="row  mt-4 mb-5">
+        <div class="col-md-12">
+
+            <h2>What's Next?</h2>
+            <br>
+            <h4>Support for larger BIM models</h4>
+            <p>xeolabs continues to research the best ways to view huge IFC models on the Web. Geographically large IFC
+                models rely on double-precision coordinates, however graphics in Web browsers only supports
+                single precision. At xeolabs, we are developing enhancements to xeokit's XKT geometry format, used by <a
+                        href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/XML3DLoaderPlugin/XML3DLoaderPlugin.js~XML3DLoaderPlugin.html">XML3DLoaderPlugin</a>,
+                that
+                will allow us to load such models into xeokit, without loss of precision.</p>
+            <br>
+            <h4>Improved measurements UX</h4>
+            <p>Also, to improve the usability of xeokit's measurement tools, such as <a
+                    href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/DistanceMeasurementsPlugin/DistanceMeasurementsPlugin.js~DistanceMeasurementsPlugin.html"
+                    target="_external">DistanceMeasurementsPlugin</a> and
+                <a href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/AngleMeasurementsPlugin/AngleMeasurementsPlugin.js~AngleMeasurementsPlugin.html"
+                   target="_external">AngleMeasurementsPlugin</a>, future versions will introduce snap-to-vertex
+                interaction, where the mouse or
+                touch pointer
+                will
+                automatically snap to the nearest vertex.</p>
+
+            <p>Do you have a feature you'd like to see in xeokit? Hit the issue tracker: <a
+                    href="https://github.com/xeokit/xeokit-sdk/issues">github.com/xeokit/xeokit-sdk/issues</a></p>
+            <br>
+            <ul>
+                <li><a href="https://github.com/xeokit/xeokit-sdk/wiki/xeokit-v1.1-Release-Notes">V1.1 Release Notes</a></li>
+                <li><a href="https://www.npmjs.com/org/xeokit">npm Modules</a></li>
+                <li><a href="https://github.com/xeokit">Source Code</a></li>
+                <li><a href="https://xeokit.github.io/xeokit-sdk/docs/">API Docs</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+@@include('../_includes/footer.html')
+
+</body>
+
+</html>

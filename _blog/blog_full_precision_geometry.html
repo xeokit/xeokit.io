@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../_includes/head.html')
+
+</head>
+
+<body>
+
+@@include('../_includes/navigation.html')
+
+
+<div class="container">
+    <div class="row  mt-5 mb-4">
+        <div class="col-md-12">
+            <h1><a href="./blog.html">Blog</a> / Full-Precision Model Geometry in xeokit 1.4.8</h1>
+            <hr>
+            <p>Oct 30, 2020</p>
+            <hr>
+            <p class="lead">This week, <a
+                    href="http://xeolabs.com">xeolabs</a> released <a
+                    href="https://github.com/xeokit/xeokit-sdk"><code>xeokit-sdk 1.4.8</code></a> and <a
+                    href="https://github.com/xeokit/xeokit-gltf-to-xkt"><code>xeokit-gltf-to-xkt 0.5.0</code></a>, which
+                allow us to accurately view BIM models at their original IFC global coordinate locations within xeokit's
+                browser-based viewer, without rounding errors. In this post, we'll describe the problem this update solves, and how
+                to upgrade your xeokit application to use this update.<br>
+            </p>
+            <hr>
+            <img class="img-responsive rounded no-padding"
+                 src="./img/xeokit-viewer-jitter.png"
+                 alt="">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row  mt-4 mb-4">
+        <div class="col-md-12">
+
+            <h2>Why is my Model Jittering?</h2>
+
+            <p>Sometimes, xeokit users would report that certain models would "jitter" as they moved. </p>
+
+            <p>The screen capture below shows the problem, using a model of
+                the <a href="https://www.peterson.fr/programme-neuf-23903.php">Marc Antoine</a> apartment complex in
+                Saint-Denis, provided by <a href="https://bimdata.io">BIMData</a>. The IFC geometry for this model is in
+                IFC
+                global coordinates. Notice the way the model "shivers" as we rotate it.</p>
+
+            <a href="https://xeokit.github.io/xeokit-sdk/examples/#loading_XKT_jitter_singlePrecision_MAP"> <img
+                    src="./img/gifs/jitter.gif" class="img-fluid rounded mx-auto d-block" alt="..."></a><br>
+
+            <p class="text-center"><b>Figure 1. Rounding Jitter on WebGL</b><br>[<a
+                    href="https://xeokit.github.io/xeokit-sdk/examples/#loading_XKT_jitter_singlePrecision_MAP">Run
+                this example</a>]</p>
+
+            <p>After some investigation, it turned out that:</p>
+
+            <ul>
+                <li><p><b>The models had geometry that relied on double-precision values.</b> This was either because the
+                    models were geographically
+                    large with fine details, or because their geometries were positioned far from the origin of the IFC
+                    global coordinate system
+                    (BIMData's model happens to be positioned at <code>[1842022, 10, -5173301]</code>, which is
+                    somewhere in Saint
+                    Denis, France).</p>
+                </li>
+
+                <li><p><b>WebGL can only support single-precision values to ~7 decimal places of accuracy.</b> Using graphics APIs such
+                    as
+                    WebGL, OpenGL and
+                    Direct3D, graphics processing units (GPUs) internally operate on single precision 32-bit
+                    floating-point numbers. Therefore, the jittering turned out to be rounding error within WebGL
+                    shaders, as each vertex position
+                    continually snapped to its nearest available single-precision value.</p>
+                </li>
+
+            </ul>
+
+            <p>So far, we've managed to avoid rounding jitter by using certain <a
+                    href="https://github.com/xeokit/xeokit-sdk/wiki/Creating-Files-for-Offline-BIM#42-ifcconvert-options-to-mitigate-precision-loss"><code>IfcConvert</code>
+                options</a>, or
+                <a href="https://github.com/xeokit/xeokit-sdk/wiki/Creating-Files-for-Offline-BIM#431-a-python-script-using-ifcopenshell"><code>python
+                    scripts on IfcOpenShell</code></a>, to "center"
+                the geometries within our IFC models (see: <a
+                        href="(https://github.com/xeokit/xeokit-sdk/wiki/Creating-Files-for-Offline-BIM#42-ifcconvert-options-to-mitigate-precision-loss">Creating
+                    Files for Offline BIM</a>). These workarounds work by transforming the geometries from IFC global
+                coordinates to IFC local coordinates, which are (hopefully) small enough to be accurately represented by
+                WebGL.</p>
+
+            <p>The problem with these workarounds is that we lose the original global placement of our models. This
+                means
+                that we cannot
+                load multiple models belonging to the same site and have them positioned correctly with respect to each
+                other. Instead,
+                they would all be in their local IFC coordinate system, and once loaded into xeokit, would be positioned
+                right on top of
+                each other.</p>
+
+            <p>Furthermore, if the model is geographically huge, with fine details (eg. a 10km long roadworks that
+                relies on 1cm
+                accuracy), then
+                centering doesn't help anyway, because the geometry will still have huge coordinate values.</p>
+        </div>
+    </div>
+
+    <div class="row  mt-4 mb-4">
+        <div class="col-md-12">
+
+            <h2>Solution: Full-Precision Emulation</h2>
+
+            <p>The solution was to extend <a href="https://github.com/xeokit/xeokit-sdk"><code>xeokit-sdk</code></a> and
+                <a href="https://github.com/xeokit/xeokit-gltf-to-xkt"><code>xeokit-gltf-to-xkt</code></a> with the
+                ability to emulate full-precision geometry rendering on WebGL, as a robust way to eliminate rounding
+                jitter with IFC models that contain
+                large geometry coordinates.</p>
+
+            <p>The screen capture below shows how this solution completely eliminates rounding jitter with BIMData's
+                model,
+                without needing to convert it to IFC local coordinates. Within xeokit's viewer, the model actually
+                retains its full IFC global
+                coordinate precision, and is still centered at <code>[1842022, 10, -5173301]</code> (the building's
+                location in Saint Denis,
+                France).</p>
+
+            <a href="https://xeokit.github.io/xeokit-sdk/examples/#loading_XKT_jitter_fullPrecision_MAP"> <img
+                    src="./img/gifs/no_jitter.gif" class="img-fluid rounded mx-auto d-block" alt="..."></a><br>
+            <p class="text-center"><b>Figure 2. Full-Precision Emulation in xeokit</b><br>[<a
+                    href="https://xeokit.github.io/xeokit-sdk/examples/#loading_XKT_jitter_fullPrecision_MAP">Run
+                this example</a>]</p>
+
+            <p>We can even load a second model, with IFC global coordinates centered at, say. <code>[-104567655, 10,
+                231000000]</code>, and
+                xeokit would happily have both of these models in the viewer, situated <code>259038312.73</code> units
+                away from each other. </p>
+
+            <p>Our jitter elimination uses a technique known as <b>relative-to-center (RTC) geometry coordinates</b>,
+                which is used in flight simulators and geospatial visualization applications to accurately render very
+                large models on single-precision GPUs. We won't describe the RTC technique here, but you can read all about it in the book <a
+                    href="https://www.amazon.com/3D-Engine-Design-Virtual-Globes/dp/1568817118">3D Engine Design for
+                Virtual Globes</a>, which was a valuable resource during the development of this release.</p>
+        </div>
+    </div>
+
+    <div class="row  mt-4 mb-4">
+        <div class="col-md-12">
+
+            <h2>Upgrading your App to Full-Precision</h2>
+
+            <p>We'll now describe how to upgrade your xeokit application to work with full-precision models. You
+                can also
+                find more information in the GitHub <a href="https://github.com/xeokit/xeokit-sdk/pull/456">pull
+                    request</a>
+                for this update.</p>
+
+            <h4>1. Update xeokit-gltf-to-xkt</h4>
+
+            <p>First, update your version of <a
+                    href="https://github.com/xeokit/xeokit-gltf-to-xkt"><code>xeokit-gltf-to-xkt</code></a> to <code>0.5.0</code>
+                or
+                later, assuming
+                that you're using that within your model conversion pipeline to convert glTF models to xeokit's
+                optimized <code>.XKT</code> native geometry format.</p>
+
+            <p>Then add the new <code>-f 6</code> option when you invoke <code>xeokit-gltf-to-xkt</code>'s <code>gltf2xkt</code>
+                executable. This will cause the executable to output the new <code>.XKT 6</code> format, which preserves
+                full model precision, using the RTC technique mentioned earlier.</p>
+
+            <pre><code>
+                $ ./gltf2xkt -f 6 -s scene.gltf -o scene.xkt
+                </code></pre>
+
+            <h4>2. Reconfigure IfcConvert</h4>
+
+            <p>If you're using <code>IfcConvert</code> with option <code>--center-model</code>,
+                <code>--site-local-placement</code> or <code>--building-local-placement</code>
+                to center your models to avoid rounding jitter, then you can now remove that option.</p>
+
+            <p>Likewise, if you're using <code>IfcOpenShell</code> scripts to center your models
+                to avoid jitter, you can now remove those script invocations from your conversion pipeline.</p>
+
+            <h4>3. Update xeokit-sdk</h4>
+
+            <p>Lastly, update your version of <a
+                    href="https://github.com/xeokit/xeokit-sdk"><code>xeokit-sdk</code></a> to <code>1.4.8</code> or
+                later. This version is
+                a backwardly-compatible drop-in replacement for 1.4.7, which does not emulate full-precision.</p>
+
+            <p>Now you can convert full-precision IFC models to <code>.xkt 6</code> and load them into your xeokit
+                application, to accurately view them in the browser.</p>
+
+        </div>
+    </div>
+
+    <div class="row  mt-4 mb-4">
+        <div class="col-md-12">
+
+            <h2>More Resources</h2>
+
+            <p>As mentioned, <b><a href="https://github.com/xeokit/xeokit-sdk/pull/456">pull request #456</a></b> has
+                info on what code has been updated in <a
+                        href="https://github.com/xeokit/xeokit-sdk">xeokit-sdk 1.4.8</a>.</p>
+            <p>For improved maintenance and QA, the converter logic in <a
+                    href="https://github.com/xeokit/xeokit-gltf-to-xkt"><code>xeokit-gltf-to-xkt</code></a>, used for
+                generating <code>.XKT 6</code> format, has been
+                factored out into its own library, <b><a href="https://github.com/xeokit/xeokit-xkt-utils">
+                    <code>xeokit-xkt-utils</code></a></b>. This allows us to more easily document and unit test the
+                converter logic, and to more clearly use it as a reference implementation for developers wanting
+                to build their own
+                tools to generate <code>.XKT 6</code> format. Take a look at that library's repository for more
+                insight into <code>.XKT 6</code> and RTC.</p>
+        </div>
+    </div>
+
+    <br><br>
+
+</div>
+
+@@include('../_includes/footer.html')
+
+</body>
+
+</html>

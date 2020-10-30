@@ -114,8 +114,7 @@
             <p>Sometimes, xeokit users would report that certain models would "jitter" as they moved. </p>
 
             <p>The screen capture below shows the problem, using a model of
-                the <a href="https://www.peterson.fr/programme-neuf-23903.php">Marc Antoine</a> apartment complex in
-                Saint-Denis, provided by <a href="https://bimdata.io">BIMData</a>. The IFC geometry for this model is in
+                the Marc Antoine Petit apartment complex in Lyon, provided by <a href="https://bimdata.io">BIMData</a>. The IFC geometry for this model is in
                 IFC
                 global coordinates. Notice the way the model "shivers" as we rotate it.</p>
 
@@ -134,8 +133,7 @@
                     large with fine details, or because their geometries were positioned far from the origin of the IFC
                     global coordinate system
                     (BIMData's model happens to be positioned at <code>[1842022, 10, -5173301]</code>, which is
-                    somewhere in Saint
-                    Denis, France).</p>
+                    somewhere in Lyon, France).</p>
                 </li>
 
                 <li><p><b>WebGL can only support single-precision values to ~7 decimal places of accuracy.</b> Using graphics APIs such
@@ -191,9 +189,7 @@
                 model,
                 without needing to convert it to IFC local coordinates. Within xeokit's viewer, the model actually
                 retains its full IFC global
-                coordinate precision, and is still centered at <code>[1842022, 10, -5173301]</code> (the building's
-                location in Saint Denis,
-                France).</p>
+                coordinate precision, and is still centered at <code>[1842022, 10, -5173301]</code> (somewhere in Lyon, France).</p>
 
             <a href="https://xeokit.github.io/xeokit-sdk/examples/#loading_XKT_jitter_fullPrecision_MAP"> <img
                     src="./img/gifs/no_jitter.gif" class="img-fluid rounded mx-auto d-block" alt="..."></a><br>

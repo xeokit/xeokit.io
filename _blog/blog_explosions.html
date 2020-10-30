@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../_includes/head.html')
+</head>
+
+<body>
+
+@@include('../_includes/navigation.html')
+
+<div class="container">
+    <div class="row  mt-5 mb-5">
+        <div class="col-md-12">
+            <h1><a href="./blog.html">Blog</a> / Exploding Parts Assemblies in xeokit 1.3.5</h1>
+            <hr>
+            <p>May 25, 2020</p>
+            <hr>
+            <p class="lead"><a href="https://www.npmjs.com/package/@xeokit/xeokit-sdk">xeokit SDK 1.3.5</a> adds the
+                ablity to individually translate
+                objects loaded from xeokit's binary .XKT format. The example below shows how this
+                capability can be
+                used to explode models to reveal inner structures. Click the screenshot below to run a live example.</p>
+            <a href="https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_metadata_moveStoreys"><img
+                    src="./img/gifs/explodeSchependomlaan.gif" class="img-fluid rounded mx-auto d-block" alt="..."></a>
+            <br>
+            <p class="text-center">[<a
+                    href="https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_metadata_moveStoreys">Run this
+                example</a>]</p>
+        </div>
+    </div>
+
+    <hr>
+    <div class="row  mt-2 mb-5">
+        <div class="col-md-12">
+            <h2>How to Explode our Models</h2>
+            <p>To explode our models, we've added the ability to translate each object individually, along with a method
+                to translate batches of objects.</p>
+            <p>The example below shows how we can use this capability to collectively translate
+                the objects belonging to each <code>IfcBuildingStorey</code>, in order to perform an animated separation the
+                storeys, as shown in the screen capture above.</p>
+            <script src="https://gist.github.com/xeolabs/7c944351cbcd1a1b74e1c2711a9fbc8a.js"></script>
+        </div>
+    </div>
+    <hr>
+
+</div>
+
+@@include('../_includes/footer.html')
+
+</body>
+
+</html>

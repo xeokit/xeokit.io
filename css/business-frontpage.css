@@ -98,10 +98,11 @@ blockquote cite:before {
     transform: translate(-50%, -70%);
 }
 
-.used-by  {
+.used-by {
     width: 100%;
     height: auto;
 }
+
 .img-wrapper {
     position: relative;
 }
@@ -456,6 +457,12 @@ span.clients-name {
     min-height: 400px;
     max-height: 500px;
     background: url('../img/planView2.jpg') center center no-repeat scroll;
+
+
+    /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/openProject/OpenProject-BIM-project-management-software-900x600.jpg') center center no-repeat scroll;*/
+    /*background-position:center top;*/
+
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -540,8 +547,8 @@ span.clients-name {
 }
 
 .usedby {
-    padding-top: 10px  !important;
-    padding-bottom: 10px  !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
 }
 
 .navbar-home {
@@ -581,12 +588,12 @@ span.clients-name {
     text-align: center;
 }
 
-h1, h2, h3,  h5, h6 {
+h1, h2, h3, h5, h6 {
     margin-top: 5px;
     margin-bottom: 0.9rem;
 }
 
-h4{
+h4 {
     margin-top: 25px;
     margin-bottom: 0.9rem;
 }
@@ -603,7 +610,7 @@ h4{
 }
 
 #clients .client-logo {
-    padding: 44px;
+    padding: 54px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -626,4 +633,117 @@ h4{
 #clients img {
     transition: all 0.4s ease-in-out;
     /*filter: grayscale(100%);*/
+}
+
+.features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+    max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem;
+}
+
+.faq-nav {
+    flex-direction: column;
+    margin: 0 0 32px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+}
+
+.faq-nav .nav-link {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 13px 16px;
+    background-color: #fff;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    color: #616161;
+    transition: background-color 0.2s ease;
+}
+
+.faq-nav .nav-link:hover {
+    background-color: #f6f6f6;
+}
+
+.faq-nav .nav-link.active {
+    background-color: #f6f6f6;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .87);
+}
+
+.faq-nav .nav-link:last-of-type {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom: 0;
+}
+
+.faq-nav .nav-link i.mdi {
+    margin-right: 5px;
+    font-size: 18px;
+    position: relative;
+}
+
+.tab-content {
+    box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+}
+
+.tab-content .card {
+    border-radius: 0;
+}
+
+.tab-content .card-header {
+    padding: 15px 16px;
+    border-radius: 0;
+    background-color: #f6f6f6;
+}
+
+.tab-content .card-header h5 {
+    margin: 0;
+}
+
+.tab-content .card-header h5 button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .87);
+    text-align: left;
+    white-space: normal;
+}
+
+.tab-content .card-header h5 button:hover, .tab-content .card-header h5 button:focus, .tab-content .card-header h5 button:active, .tab-content .card-header h5 button:hover:active {
+    text-decoration: none;
+}
+
+.tab-content .card-body p {
+    color: #616161;
+}
+
+.tab-content .card-body p:last-of-type {
+    margin: 0;
+}
+
+.accordion > .card:not(:first-child) {
+    border-top: 0;
+}
+
+.collapse.show .card-body {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
 }

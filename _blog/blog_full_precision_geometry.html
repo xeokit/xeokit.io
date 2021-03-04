@@ -14,7 +14,7 @@
 <div class="container">
     <div class="row  mt-5 mb-4">
         <div class="col-md-12">
-            <h1><a href="./blog.html">Blog</a> / Full-Precision Model Geometry in xeokit 1.4.8</h1>
+            <h1><a href="./blog.html">Blog</a> / Double-Precision Model Geometry in xeokit 1.4.8</h1>
             <hr>
             <p>Oct 30, 2020</p>
             <hr>
@@ -43,8 +43,7 @@
             <p>Sometimes, xeokit users would report that certain models would "jitter" as they moved. </p>
 
             <p>The screen capture below shows the problem, using a model of
-                the <a href="https://www.peterson.fr/programme-neuf-23903.php">Marc Antoine</a> apartment complex in
-                Saint-Denis, provided by <a href="https://bimdata.io">BIMData</a>. The IFC geometry for this model is in
+                the Marc Antoine Petit apartment complex in Lyon, provided by <a href="https://bimdata.io">BIMData</a>. The IFC geometry for this model is in
                 IFC
                 global coordinates. Notice the way the model "shivers" as we rotate it.</p>
 
@@ -63,8 +62,7 @@
                     large with fine details, or because their geometries were positioned far from the origin of the IFC
                     global coordinate system
                     (BIMData's model happens to be positioned at <code>[1842022, 10, -5173301]</code>, which is
-                    somewhere in Saint
-                    Denis, France).</p>
+                    somewhere in Lyon, France).</p>
                 </li>
 
                 <li><p><b>WebGL can only support single-precision values to ~7 decimal places of accuracy.</b> Using graphics APIs such
@@ -84,7 +82,7 @@
                 <a href="https://github.com/xeokit/xeokit-sdk/wiki/Creating-Files-for-Offline-BIM#431-a-python-script-using-ifcopenshell"><code>python
                     scripts on IfcOpenShell</code></a>, to "center"
                 the geometries within our IFC models (see: <a
-                        href="(https://github.com/xeokit/xeokit-sdk/wiki/Creating-Files-for-Offline-BIM#42-ifcconvert-options-to-mitigate-precision-loss">Creating
+                        href="https://github.com/xeokit/xeokit-sdk/wiki/Creating-Files-for-Offline-BIM">Creating
                     Files for Offline BIM</a>). These workarounds work by transforming the geometries from IFC global
                 coordinates to IFC local coordinates, which are (hopefully) small enough to be accurately represented by
                 WebGL.</p>
@@ -108,11 +106,11 @@
     <div class="row  mt-4 mb-4">
         <div class="col-md-12">
 
-            <h2>Solution: Full-Precision Emulation</h2>
+            <h2>Solution: double-Precision Emulation</h2>
 
             <p>The solution was to extend <a href="https://github.com/xeokit/xeokit-sdk"><code>xeokit-sdk</code></a> and
                 <a href="https://github.com/xeokit/xeokit-gltf-to-xkt"><code>xeokit-gltf-to-xkt</code></a> with the
-                ability to emulate full-precision geometry rendering on WebGL, as a robust way to eliminate rounding
+                ability to emulate double-precision geometry rendering on WebGL, as a robust way to eliminate rounding
                 jitter with IFC models that contain
                 large geometry coordinates.</p>
 
@@ -120,13 +118,11 @@
                 model,
                 without needing to convert it to IFC local coordinates. Within xeokit's viewer, the model actually
                 retains its full IFC global
-                coordinate precision, and is still centered at <code>[1842022, 10, -5173301]</code> (the building's
-                location in Saint Denis,
-                France).</p>
+                coordinate precision, and is still centered at <code>[1842022, 10, -5173301]</code> (somewhere Lyon, France).</p>
 
             <a href="https://xeokit.github.io/xeokit-sdk/examples/#loading_XKT_jitter_fullPrecision_MAP"> <img
                     src="./img/gifs/no_jitter.gif" class="img-fluid rounded mx-auto d-block" alt="..."></a><br>
-            <p class="text-center"><b>Figure 2. Full-Precision Emulation in xeokit</b><br>[<a
+            <p class="text-center"><b>Figure 2. double-Precision Emulation in xeokit</b><br>[<a
                     href="https://xeokit.github.io/xeokit-sdk/examples/#loading_XKT_jitter_fullPrecision_MAP">Run
                 this example</a>]</p>
 
@@ -146,9 +142,9 @@
     <div class="row  mt-4 mb-4">
         <div class="col-md-12">
 
-            <h2>Upgrading your App to Full-Precision</h2>
+            <h2>Upgrading your App to double-Precision</h2>
 
-            <p>We'll now describe how to upgrade your xeokit application to work with full-precision models. You
+            <p>We'll now describe how to upgrade your xeokit application to work with double-precision models. You
                 can also
                 find more information in the GitHub <a href="https://github.com/xeokit/xeokit-sdk/pull/456">pull
                     request</a>
@@ -165,7 +161,7 @@
 
             <p>Then add the new <code>-f 6</code> option when you invoke <code>xeokit-gltf-to-xkt</code>'s <code>gltf2xkt</code>
                 executable. This will cause the executable to output the new <code>.XKT 6</code> format, which preserves
-                full model precision, using the RTC technique mentioned earlier.</p>
+                double model precision, using the RTC technique mentioned earlier.</p>
 
             <pre><code>
                 $ ./gltf2xkt -f 6 -s scene.gltf -o scene.xkt
@@ -185,9 +181,9 @@
             <p>Lastly, update your version of <a
                     href="https://github.com/xeokit/xeokit-sdk"><code>xeokit-sdk</code></a> to <code>1.4.8</code> or
                 later. This version is
-                a backwardly-compatible drop-in replacement for 1.4.7, which does not emulate full-precision.</p>
+                a backwardly-compatible drop-in replacement for 1.4.7, which does not emulate double-precision.</p>
 
-            <p>Now you can convert full-precision IFC models to <code>.xkt 6</code> and load them into your xeokit
+            <p>Now you can convert double-precision IFC models to <code>.xkt 6</code> and load them into your xeokit
                 application, to accurately view them in the browser.</p>
 
         </div>

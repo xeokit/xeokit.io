@@ -4,10 +4,10 @@ var runSequence = require('gulp4-run-sequence');
 const gulp = require('gulp');
 
 gulp.task('build', function (callback) {
-    runSequence('build-pages','build-blog', callback);
+    runSequence('build-pages', 'build-blog', callback);
 });
 
-gulp.task('build-pages', function() {
+gulp.task('build-pages', function () {
     return gulp.src([
         '_pages/index.html',
         '_pages/demo.html',
@@ -22,10 +22,18 @@ gulp.task('build-pages', function() {
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('build-blog', function() {
+gulp.task('build-blog', function () {
     return gulp.src([
-        // '_blog/blog_xeokit_powering_bimdata.html',
-        // '_blog/blog_xeokit_powering_planradar.html',
+        `_blog/blog_creoox_becomes_xeokit_sales_partner.html`,
+        '_blog/blog_xeokit_at_webgl_meetup_2020.html',
+        '_blog/blog_full_precision_geometry.html',
+        '_blog/blog_xkt_utilities_library.html',
+        '_blog/blog_xeokit_powering_bimdata.html',
+        '_blog/blog_xeokit_partners_with_bimspot.html',
+        '_blog/blog_xeokit_powering_planradar.html',
+        '_blog/blog_xeokit_partners_with_congrid.html',
+        //'_blog/blog_view_culling.html',
+        '_blog/blog_explosions.html',
         '_blog/blog_xeokit_partners_with_bimspot.html',
         '_blog/blog_xeokit_partners_with_dstudio.html',
         '_blog/blog_xeokit_partners_with_singular.html',

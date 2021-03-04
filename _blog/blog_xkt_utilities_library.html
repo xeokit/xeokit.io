@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('../_includes/head.html')
+
+</head>
+
+<body>
+
+@@include('../_includes/navigation.html')
+
+
+<div class="container">
+    <div class="row  mt-5 mb-5">
+        <div class="col-md-12">
+            <h1><a href="./blog.html">Blog</a> / A Toolkit for Creating XKT Files</h1>
+            <hr>
+            <p>Oct 30, 2020</p>
+            <hr>
+            <p class="lead">The new double-precision geometry support in <a href="https://www.npmjs.com/package/@xeokit/xeokit-sdk">xeokit SDK 1.4.8+</a> includes a version
+                of the <a href="">xeokit-gltf-to-gltf</a> tool that generates a new version of xeokit's XKT geometry format.</p>
+
+            <img src="./img/kdtree.jpeg" class="img-fluid rounded mx-auto d-block" alt="...">
+
+        </div>
+    </div>
+
+    <div class="row  mt-2 mb-5">
+        <div class="col-md-12">
+
+            <h2>A Utilities Library for Creating XKT Files</h2>
+
+            <p><b><a href="https://github.com/xeokit/xeokit-xkt-utils">xeokit-xkt-utils</a></b> is a new npm library of
+                JavaScript tools for programmatically creating XKT files.
+            </p>
+
+            <p>With this library, we can load, or programmatically build, an in-memory document that represents an XKT model.</p>
+            <p>We can then validate the model, and serialize it to an XKT binary file, which can be loaded into a xeokit viewer using <a
+                        href="https://xeokit.github.io/xeokit-sdk/docs/class/src/plugins/XKTLoaderPlugin/XKTLoaderPlugin.js~XKTLoaderPlugin.html">XKTLoaderPlugin</a>.
+            </p>
+
+            <p>This library is now used as an external npm dependency by xeokit's <a
+                    href="https://github.com/xeokit/xeokit-xkt-utils">xeokit-gltf-to-xkt</a> tool. The library
+                effectively factors out the tool's internal conversion logic into a public npm library
+                that we can reuse in own custom XKT tools.</p>
+
+        </div>
+    </div>
+
+    <div class="row  mt-2 mb-5">
+        <div class="col-md-12">
+
+            <h2>What can we do with it?</h2>
+<p></p><br>
+            <ul>
+                <li><p><b>Convert a glTF file into an XKT file.</b></p></li>
+                <li><p><b>Programmatically generate an XKT file.</b></p></li>
+                <li><p><b>Write custom converters for other source file formats.</b></p></li>
+            </ul>
+
+
+            <a href="#example1"><h4>Programmatically Generate an XKT File</h4></a>
+
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row  mt-2 mb-5">
+        <div class="col-md-12">
+
+            <h2>Usage Examples</h2>
+
+            <a name="example1"><h5>Example 1: Convert a glTF Model into XKT</h5></a>
+
+            <a name="example1"><h5>Example 2: Programmatically Generate an XKT File</h5></a>
+
+            <script src="https://gist.github.com/xeolabs/6dbe8107dc14ab5aee6e887bf5afd91e.js"></script>
+
+        </div>
+    </div>
+    <hr>
+</div>
+
+@@include('../_includes/footer.html')
+
+</body>
+
+</html>

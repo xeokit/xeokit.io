@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
     @@include('../_includes/head.html')
+    <style>
+        body {
+            overflow-y: hidden !important;
+        }
+    </style>
 </head>
 <body>
 @@include('../_includes/navigation.html')
 <div class="row no-gutters">
     <iframe id="embeddedViewer" class="embedded-viewer" src=""></iframe>
 </div>
-@@include('../_includes/footer.html')
+<!--@@include('../_includes/footer.html')-->
 </body>
 <script>
     window.onload = function () {

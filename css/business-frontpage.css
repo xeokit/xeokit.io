@@ -454,14 +454,16 @@ span.clients-name {
 
 .home-header {
     height: 100vh;
-    min-height: 400px;
-    max-height: 500px;
-    background: url('../img/planView2.jpg') center center no-repeat scroll;
+    min-height: 600px;
+    max-height: 600px;
+    /*background: url('../img/RevitSamples.png') center center no-repeat scroll;*/
 
 
-    /*background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/openProject/OpenProject-BIM-project-management-software-900x600.jpg') center center no-repeat scroll;*/
-    /*background-position:center top;*/
+    /*background: linear-gradient(to right,  rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2) ), url('../img/openProject/OpenProject-BIM-project-management-software-900x600.jpg') center center no-repeat scroll;*/
 
+
+    background: linear-gradient(to right,  rgba(0, 0, 0.8, 0.99), rgba(0,0, 0, 0.2) ), url('../img/RevitSamples.png') center center no-repeat scroll;
+    background-position:center center;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -470,10 +472,9 @@ span.clients-name {
 }
 
 .home-header h1 {
-    /*font-weight: 600;*/
-    /*text-shadow: 1px 1px 3px rgba(0,0,0,.5);*/
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
     color: #e6e5e5;
-
 }
 
 .blog-header {

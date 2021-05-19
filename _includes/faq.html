@@ -26,7 +26,8 @@
                              data-parent="#xeokitFaq">
                             <div class="card-body">
                                 <b>Answer: </b><br><br>
-                                <p>When it comes to high-performance BIM/AEC visualization, xeokit has several capabilities
+                                <p>When it comes to high-performance BIM/AEC visualization, xeokit has several
+                                    capabilities
                                     that set it apart from standard Web graphics libraries:</p>
                                 <ul>
                                     <li><b>Fast loading</b> - ultra-compact native file geometry format loads hundreds
@@ -38,10 +39,12 @@
                                     <li><b>Double-precision rendering</b> - accurately view
                                         building model geometry in global coordinates.
                                     </li>
-                                    <li><b>BIM/AEC-friendly programming API</b> - a complete JavaScript graphics programming
+                                    <li><b>BIM/AEC-friendly programming API</b> - a complete JavaScript graphics
+                                        programming
                                         toolkit, with an API designed specially for BIM/AEC applications.
                                     </li>
-                                    <li><b>Plugins</b> - a library of plugins to accelerate BIM/AEC application development.
+                                    <li><b>Plugins</b> - a library of plugins to accelerate BIM/AEC application
+                                        development.
                                     </li>
                                     <li><b>Freedom</b> - host viewer, models and conversion tools on your own servers -
                                         no issues with data sovereignty, no reliance on 3rd-party cloud services.
@@ -99,7 +102,7 @@
                                 rendering on WebGL, which only supports single-precision natively. This means that we
                                 can render buildings
                                 in their original, global coordinate system, without rounding errors. [<a
-                                    href="https://xeokit.github.io/xeokit-sdk/examples/#logDepthBuf_XKT_Lyon_logDepthBufDisabled"
+                                    href="https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_DoublePrecision_MAP"
                                     target="_examples">Try a demo</a>]
                             </div>
                         </div>
@@ -117,47 +120,69 @@
                             <div class="card-body">
                                 <b>Answer: </b><br><br>The xeokit SDK loads IFC (2x3 & 4), glTF, OBJ, STL, 3DXML and
                                 XKT.<br><br>
-                                XKT is xeokit's highly-optimized native geometry format, which allows xeokit to hundreds
-                                of thousands of full-precision objects in seconds.<br><br>
-                                XKT files are converted from IFC and glTF using open source CLI tools [<a
-                                    href="https://github.com/xeokit/xeokit-sdk/wiki/Creating-Files-for-Offline-BIM"><i>learn
-                                more</i></a>].
+                                XKT is xeokit's highly-optimized native geometry format, which allows xeokit to load
+                                hundreds
+                                of thousands of full-precision objects in seconds. XKT files are converted from IFC and glTF using open source CLI tools.<br><br>
 
+                                <b>Learn more:</b><br><br>
+                                <ul>
+                                    <li><a
+                                            href="https://www.notion.so/xeokit/Viewing-an-IFC-Model-with-xeokit-c373e48bc4094ff5b6e5c5700ff580ee">Viewing
+                                        an IFC Model with xeokit</a></li>
+                                    <li><a
+                                            href="https://www.notion.so/xeokit/Viewing-a-Point-Cloud-with-xeokit-c45cdaae64514170be91c37d6827c9ca">Viewing
+                                        a Point Cloud with xeokit</a></li>
+                                    <li><a
+                                            href="https://www.notion.so/xeokit/Viewing-Multiple-Models-with-xeokit-71b73627d97840f7887275ea6ac4ed4a">Viewing
+                                        Multiple Models with xeokit</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <!--                    <div class="card">-->
-                    <!--                        <div class="card-header p-2" id="headingFour">-->
-                    <!--                            <h5 class="mb-0">-->
-                    <!--                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"-->
-                    <!--                                        data-target="#collapseFoar" aria-expanded="false" aria-controls="collapseFour">-->
-                    <!--                                    Q: How do I view my IFC file with xeokit?-->
-                    <!--                                </button>-->
-                    <!--                            </h5>-->
-                    <!--                        </div>-->
-                    <!--                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#xeokitFaq">-->
-                    <!--                            <div class="card-body">-->
-                    <!--                                The answer to this question can go here. This FAQ example can contain all the Q/A that-->
-                    <!--                                is needed.-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
-                    <!--                    <div class="card">-->
-                    <!--                        <div class="card-header p-2" id="headingFive">-->
-                    <!--                            <h5 class="mb-0">-->
-                    <!--                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"-->
-                    <!--                                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">-->
-                    <!--                                    Q: How do I view my Revit model with xeokit?-->
-                    <!--                                </button>-->
-                    <!--                            </h5>-->
-                    <!--                        </div>-->
-                    <!--                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#xeokitFaq">-->
-                    <!--                            <div class="card-body">-->
-                    <!--                                The answer to this question can go here. This FAQ example can contain all the Q/A that-->
-                    <!--                                is needed.-->
-                    <!--                            </div>-->
-                    <!--                        </div>-->
-                    <!--                    </div>-->
+                    <div class="card">
+                        <div class="card-header p-2" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Q: How do I view my IFC file with xeokit?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#xeokitFaq">
+                            <div class="card-body">
+                                <b>Answer: </b><br><br>Use open source CLI tools to convert IFC STEP files into xeokit's
+                                compressed native model format, XKT, which xeokit can then load super quickly into its
+                                browser-based viewer.<br><br>The XKT format contains all the model's geometry and
+                                elements, along with some basic metadata to help navigate the IFC types. The format
+                                format greatly reduces the model size. As an example, the 49M IFC file for the Schependomlaan sample model converted
+                                into an 1.5M XKT  file, which xeokit loads in around ~2-3 seconds over a good Internet connection.<br><br>
+                                <b>Learn more:</b><br><br>
+                                <ul>
+                                    <li><a
+                                            href="https://www.notion.so/xeokit/Viewing-an-IFC-Model-with-xeokit-c373e48bc4094ff5b6e5c5700ff580ee">Viewing
+                                        an IFC Model with xeokit</a></li>
+                                    <li><a
+                                            href="https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_Schependomlaan">View the Schependomlaan Model</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--                                        <div class="card">-->
+                    <!--                                            <div class="card-header p-2" id="headingFive">-->
+                    <!--                                                <h5 class="mb-0">-->
+                    <!--                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"-->
+                    <!--                                                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">-->
+                    <!--                                                        Q: How do I view my Revit model with xeokit?-->
+                    <!--                                                    </button>-->
+                    <!--                                                </h5>-->
+                    <!--                                            </div>-->
+                    <!--                                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#xeokitFaq">-->
+                    <!--                                                <div class="card-body">-->
+                    <!--                                                    The answer to this question can go here. This FAQ example can contain all the Q/A that-->
+                    <!--                                                    is needed.-->
+                    <!--                                                </div>-->
+                    <!--                                            </div>-->
+                    <!--                                        </div>-->
 
 
                     <!--                    <div class="card">-->

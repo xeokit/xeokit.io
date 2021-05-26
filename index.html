@@ -285,7 +285,12 @@
                                                   class="img-fluid" alt=""></div>
                 </a>
             </div>
-
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a href="https://www.blindside.pro/">
+                    <div class="client-logo"><img src="./img/userLogos/blindSide.png"
+                                                  class="img-fluid" alt=""></div>
+                </a>
+            </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
                 <a href="https://tmm-group.de/">
                     <div class="client-logo"><img src="./img/userLogos/tmm.png"
@@ -298,12 +303,7 @@
                                                   class="img-fluid" alt=""></div>
                 </a>
             </div>
-            <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="https://www.blindside.pro/">
-                    <div class="client-logo"><img src="./img/userLogos/blindSide.png"
-                                                  class="img-fluid" alt=""></div>
-                </a>
-            </div>
+
         </div>
         <div class="row mt-5 mb-5">
             <div class="col-sm-12 text-center">
@@ -971,7 +971,8 @@
                                 XKT.<br><br>
                                 XKT is xeokit's highly-optimized native geometry format, which allows xeokit to load
                                 hundreds
-                                of thousands of full-precision objects in seconds. XKT files are converted from IFC and glTF using open source CLI tools.<br><br>
+                                of thousands of full-precision objects in seconds. XKT files are converted from IFC and
+                                glTF using open source CLI tools.<br><br>
 
                                 <b>Learn more:</b><br><br>
                                 <ul>
@@ -1003,15 +1004,46 @@
                                 compressed native model format, XKT, which xeokit can then load super quickly into its
                                 browser-based viewer.<br><br>The XKT format contains all the model's geometry and
                                 elements, along with some basic metadata to help navigate the IFC types. The format
-                                format greatly reduces the model size. As an example, the 49M IFC file for the Schependomlaan sample model converted
-                                into an 1.5M XKT  file, which xeokit loads in around ~2-3 seconds over a good Internet connection.<br><br>
+                                format greatly reduces the model size. As an example, the 49M IFC file for the
+                                Schependomlaan sample model converted
+                                into an 1.5M XKT file, which xeokit loads in around ~2-3 seconds over a good Internet
+                                connection.<br><br>
                                 <b>Learn more:</b><br><br>
                                 <ul>
                                     <li><a
                                             href="https://www.notion.so/xeokit/Viewing-an-IFC-Model-with-xeokit-c373e48bc4094ff5b6e5c5700ff580ee">Viewing
                                         an IFC Model with xeokit</a></li>
                                     <li><a
-                                            href="https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_Schependomlaan">View the Schependomlaan Model</a></li>
+                                            href="https://xeokit.github.io/xeokit-sdk/examples/#BIMOffline_XKT_Schependomlaan">View
+                                        the Schependomlaan Model</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header p-2" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Q: Can I edit and save IFC files with xeokit?
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#xeokitFaq">
+                            <div class="card-body">
+                                <b>Answer: </b><br><br>No - authoring of IFC is outside the scope of xeokit, which is
+                                intended to be used as a front-end visualization tool.<br><br>In order to modify and save IFC
+                                files,
+                                xeokit would need to load, persist, modify and validate (potentially huge) IFC documents
+                                models in browser memory, which would not be practical.<br><br>Rather, xeokit's focus is
+                                efficient interaction with large models, which we pre-convert from IFC to a compact and
+                                fast-loading format that permits large models to fit in browser memory.<br><br>
+                                <b>Learn more:</b><br><br>
+                                <ul>
+                                    <li><a
+                                            href="https://www.notion.so/xeokit/Viewing-an-IFC-Model-with-xeokit-c373e48bc4094ff5b6e5c5700ff580ee">Viewing
+                                        an IFC Model with xeokit</a></li>
                                 </ul>
                             </div>
                         </div>

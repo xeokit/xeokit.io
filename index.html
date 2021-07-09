@@ -298,12 +298,21 @@
                 </a>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6">
-                <a href="https://vollack.de/en/">
-                    <div class="client-logo"><img src="./img/trustedByLogos/vollack.jpg"
+                <a href="https://www.build365.de">
+                    <div class="client-logo"><img src="./img/userLogos/Build365.png"
                                                   class="img-fluid" alt=""></div>
                 </a>
             </div>
-
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <a href="http://civil.uminho.pt/">
+                    <div class="client-logo"><img src="./img/userLogos/uminho.png" class="img-fluid" alt=""></div>
+                </a>
+            </div>
+<!--            <div class="col-lg-3 col-md-4 col-xs-6">-->
+<!--                <a href="https://andpad.jp/">-->
+<!--                    <div class="client-logo"><img src="./img/userLogos/andpad.png" class="img-fluid" alt=""></div>-->
+<!--                </a>-->
+<!--            </div>-->
         </div>
         <div class="row mt-5 mb-5">
             <div class="col-sm-12 text-center">
@@ -967,12 +976,12 @@
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#xeokitFaq">
                             <div class="card-body">
-                                <b>Answer: </b><br><br>The xeokit SDK loads IFC (2x3 & 4), glTF, OBJ, STL, 3DXML and
-                                XKT.<br><br>
+                                <b>Answer: </b><br><br>The xeokit SDK loads (at least) IFC (2x3 & 4), CityJSON, glTF, OBJ, 3DS, STL,
+                                3DXML, LAS, LAZ, PLY and XKT.<br><br>
                                 XKT is xeokit's highly-optimized native geometry format, which allows xeokit to load
                                 hundreds
-                                of thousands of full-precision objects in seconds. XKT files are converted from IFC and
-                                glTF using open source CLI tools.<br><br>
+                                of thousands of full-precision objects in seconds. XKT files are converted from various
+                                source formats using open source CLI tools.<br><br>
 
                                 <b>Learn more:</b><br><br>
                                 <ul>
@@ -1033,7 +1042,8 @@
                         <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#xeokitFaq">
                             <div class="card-body">
                                 <b>Answer: </b><br><br>No - authoring of IFC is outside the scope of xeokit, which is
-                                intended to be used as a front-end visualization tool.<br><br>In order to modify and save IFC
+                                intended to be used as a front-end visualization tool.<br><br>In order to modify and
+                                save IFC
                                 files,
                                 xeokit would need to load, persist, modify and validate (potentially huge) IFC documents
                                 models in browser memory, which would not be practical.<br><br>Rather, xeokit's focus is

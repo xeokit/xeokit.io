@@ -4,7 +4,7 @@
   "description": "xeokit website",
   "main": "index.js",
   "scripts": {
-    "build": "gulp fileinclude"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",

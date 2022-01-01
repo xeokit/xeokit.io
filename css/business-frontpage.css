@@ -600,17 +600,17 @@ h4 {
 }
 
 
-#clients {
+.clients {
     padding: 60px 0
 }
 
-#clients .clients-wrap {
+.clients .clients-wrap {
     border-top: 1px solid #d6eaff;
     border-left: 1px solid #d6eaff;
     margin-bottom: 0px
 }
 
-#clients .client-logo {
+.clients .client-logo {
     padding: 54px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -631,7 +631,7 @@ h4 {
     height: 130px
 }
 
-#clients img {
+.clients img {
     transition: all 0.4s ease-in-out;
     /*filter: grayscale(100%);*/
 }

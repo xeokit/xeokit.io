@@ -25,6 +25,10 @@
             <input type="text" name="company" autocomplete="organization" placeholder="Firma" required/>
             <input type="email" name="email" autocomplete="email" placeholder="E-mail" required/>
             <textarea placeholder="Nachricht" name="message" minlength="10"></textarea>
+            <div class="input_consent mb-3">
+              <input id="consent" name="consent" type="checkbox" value="" aria-required="true" aria-invalid="false" required />
+              <label for="consent">Mit dem Absenden dieses Formulars akzeptiere ich, dass die eingegebenen Informationen im Rahmen der gestellten Anfrage und der daraus resultierenden Geschäftsbeziehung verwendet werden. Siehe unsere Datenschutzrichtlinie, um mehr über unsere Datenschutzrichtlinie zu erfahren.</label>
+            </div>
             <button type="submit" class="btn btn-primary">Kontakt</button>
             <p id="form-status"></p>
           </form>

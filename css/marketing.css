@@ -473,6 +473,14 @@ img {
   background: linear-gradient(109.32deg, #eff3f5 26.68%, #b8d2e4 76.94%); }
   .contact .row {
     flex-direction: row; }
+  .contact .input_consent {
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px; }
+    .contact .input_consent input {
+      margin-right: 10px;
+      width: 16px;
+      margin-top: 5px; }
   .contact__title {
     margin-bottom: 14px; }
   .contact__subtitle {

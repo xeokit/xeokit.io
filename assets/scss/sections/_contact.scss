@@ -7,6 +7,18 @@
     flex-direction: row;
   }
 
+  .input_consent{
+    display: flex;
+    align-items: flex-start;
+    font-size: 14px;
+
+    input{
+      margin-right: 10px;
+      width: 16px;
+      margin-top: 5px;
+    }
+  }
+
   &__title {
     margin-bottom: 14px;
   }

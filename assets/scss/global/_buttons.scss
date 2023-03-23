@@ -1,0 +1,78 @@
+.btn {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+  padding-right: 48px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.47;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 19px;
+    padding-right: 53px;
+  }
+}
+
+.btn-primary {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("./../img/marketing/icons/arrow-white.svg");
+  }
+}
+
+.btn-outline-primary {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("./../img/marketing/icons/arrow-blue.svg");
+  }
+
+  &:hover {
+    &::after {
+      background-image: url("./../img/marketing/icons/arrow-white.svg");
+    }
+  }
+}
+
+.btn-outline-secondary {
+  position: relative;
+  border: 1px solid $theme-color-brown;
+  color: $theme-color-brown;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    transform: translateY(-50%);
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("./../img/marketing/icons/arrow-brown.svg");
+  }
+
+  &:hover {
+    border: 1px solid $theme-color-brown;
+    background-color: $theme-color-brown;
+
+    &::after {
+      background-image: url("./../img/marketing/icons/arrow-white.svg");
+    }
+  }
+}

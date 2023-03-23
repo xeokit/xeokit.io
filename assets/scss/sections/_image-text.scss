@@ -1,0 +1,115 @@
+.image-text-color {
+  padding-top: 24px;
+  padding-bottom: 44px;
+  background: $theme-gradient;
+}
+
+.image-text-white {
+  margin-top: unset;
+  padding-bottom: 45px;
+
+  @media screen and (min-width: 992px) {
+    margin-top: -100px;
+  }
+}
+
+.image-text,
+.image-text-white,
+.image-text-color {
+  .color {
+    background: $theme-gradient;
+  }
+  .block-row {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    &--reverse {
+      flex-direction: column-reverse;
+      margin-top: 29px;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    color: $theme-color-brown;
+  }
+
+  &__title {
+    margin-bottom: 19px;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__additional-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 29px;
+
+    @media screen and (min-width: 992px) {
+      flex-direction: row;
+    }
+
+    &__first {
+      position: relative;
+
+      @media screen and (min-width: 992px) {
+        padding-right: 31px;
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 50%;
+          transform: translateY(-50%);
+          right: 13px;
+          width: 5px;
+          height: 5px;
+          background-color: $theme-color-brown;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    span {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.39;
+      color: $theme-color-brown;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.35;
+
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+    }
+  }
+
+  .image-wrapper {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      justify-content: flex-start;
+    }
+  }
+}

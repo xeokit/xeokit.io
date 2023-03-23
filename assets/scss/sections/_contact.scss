@@ -1,0 +1,124 @@
+.contact {
+  padding-top: 91px;
+  padding-bottom: 96px;
+  background: $theme-gradient;
+
+  .row {
+    flex-direction: row;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+  }
+
+  &__subtitle {
+    margin-bottom: 36px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.35;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__item {
+      padding-left: 30px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        background-image: url(./../img/marketing/icons/check.svg);
+      }
+    }
+  }
+
+  &__contact {
+    font-size: 20px;
+    line-height: 1.35;
+    padding-left: 83px;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 56px;
+      height: 56px;
+      top: 0;
+      left: 0;
+    }
+
+    &--phone {
+      margin-bottom: 31px;
+
+      &::after {
+        background: url(./../img/marketing/icons/phone.png);
+      }
+    }
+
+    &--email {
+      margin-bottom: 50px;
+
+      &::after {
+        background: url(./../img/marketing/icons/email.png);
+      }
+    }
+
+    a {
+      color: $theme-color-black;
+    }
+  }
+
+  &__form {
+    background-color: $theme-color-white;
+    padding-top: 66px;
+    padding-left: 49px;
+    padding-right: 42px;
+    padding-bottom: 47px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    input,
+    textarea {
+      border: 1px solid #eff3f5;
+      border-radius: 10px;
+      padding-top: 12px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 11px;
+
+      &::placeholder {
+        color: $theme-color-black;
+      }
+    }
+
+    input {
+      margin-bottom: 17px;
+      max-width: 444px;
+      width: 100%;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 131px;
+      margin-bottom: 9px;
+    }
+  }
+}

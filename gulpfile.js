@@ -12,7 +12,9 @@ gulp.task('build-pages', function () {
         '_pages/index.html',
         '_pages/demo.html',
         '_pages/download.html',
-        '_pages/blog.html'
+        '_pages/blog.html',
+        '_pages/for-business.html',
+        '_pages/fur-das-geschaft.html'
     ])
         .pipe(fileinclude({
             filters: {

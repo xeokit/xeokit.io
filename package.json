@@ -4,7 +4,8 @@
   "description": "xeokit website",
   "main": "index.js",
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "watch:scss": "node-sass -w assets/scss/marketing.scss -o css/"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-file-include": "^2.1.1",
+    "node-sass": "^8.0.0",
     "run-sequence": "^2.2.1"
   },
   "dependencies": {

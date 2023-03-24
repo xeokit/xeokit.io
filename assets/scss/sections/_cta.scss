@@ -1,0 +1,57 @@
+.cta {
+  padding-top: 121px;
+  padding-bottom: 101px;
+
+  &__logo {
+    margin-bottom: 32px;
+  }
+
+  &__subtitle {
+    max-width: 698px;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 18px;
+    color:$theme-color-brown;
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    max-width: 698px;
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 40px;
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    a{
+      margin-right: 20px;
+      margin-bottom: 20px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    @media screen and (min-width: 768px) {
+
+    }
+  }
+
+  .container {
+    position: relative;
+
+    .cta__order {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      display: none;
+
+      @media screen and (min-width: 1300px) {
+        display: block;
+      }
+    }
+  }
+}

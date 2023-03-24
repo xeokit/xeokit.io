@@ -284,6 +284,15 @@ img {
     .text-images__images-wrapper .item {
       margin: 0 auto;
       position: relative; }
+      .text-images__images-wrapper .item:before {
+        content: '';
+        height: 50%;
+        background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0; }
       .text-images__images-wrapper .item__text {
         position: absolute;
         top: 47px;

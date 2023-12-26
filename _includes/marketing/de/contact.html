@@ -1,0 +1,38 @@
+<section id="contact" class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <h2 class="contact__title">Kontakt</h2>
+          <div class="contact__subtitle">Immer für Sie da 100%</div>
+          <ul class="contact__list">
+            <li class="contact__list__item">Optimiert</li>
+            <li class="contact__list__item">Konfigurierbar</li>
+            <li class="contact__list__item">Effizient</li>
+            <li class="contact__list__item">Integrierbar</li>
+            <li class="contact__list__item">Zuverlässig</li>
+            <li class="contact__list__item">Sicher</li>
+          </ul>
+          <div class="contact__contact contact__contact--phone">
+            <a href="tel:+41762785998">+41 76 278 5998</a>
+          </div>
+          <div class="contact__contact contact__contact--email">
+            <a href="mailto:info@creoox.com">info@creoox.com</a>
+          </div>
+        </div>
+        <div class="offset-lg-1 col-12 col-lg-7">
+          <form id="form" class="contact__form"  action="https://formspree.io/f/xnqyzkbb" method="POST">
+            <input type="text" name="name" autocomplete="given-name" placeholder="Name" required/>
+            <input type="text" name="company" autocomplete="organization" placeholder="Firma" required/>
+            <input type="email" name="email" autocomplete="email" placeholder="E-Mail" required/>
+            <textarea placeholder="Nachricht" name="message" minlength="10"></textarea>
+            <div class="input_consent mb-3">
+              <input id="consent" name="consent" type="checkbox" value="" aria-required="true" aria-invalid="false" required />
+              <label for="consent">Mit dem Absenden dieses Formulars akzeptiere ich, dass die eingegebenen Informationen im Rahmen der gestellten Anfrage und der daraus resultierenden Geschäftsbeziehung verwendet werden. Siehe unsere Datenschutzrichtlinie, um mehr über unsere Datenschutzrichtlinie zu erfahren.</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Kontakt</button>
+            <p id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>

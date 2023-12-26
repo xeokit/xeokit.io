@@ -94,7 +94,7 @@
     <!--    </div>-->
 </nav>
 <div class="row no-gutters">
-    <iframe id="embeddedViewer" class="embedded-viewer" src=""></iframe>
+    <iframe class="embedded-viewer" id="embeddedViewer" src=""></iframe>
 </div>
 
 </body>
@@ -106,6 +106,9 @@
         }
         const searchStr = window.location.search || "?projectId=Schependomlaan_selectedStorey&tab=storeys";
         iframeElement.src = "https://xeokit.github.io/xeokit-bim-viewer/app/index.html" + searchStr;
+        iframeElement.addEventListener('load', function () {
+            iframeElement.focus();
+        });
     };
 </script>
 </html>

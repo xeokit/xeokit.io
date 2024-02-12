@@ -261,6 +261,11 @@ img {
       @media screen and (min-width: 768px) {
         .text-images__text-wrapper .second-part {
           width: 50%; } }
+          
+.text-images-banner {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: #04070F; }
   .text-images__subtitle {
     font-weight: 600;
     font-size: 12px;

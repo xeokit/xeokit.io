@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /.git/
+Disallow: /*.md$
+Disallow: /download.html
+
+Sitemap: https://xeokit.io/sitemap.xml

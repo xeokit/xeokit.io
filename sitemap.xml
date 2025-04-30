@@ -4,145 +4,142 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
   <loc>https://xeokit.io/</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://xeokit.io/index.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://xeokit.io/blog.html</loc>
-  <lastmod>2025-02-18T19:15:13+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://xeokit.io/blog_xeokit_partners_with_openproject.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://xeokit.io/blog_xeokit_powering_planradar.html</loc>
-  <lastmod>2025-02-18T19:15:13+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://xeokit.io/blog_xeokit_partners_with_bimspot.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://xeokit.io/blog_xeokit_partners_with_singular.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://xeokit.io/blog_xeokit_partners_with_dstudio.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://xeokit.io/blog_xeokit_partners_with_congrid.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://xeokit.io/blog_xeokit_powering_bimdata.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://xeokit.io/blog_creoox_becomes_xeokit_sales_partner.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://xeokit.io/demo.html?projectId=OTCConferenceCenter&amp;tab=storeys</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://xeokit.io/index.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <loc>https://xeokit.io/index.html?foo=0</loc>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://xeokit.io/demo.html?projectId=RevitSamples&amp;tab=models</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://xeokit.io/demo.html?projectId=MAPPointCloud</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://xeokit.io/demo.html?projectId=MAP&amp;tab=objects</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://xeokit.io/demo.html?projectId=Schependomlaan&amp;tab=storeys</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://xeokit.io/demo.html?projectId=Schependomlaan_selectedStorey&amp;tab=storeys</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://xeokit.io/index.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <loc>https://xeokit.io/index.html?foo=1</loc>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://xeokit.io/index.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://xeokit.io/download.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <loc>https://xeokit.io/index.html?foo=2</loc>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://xeokit.io/blog_xeokit_at_webgl_meetup_2020.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://xeokit.io/blog_full_precision_geometry.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://xeokit.io/blog_xeokit_partners_with_congrid.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <loc>https://xeokit.io/blog_xeokit_powering_planradar.html</loc>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://xeokit.io/blog_explosions.html?</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <loc>https://xeokit.io/blog_xeokit_partners_with_congrid.html?foo=bar</loc>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://xeokit.io/blog_xeokit_release_1.1.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <loc>https://xeokit.io/blog_explosions.html?foo=bar</loc>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://xeokit.io/blog_xeokit_release_1.1.html?foo=bar</loc>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://xeokit.io/blog_saoEdgesDisableOnCameraMove.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://xeokit.io/blog_xeokit_at_siggraph.html</loc>
-  <lastmod>2025-02-18T19:15:14+00:00</lastmod>
+  <lastmod>2025-04-30T15:47:41+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
